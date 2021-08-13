@@ -1,4 +1,19 @@
-$colour-primary: #9356DC;
-$colour-secondary: #FF79DA; 
-$colour-tertiary: #99E2D0;
+// color
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-text-headder: black;
+$color-text-main: black;
+$color-text-footer: white;
 
+// typography
+$font-title: 'Shrikhand',
+cursive;
+$font-stack: 'Roboto',
+sans-serif;
+$weight-title: 700;
+$weight-stack: 100;
+
+
+//gutter
+$gutter: 1rem;
