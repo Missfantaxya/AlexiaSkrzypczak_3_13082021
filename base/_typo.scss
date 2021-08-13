@@ -1,8 +1,13 @@
 
-body {
-  font-family: 'Roboto', sans-serif;
+
+%typography-stack {
+  font-family: $font-stack;
+  font-weight: $weight-stack;
 }
 
-.title {
-  font-family: 'Shrikhand', cursive;
+%typography-title {
+  font-family: $font-title;
+  font-weight: $weight-title;
+  text-align: left;
 }
+
