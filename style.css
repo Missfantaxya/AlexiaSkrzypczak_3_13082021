@@ -135,6 +135,17 @@ table {
   border-spacing: 0;
 }
 
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  background-color: transparent;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -142,11 +153,6 @@ body {
 
 body {
   color: black;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
 }
 
 .card {
@@ -167,14 +173,22 @@ a {
   justify-content: center;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  width: 100vw;
+}
+.header__logo {
+  width: 50vw;
 }
 
 .footer {
   background-color: black;
   color: white;
 }
+.footer__logo {
+  width: 25vw;
+  padding: 1.2rem 1rem 0.3rem 1.5rem;
+}
 .footer__list {
-  padding: 1rem 1rem 2.5rem 1.5rem;
+  padding: 0.5rem 1rem 2.5rem 1.5rem;
 }
 .footer__item {
   padding: 0.4rem;
