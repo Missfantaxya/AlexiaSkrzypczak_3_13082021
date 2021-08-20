@@ -135,6 +135,13 @@ table {
   border-spacing: 0;
 }
 
+.header__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .card {
   width: 98vw;
   height: 40vh;
