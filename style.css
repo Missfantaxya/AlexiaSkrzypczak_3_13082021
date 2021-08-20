@@ -155,6 +155,18 @@ body {
   color: black;
 }
 
+.location {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 0.5rem 0;
+  background-color: #eaeaea;
+}
+.location__button {
+  padding-right: 1rem;
+}
+
 .card {
   width: 98vw;
   height: 40vh;
@@ -171,8 +183,8 @@ body {
 .header__title {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
   width: 100vw;
 }
 .header__logo {
