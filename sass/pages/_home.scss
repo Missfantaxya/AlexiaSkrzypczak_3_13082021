@@ -4,9 +4,10 @@
   flex-flow: row nowrap;
   justify-content: center;
   padding: $gutter*0.5 0;
+  // TODO le foncer et faire un gradient
   background-color: $color-bg-main;
   &__button {
-    padding-right: $gutter;
+    padding-right: $gutter*1.1;
   }
 }
 
