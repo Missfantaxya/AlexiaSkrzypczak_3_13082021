@@ -10,7 +10,7 @@
 }
 
 body {
-  color: black;
+  color:$color-text-body;
   @extend %typography-content;
 }
 
@@ -18,3 +18,4 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+
