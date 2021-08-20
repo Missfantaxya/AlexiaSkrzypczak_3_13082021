@@ -2,8 +2,8 @@
   &__title {
     display: flex;
     justify-content: center;
-    margin-top: $gutter*1.5;
-    margin-bottom: $gutter;
+    padding-top: $gutter*1.4;
+    padding-bottom: $gutter;
     width: 100vw;
   }
   &__logo {
