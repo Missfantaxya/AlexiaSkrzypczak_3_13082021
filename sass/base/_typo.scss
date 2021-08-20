@@ -1,8 +1,6 @@
-
-
-%typography-stack {
-  font-family: $font-stack;
-  font-weight: $weight-stack;
+%typography-content {
+  font-family: $font-content;
+  font-weight: $weight-content;
 }
 
 %typography-title {
@@ -11,3 +9,12 @@
   text-align: left;
 }
 
+body {
+  color: black;
+  @extend %typography-content;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}

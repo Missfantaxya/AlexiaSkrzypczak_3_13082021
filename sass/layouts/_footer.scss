@@ -1,0 +1,13 @@
+.footer {
+  background-color: $color-bg-footer;
+  color: $color-text-footer;
+  // TODO mettre le log en blanc
+  &__list {
+    padding:$gutter $gutter $gutter*2.5 $gutter*1.5;
+
+  }
+  &__item {
+    padding: $gutter*0.4;
+    font-weight: $weight-middle;
+  }
+}

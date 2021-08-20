@@ -6,14 +6,19 @@ $color-text-headder: black;
 $color-text-main: black;
 $color-text-footer: white;
 
+// background-color
+$color-bg-footer: black;
+
 // typography
 $font-title: 'Shrikhand',
 cursive;
-$font-stack: 'Roboto',
+$font-content: 'Roboto',
 sans-serif;
-$weight-title: 700;
-$weight-stack: 100;
 
+// font-weight
+$weight-title: 700;
+$weight-content: 100;
+$weight-middle: 400;
 
 //gutter
 $gutter: 1rem;

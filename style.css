@@ -135,6 +135,20 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+body {
+  color: black;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
 .card {
   width: 98vw;
   height: 40vh;
@@ -153,6 +167,18 @@ table {
   justify-content: center;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer__list {
+  padding: 1rem 1rem 2.5rem 1.5rem;
+}
+.footer__item {
+  padding: 0.4rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
