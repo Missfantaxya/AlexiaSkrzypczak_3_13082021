@@ -1,0 +1,48 @@
+@mixin typography-content {
+	font-family: $font-content;
+	font-weight: $weight-content;
+}
+
+@mixin typography-title {
+	font-family: $font-title;
+	font-weight: $weight-title;
+	text-align: left;
+}
+
+@mixin typography-subtitle {
+	font-family: $font-content;
+	font-weight: $weight-title;
+	font-size: $size-subtitle;
+}
+
+@mixin button {
+	width: 75%;
+	min-width: min-content;
+	max-width: 100px;
+	height: 2.5rem;
+	margin: $gutter * 2 $gutter;
+	padding: $gutter * 0.8 $gutter * 1.2;
+	border-radius: 50px;
+	color: $color-text-light;
+	background: linear-gradient(175deg, $color-secondary, $color-primary);
+	text-align: center;
+	vertical-align: middle;
+}
+
+@mixin stepnumber {
+	width: 1vw;
+	height: 1vw;
+	background-color: $color-primary;
+	border-radius: 50%;
+	color: $color-text-light;
+}
+
+@mixin flexrowno {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+@mixin flexcolno {
+	display: flex;
+	flex-flow: column nowrap;
+}

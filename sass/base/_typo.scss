@@ -1,18 +1,4 @@
-%typography-content {
-  font-family: $font-content;
-  font-weight: $weight-content;
-}
-
-%typography-title {
-  font-family: $font-title;
-  font-weight: $weight-title;
-  text-align: left;
-}
-
 body {
-  color:$color-text-body;
-  @extend %typography-content;
+	color: $color-text-dark;
+	@include typography-content;
 }
-
-
-

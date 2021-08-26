@@ -22,43 +22,50 @@
   <header class="header">
     <h1 class="header__title">
       <img class="header__logo" src="./public/ohmyfood.png" alt="logo noir ohmyfood">
-    </h1clas>
+    </h1>
   </header>
 
   <main>
-    <div class="location">
-      <button class="location__button" type="button">
-        <i class="fas fa-map-marker-alt fa-lg"></i>
-      </button>
-      <input class="location__input" type="search" id="location" placeholder="Choisissez votre lieux" value="Paris, Belleville">
+    <div class="home__top">
+      <div class="location">
+        <button class="location__button" type="button">
+          <i class="fas fa-map-marker-alt"></i>
+        </button>
+        <input class="location__input" type="search" id="location" placeholder="Choisissez votre lieux" value="Paris, Belleville">
+      </div>
+      <section class="search">
+        <h2 class="search__title">Réservez le menu qui vous convient</h2>
+        <div class="search__content">
+          <p class="search__text">Découvrez des restaurants d'exception,</p>
+          <p class="search__text">sélectionnés par nos soins.</p>
+        </div>
+        <input class="search__button btn" type="button" value="Explorez nos restaurants">
+      </section>
     </div>
-    <section>
-      <h2>Réservez le menu qui vous convient</h2>
-      <p>Découvrez des restaurants d'exception, sélectionnés par nosoins.</p>
-      <input type="button" value="Explorez nos restaurants">
-    </section>
-    <section>
-      <h2>Fonctionnement</h2>
-      <div>
-        <div>1</div>
-        <div>
-          <i class="fas fa-mobile-alt"></i>
+    <section class="notice">
+      <h2 class="notice__title">Fonctionnement</h2>
+      <div class="notice__steps">
+        <div class="notice__step">
+          <div class="notice__number">1</div>
+          <div>
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <p>Choisissez un restaurant</p>
         </div>
-        <p>Choisissez un restaurant</p>
-      </div>
-      <div>
-        <div>2</div>
-        <div>
-          <i class="fas fa-list-ul"></i>
+        <div class="notice__step">
+          <div class="notice__number">2</div>
+          <div>
+            <i class="fas fa-list-ul"></i>
+          </div>
+          <p>Composez votre menu</p>
         </div>
-        <p>Composez votre menu</p>
-      </div>
-      <div>
-        <div>3</div>
-        <div>
-          <i class="fas fa-store"></i>
+        <div class="notice__step">
+          <div class="notice__number">3</div>
+          <div>
+            <i class="fas fa-store"></i>
+          </div>
+          <p>Dégustez au restaurant</p>
         </div>
-        <p>Dégustez au restaurant</p>
       </div>
     </section>
     <section>

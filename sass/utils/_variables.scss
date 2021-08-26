@@ -1,24 +1,27 @@
 // color
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-text-body: black;
-$color-text-footer: white;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-text-dark: black;
+$color-text-light: white;
 
 // background-color
 $color-bg-footer: black;
 $color-bg-main: #eaeaea;
 
 // typography
-$font-title: 'Shrikhand',
-cursive;
-$font-content: 'Roboto',
-sans-serif;
+$font-title: "Shrikhand", cursive;
+$font-content: "Roboto", sans-serif;
 
 // font-weight
 $weight-title: 700;
-$weight-content: 100;
-$weight-middle: 400;
+$weight-content: 300;
+$weight-middle: 500;
+
+//font-size
+$size-title: 1rem;
+$size-subtitle: 1.2rem;
+$size-content: 1rem;
 
 //gutter
 $gutter: 1rem;
