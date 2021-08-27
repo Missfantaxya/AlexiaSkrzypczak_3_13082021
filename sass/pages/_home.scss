@@ -141,9 +141,8 @@
 	}
 	&__icone {
 		color: darken($color-main, 50%);
-		&:hover {
-			background-clip: content-box;
-			background: $color-primary;
+		&::before {
+			content: fas-content($fa-var-heart);
 		}
 	}
 }
