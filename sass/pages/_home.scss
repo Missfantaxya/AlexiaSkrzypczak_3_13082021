@@ -114,6 +114,12 @@
 		height: 75%;
 		overflow: hidden;
 	}
+	&__tag {
+		@include tag;
+		&--new {
+			@include tagnew;
+		}
+	}
 	&__picture {
 		width: 100%;
 		&--1 {
@@ -133,16 +139,30 @@
 		@include flexrowno;
 		justify-content: space-between;
 		align-items: center;
-		padding: $gutter;
+		padding: 0 $gutter;
 	}
 	&__title {
 		@include typography-subtitle;
 		padding-bottom: $gutter * 0.5;
 	}
 	&__icone {
+		font-size: 1.5rem;
 		color: darken($color-main, 50%);
-		&::before {
-			content: fas-content($fa-var-heart);
+		@include fa-icon;
+		&:hover {
+			@extend .fas;
+			background: linear-gradient(195deg, $color-primary, $color-secondary);
+			background-clip: border-box;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 		}
+	}
+}
+
+.heart {
+	@extend %fa-icon;
+	@extend .fas;
+	&:before {
+		content: fa-content($fa-var-heart);
 	}
 }

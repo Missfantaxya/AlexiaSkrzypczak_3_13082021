@@ -19,6 +19,16 @@
 	box-shadow: 0 3px 4px 2px darken($color-main, 7%);
 }
 
+@mixin flexrowno {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+@mixin flexcolno {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
 @mixin button {
 	width: 75%;
 	min-width: min-content;
@@ -32,16 +42,6 @@
 	text-align: center;
 	vertical-align: middle;
 	@include shadow;
-}
-
-@mixin flexrowno {
-	display: flex;
-	flex-flow: row nowrap;
-}
-
-@mixin flexcolno {
-	display: flex;
-	flex-flow: column nowrap;
 }
 
 @mixin stepcontent {
@@ -65,6 +65,23 @@
 	background-color: $color-primary;
 	border-radius: 50%;
 	color: $color-light;
+}
+@mixin tag {
+	display: inline;
+	border-radius: 2px;
+	width: max-content;
+	padding: $gutter * 0.4 $gutter;
+	position: relative;
+	top: -20vh;
+	right: -65vw;
+	font-weight: $weight-title;
+	font-size: $size-small;
+	text-align: center;
+}
+
+@mixin tagnew {
+	background-color: $color-tertiary;
+	color: darken($color-tertiary, 37%);
 }
 
 @mixin card {

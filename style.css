@@ -153,6 +153,8 @@ button {
  */
 .fa,
 .fas,
+.heart,
+.restaurant__icone:hover,
 .far,
 .fal,
 .fad,
@@ -163,6 +165,16 @@ button {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
+  line-height: 1;
+}
+
+.heart {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
   line-height: 1;
 }
 
@@ -258,6 +270,8 @@ button {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
+.fa-pull-left.heart,
+.fa-pull-left.restaurant__icone:hover,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -265,6 +279,8 @@ button {
 }
 .fa.fa-pull-right,
 .fas.fa-pull-right,
+.fa-pull-right.heart,
+.fa-pull-right.restaurant__icone:hover,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -6222,7 +6238,9 @@ readers do not read off random characters that represent icons */
   src: url("../../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../../fonts/webfonts/fa-solid-900.woff") format("woff"), url("../../fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
-.fas {
+.fas,
+.heart,
+.restaurant__icone:hover {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
@@ -6402,6 +6420,22 @@ body {
   height: 75%;
   overflow: hidden;
 }
+.restaurant__tag {
+  display: inline;
+  border-radius: 2px;
+  width: max-content;
+  padding: 0.4rem 1rem;
+  position: relative;
+  top: -20vh;
+  right: -65vw;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.restaurant__tag--new {
+  background-color: #99e2d0;
+  color: #2a947a;
+}
 .restaurant__picture {
   width: 100%;
 }
@@ -6422,7 +6456,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .restaurant__title {
   font-family: "Roboto", sans-serif;
@@ -6431,10 +6465,25 @@ body {
   padding-bottom: 0.5rem;
 }
 .restaurant__icone {
+  font-size: 1.5rem;
   color: #777777;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
 }
-.restaurant__icone::before {
-  content: fas-content();
+.restaurant__icone:hover {
+  background: linear-gradient(195deg, #9356dc, #ff79da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart:before {
+  content: "";
 }
 
 .header__title {
