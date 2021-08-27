@@ -30,14 +30,6 @@
 	box-shadow: 0 3px 4px 2px darken($color-bg-main, 7%);
 }
 
-@mixin stepnumber {
-	width: 1vw;
-	height: 1vw;
-	background-color: $color-primary;
-	border-radius: 50%;
-	color: $color-text-light;
-}
-
 @mixin flexrowno {
 	display: flex;
 	flex-flow: row nowrap;
@@ -46,4 +38,28 @@
 @mixin flexcolno {
 	display: flex;
 	flex-flow: column nowrap;
+}
+
+@mixin stepcontent {
+	min-width: max-content;
+	@include flexrowno;
+	justify-content: flex-start;
+	margin: $gutter * 0.2 $gutter;
+	padding: $gutter * 2 $gutter $gutter * 1.5 $gutter * 2;
+	background-color: $color-bg-main;
+	border-radius: 20px;
+	box-shadow: 1px 2px 5px 3px darken($color-bg-main, 4%);
+	font-weight: $weight-title;
+}
+
+@mixin stepnumber {
+	display: flex;
+	@include flexrowno;
+	justify-content: center;
+	align-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: $color-primary;
+	border-radius: 50%;
+	color: $color-text-light;
 }
