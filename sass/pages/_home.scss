@@ -93,6 +93,14 @@
 	}
 	&__content {
 		@include stepcontent;
+		background-color: $color-bg-main;
+		&--dif {
+			background: linear-gradient(
+				175deg,
+				lighten($color-primary, 33%),
+				lighten($color-primary, 35%)
+			);
+		}
 	}
 	&__icone {
 		padding-right: $gutter;
