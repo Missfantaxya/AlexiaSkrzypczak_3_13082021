@@ -5,12 +5,13 @@
 	}
 }
 
+//TODO foncé le BG
+// TODO ombrage interne
 .location {
 	width: 75%;
 	@include flexrowno;
 	justify-content: center;
 	margin: $gutter * 0.5 auto;
-	// TODO le foncer et faire un gradient
 	&__button {
 		padding-right: $gutter * 0.8;
 	}
