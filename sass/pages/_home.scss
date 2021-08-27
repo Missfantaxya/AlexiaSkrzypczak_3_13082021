@@ -107,13 +107,7 @@
 }
 .restaurant {
 	&__card {
-		width: 90vw;
-		height: 30vh;
-		margin: $gutter auto;
-		overflow: hidden;
-		border-radius: 20px;
-		background-color: $color-light;
-		padding-bottom: $gutter * 0.5;
+		@include card;
 	}
 	&__image {
 		width: 100%;
@@ -147,5 +141,9 @@
 	}
 	&__icone {
 		color: darken($color-main, 50%);
+		&:hover {
+			background-clip: content-box;
+			background: $color-primary;
+		}
 	}
 }
