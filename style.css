@@ -6486,12 +6486,22 @@ body {
   content: "";
 }
 
+.header {
+  width: 100vw;
+  justify-content: center;
+}
+.header__link {
+  display: inline;
+  position: relative;
+  top: 5rem;
+  left: 3rem;
+  padding: 1.5rem;
+}
 .header__title {
   display: flex;
   justify-content: center;
   padding-top: 1.4rem;
   padding-bottom: 1rem;
-  width: 100vw;
 }
 .header__logo {
   width: 50vw;

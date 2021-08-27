@@ -1,12 +1,21 @@
 .header {
-  &__title {
-    display: flex;
-    justify-content: center;
-    padding-top: $gutter*1.4;
-    padding-bottom: $gutter;
-    width: 100vw;
-  }
-  &__logo {
-    width: 50vw;
-  }
+	width: 100vw;
+	justify-content: center;
+	&__link {
+		display: inline;
+		position: relative;
+		top: $gutter * 5;
+		left: $gutter * 3;
+		padding: $gutter * 1.5;
+	}
+	&__title {
+		display: flex;
+		justify-content: center;
+		padding-top: $gutter * 1.4;
+		padding-bottom: $gutter;
+	}
+	&__logo {
+		width: 50vw;
+	}
 }
+//TODO reduire le margin/*padding top aux header__page
