@@ -27,6 +27,7 @@
 	background: linear-gradient(175deg, $color-secondary, $color-primary);
 	text-align: center;
 	vertical-align: middle;
+	box-shadow: 0 3px 4px 2px darken($color-bg-main, 7%);
 }
 
 @mixin stepnumber {
