@@ -1,17 +1,23 @@
 .home {
 	&__top {
-		background-color: $color-bg-main;
+		background: linear-gradient(
+			90deg,
+			darken($color-bg-main, 2%),
+			lighten($color-bg-main, 2%)
+		);
 		padding-bottom: $gutter * 3;
 	}
 	&__first {
-		background-color: darken($color-bg-main, 5%);
+		background: linear-gradient(
+			175deg,
+			darken($color-bg-main, 7%),
+			darken($color-bg-main, 5%)
+		);
 		padding: $gutter * 0.8 0;
 		box-shadow: inset 0 1px 1px 1px darken($color-bg-main, 10%);
 	}
 }
 
-//TODO foncé le BG
-// TODO ombrage interne
 .location {
 	width: 75%;
 	@include flexrowno;
@@ -30,8 +36,6 @@
 .search {
 	width: 100vw;
 	@include flexcolno;
-	// display: flex;
-	// flex-flow: column nowrap;
 	justify-content: center;
 	&__title {
 		margin: $gutter * 2 auto $gutter * 0.8 auto;
@@ -41,8 +45,6 @@
 	}
 	&__content {
 		@include flexcolno;
-		// display: flex;
-		// flex-flow: column nowrap;
 		justify-content: center;
 		padding: 0 $gutter $gutter $gutter;
 		margin-bottom: $gutter;
@@ -69,12 +71,31 @@
 }
 
 .notice {
-	padding: $gutter * 3 $gutter;
+	margin: $gutter * 3 0;
 	&__title {
 		@include typography-subtitle;
-		margin-bottom: $gutter;
+		padding: 0 $gutter;
+	}
+	&__steps {
+		@include flexcolno;
+		justify-content: center;
+		align-items: center;
 	}
 	&__step {
-		@include flexrowno;
+		display: inline-block;
+		width: 90%;
+	}
+	&__number {
+		@include stepnumber;
+		position: relative;
+		top: $gutter * 3.4;
+		left: $gutter * 0.3;
+	}
+	&__content {
+		@include stepcontent;
+	}
+	&__icone {
+		padding-right: $gutter;
+		color: darken($color-bg-main, 50%);
 	}
 }
