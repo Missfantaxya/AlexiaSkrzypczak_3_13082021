@@ -1,6 +1,7 @@
 .footer {
 	background-color: lighten($color-dark, 20%);
 	color: $color-light;
+	font-size: $size-small;
 
 	&__logo {
 		width: 25vw;
