@@ -1,5 +1,5 @@
 .footer {
-	background-color: $color-dark;
+	background-color: lighten($color-dark, 20%);
 	color: $color-light;
 
 	&__logo {
@@ -16,3 +16,4 @@
 		font-weight: $weight-middle;
 	}
 }
+// TODO diminuer police et weight
