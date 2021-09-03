@@ -1,0 +1,11 @@
+.menu {
+	&__image {
+		width: 100vw;
+		height: 75%;
+		overflow: hidden;
+	}
+	&__picture {
+		width: 100%;
+		object-fit: cover;
+	}
+}

@@ -6486,6 +6486,16 @@ body {
   content: "";
 }
 
+.menu__image {
+  width: 100vw;
+  height: 75%;
+  overflow: hidden;
+}
+.menu__picture {
+  width: 100%;
+  object-fit: cover;
+}
+
 .header {
   width: 100vw;
   justify-content: center;
