@@ -6495,6 +6495,11 @@ body {
   width: 100%;
   object-fit: cover;
 }
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 700;
+  text-align: left;
+}
 
 .header {
   width: 100vw;

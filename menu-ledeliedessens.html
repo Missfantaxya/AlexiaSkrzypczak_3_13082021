@@ -1,170 +1,189 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--svg-->
+		<script
+			src="https://kit.fontawesome.com/e9f8e419b3.js"
+			crossorigin="anonymous"
+		></script>
+		<!--font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
+			rel="stylesheet"
+		/>
+		<!--local styles-->
+		<link rel="stylesheet" href="./style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--svg-->
-  <script src="https://kit.fontawesome.com/e9f8e419b3.js" crossorigin="anonymous"></script>
-  <!--font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
-    rel="stylesheet">
-  <!--local styles-->
-  <link rel="stylesheet" href="./style.css">
+		<title>ohmyfood - Le délice des sens</title>
+	</head>
 
-  <title>ohmyfood - Le délice des sens</title>
-</head>
-
-<body>
-  <header>
-    <a href="./index.html">
-      <i class="fas fa-arrow-left"></i>
-    </a>
-    <h1 class="header__title">
-      <img class="header__logo" src="./public/ohmyfood.png" alt="logo noir ohmyfood">
-    </h1>
-  </header>
-  <main>
-    <img src="./public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="assiette de poisson au restaurant">
-    <section>
-      <h2>Le délice des sens
-        <i class="far fa-heart"></i>
-      </h2>
-    </section>
-    <form>
-      <section>
-        <h3>Entrées</h3>
-        <div>
-          <div>
-            <label for="tartare">Tartare de thon</label>
-            <div>
-              <label for="tartare">Assaisonné au yuzu</label>
-              <label for="tartare">25€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="tartare" name="tartare">
-        </div>
-        <div>
-          <div>
-            <label for="homard">Bouchée de homard croustillant</label>
-            <div>
-              <label for="homard">Et sa farandole de petits légumes</label>
-              <label for="homard">35€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="homard" name="homard">
-        </div>
-        <div>
-          <div>
-            <label for="veloute">Velouté de cèpes</label>
-            <div>
-              <label for="veloute">Aux truffes</label>
-              <label for="veloute">20€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="veloute" name="veloute">
-        </div>
-      </section>
-      <section>
-        <h3>Plats</h3>
-        <div>
-          <div>
-            <label for="poulet">Poulet rôti aux herbes de Provence</label>
-            <div>
-              <label for="poulet">Et sa crème de truffe</label>
-              <label for="poulet">40€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="poulet" name="poulet">
-        </div>
-        <div>
-          <div>
-            <label for="langouste">Langouste rôtie</label>
-            <div>
-              <label for="langouste">Et ses légumes de saison</label>
-              <label for="langouste">35€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="langouste" name="langouste">
-        </div>
-        <div>
-          <div>
-            <label for="angus">Côte de boeuf Angus</label>
-            <div>
-              <label for="angus">Et sa purée de panais</label>
-              <label for="angus">44€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="angus" name="angus">
-        </div>
-      </section>
-      <section>
-        <h3>Desserts</h3>
-        <div>
-          <div>
-            <label for="farandole">Farandole de desserts</label>
-            <div>
-              <label for="farandole">Du chef</label>
-              <label for="farandole">18€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="farandole" name="farandole">
-        </div>
-        <div>
-          <div>
-            <label for="creme">Crème brulée</label>
-            <div>
-              <label for="creme">Revisitée</label>
-              <label for="creme">22€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="creme" name="creme">
-        </div>
-        <div>
-          <div>
-            <label for="tiramisu">Tiramisu</label>
-            <div>
-              <label for="tiramisu">À la noisette</label>
-              <label for="tiramisu">23€</label>
-            </div>
-          </div>
-          <input type="checkbox" id="tiramisu" name="tiramisu">
-        </div>
-      </section>
-      <div>
-        <input type="submit">
-      </div>
-    </form>
-  </main>
-  <footer>
-    <h2>
-      <img src="./public/ohmyfood.png" alt="logo blanc ohmyfood">
-    </h2>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">
-            <i class="fas fa-utensils"></i>
-            Proposer un restaurant
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fas fa-hands-helping"></i>
-            Devenir partenaire
-          </a>
-        </li>
-        <li>
-          <a href="#">Mentions légales</a>
-        </li>
-        <li>
-          <a href="mailto:email@exemple.com">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-</body>
+	<body>
+		<!-- TODO aligner la flêche -->
+		<header class="header header--page">
+			<a class="header__link" href="./index.html">
+				<div>
+					<i class="fas fa-arrow-left fa-2x"></i>
+				</div>
+			</a>
+			<h1 class="header__title">
+				<img
+					class="header__logo"
+					src="./public/ohmyfood.png"
+					alt="logo noir ohmyfood"
+				/>
+			</h1>
+		</header>
+		<main>
+			<!-- TODO grossir l'image -->
+			<div class="menu__image">
+				<img
+					class="menu__picture"
+					src="./public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+					alt="assiette de poisson au restaurant"
+				/>
+			</div>
+			<section>
+				<h2 class="menu__title">
+					Le délice des sens
+					<i class="far fa-heart"></i>
+				</h2>
+			</section>
+			<form>
+				<section>
+					<h3>Entrées</h3>
+					<div>
+						<div>
+							<label for="tartare">Tartare de thon</label>
+							<div>
+								<label for="tartare">Assaisonné au yuzu</label>
+								<label for="tartare">25€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="tartare" name="tartare" />
+					</div>
+					<div>
+						<div>
+							<label for="homard">Bouchée de homard croustillant</label>
+							<div>
+								<label for="homard">Et sa farandole de petits légumes</label>
+								<label for="homard">35€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="homard" name="homard" />
+					</div>
+					<div>
+						<div>
+							<label for="veloute">Velouté de cèpes</label>
+							<div>
+								<label for="veloute">Aux truffes</label>
+								<label for="veloute">20€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="veloute" name="veloute" />
+					</div>
+				</section>
+				<section>
+					<h3>Plats</h3>
+					<div>
+						<div>
+							<label for="poulet">Poulet rôti aux herbes de Provence</label>
+							<div>
+								<label for="poulet">Et sa crème de truffe</label>
+								<label for="poulet">40€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="poulet" name="poulet" />
+					</div>
+					<div>
+						<div>
+							<label for="langouste">Langouste rôtie</label>
+							<div>
+								<label for="langouste">Et ses légumes de saison</label>
+								<label for="langouste">35€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="langouste" name="langouste" />
+					</div>
+					<div>
+						<div>
+							<label for="angus">Côte de boeuf Angus</label>
+							<div>
+								<label for="angus">Et sa purée de panais</label>
+								<label for="angus">44€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="angus" name="angus" />
+					</div>
+				</section>
+				<section>
+					<h3>Desserts</h3>
+					<div>
+						<div>
+							<label for="farandole">Farandole de desserts</label>
+							<div>
+								<label for="farandole">Du chef</label>
+								<label for="farandole">18€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="farandole" name="farandole" />
+					</div>
+					<div>
+						<div>
+							<label for="creme">Crème brulée</label>
+							<div>
+								<label for="creme">Revisitée</label>
+								<label for="creme">22€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="creme" name="creme" />
+					</div>
+					<div>
+						<div>
+							<label for="tiramisu">Tiramisu</label>
+							<div>
+								<label for="tiramisu">À la noisette</label>
+								<label for="tiramisu">23€</label>
+							</div>
+						</div>
+						<input type="checkbox" id="tiramisu" name="tiramisu" />
+					</div>
+				</section>
+				<div>
+					<input type="submit" />
+				</div>
+			</form>
+		</main>
+		<footer>
+			<h2>
+				<img src="./public/ohmyfood.png" alt="logo blanc ohmyfood" />
+			</h2>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fas fa-utensils"></i>
+							Proposer un restaurant
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-hands-helping"></i>
+							Devenir partenaire
+						</a>
+					</li>
+					<li>
+						<a href="#">Mentions légales</a>
+					</li>
+					<li>
+						<a href="mailto:email@exemple.com">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>
