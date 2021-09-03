@@ -1,14 +1,55 @@
 .menu {
 	&__image {
 		width: 100vw;
-		height: 75%;
+		height: 41vh;
 		overflow: hidden;
+		background-repeat: no-repeat;
+		&--palettedugout {
+			background-image: url("../../public/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+			background-size: 110%;
+			background-position: 50% 40%;
+		}
+		&--alafrancaise {
+			background-image: url("../../public/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+			background-size: 110%;
+			background-position: 50% 40%;
+		}
+		&--lanoteenchantee {
+			background-image: url("../../public/stil-u2Lp8tXIcjw-unsplash.jpg");
+			background-size: 100%;
+			background-position: 50% 50%;
+		}
+		&--delicedessens {
+			background-image: url("../../public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+			background-size: 110%;
+			background-position: 50% 40%;
+		}
 	}
 	&__picture {
 		width: 100%;
 		object-fit: cover;
 	}
+	&__content {
+		box-sizing: border-box;
+		width: 100%;
+		background-color: darken($color-main, 3%);
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		padding: $gutter * 3 $gutter;
+		position: relative;
+		top: -8vh;
+	}
 	&__title {
 		@include typography-title;
+		font-size: $size-title;
+		@include flexrowno;
+		justify-content: space-between;
+		padding-bottom: $gutter * 1.2;
+	}
+	&__type {
+		text-transform: uppercase;
+	}
+	&__card {
+		@include dish;
 	}
 }

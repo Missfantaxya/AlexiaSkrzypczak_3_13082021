@@ -6384,7 +6384,7 @@ body {
   padding: 2rem 1rem 1.5rem 2rem;
   border-radius: 20px;
   box-shadow: 0 3px 4px 2px #e4e4e4;
-  font-weight: 700;
+  font-weight: 500;
   background-color: #f6f6f6;
 }
 .notice__content--dif {
@@ -6428,7 +6428,7 @@ body {
   position: relative;
   top: -20vh;
   right: -65vw;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.7rem;
   text-align: center;
 }
@@ -6488,17 +6488,65 @@ body {
 
 .menu__image {
   width: 100vw;
-  height: 75%;
+  height: 41vh;
   overflow: hidden;
+  background-repeat: no-repeat;
+}
+.menu__image--palettedugout {
+  background-image: url("../../public/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: 110%;
+  background-position: 50% 40%;
+}
+.menu__image--alafrancaise {
+  background-image: url("../../public/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: 110%;
+  background-position: 50% 40%;
+}
+.menu__image--lanoteenchantee {
+  background-image: url("../../public/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+.menu__image--delicedessens {
+  background-image: url("../../public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: 110%;
+  background-position: 50% 40%;
 }
 .menu__picture {
   width: 100%;
   object-fit: cover;
 }
+.menu__content {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eeeeee;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 3rem 1rem;
+  position: relative;
+  top: -8vh;
+}
 .menu__title {
   font-family: "Shrikhand", cursive;
-  font-weight: 700;
+  font-weight: 500;
   text-align: left;
+  font-size: 1.6rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+}
+.menu__type {
+  text-transform: uppercase;
+}
+.menu__card {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .header {

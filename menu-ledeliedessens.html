@@ -40,147 +40,152 @@
 		</header>
 		<main>
 			<!-- TODO grossir l'image -->
-			<div class="menu__image">
-				<img
-					class="menu__picture"
-					src="./public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-					alt="assiette de poisson au restaurant"
-				/>
+			<div class="menu__image menu__image--delicedessens"></div>
+			<div class="menu__content">
+				<!-- <img
+						class="menu__picture"
+						src="./public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+						alt="assiette de poisson au restaurant"
+					/> -->
+				<section>
+					<h2 class="menu__title">
+						Le délice des sens
+						<i class="far fa-heart"></i>
+					</h2>
+				</section>
+				<form>
+					<section>
+						<h3>Entrées</h3>
+						<div>
+							<div>
+								<label for="tartare">Tartare de thon</label>
+								<div>
+									<label for="tartare">Assaisonné au yuzu</label>
+									<label for="tartare">25€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="tartare" name="tartare" />
+						</div>
+						<div>
+							<div>
+								<label for="homard">Bouchée de homard croustillant</label>
+								<div>
+									<label for="homard">Et sa farandole de petits légumes</label>
+									<label for="homard">35€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="homard" name="homard" />
+						</div>
+						<div>
+							<div>
+								<label for="veloute">Velouté de cèpes</label>
+								<div>
+									<label for="veloute">Aux truffes</label>
+									<label for="veloute">20€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="veloute" name="veloute" />
+						</div>
+					</section>
+					<section>
+						<h3>Plats</h3>
+						<div>
+							<div>
+								<label for="poulet">Poulet rôti aux herbes de Provence</label>
+								<div>
+									<label for="poulet">Et sa crème de truffe</label>
+									<label for="poulet">40€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="poulet" name="poulet" />
+						</div>
+						<div>
+							<div>
+								<label for="langouste">Langouste rôtie</label>
+								<div>
+									<label for="langouste">Et ses légumes de saison</label>
+									<label for="langouste">35€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="langouste" name="langouste" />
+						</div>
+						<div>
+							<div>
+								<label for="angus">Côte de boeuf Angus</label>
+								<div>
+									<label for="angus">Et sa purée de panais</label>
+									<label for="angus">44€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="angus" name="angus" />
+						</div>
+					</section>
+					<section>
+						<h3>Desserts</h3>
+						<div>
+							<div>
+								<label for="farandole">Farandole de desserts</label>
+								<div>
+									<label for="farandole">Du chef</label>
+									<label for="farandole">18€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="farandole" name="farandole" />
+						</div>
+						<div>
+							<div>
+								<label for="creme">Crème brulée</label>
+								<div>
+									<label for="creme">Revisitée</label>
+									<label for="creme">22€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="creme" name="creme" />
+						</div>
+						<div>
+							<div>
+								<label for="tiramisu">Tiramisu</label>
+								<div>
+									<label for="tiramisu">À la noisette</label>
+									<label for="tiramisu">23€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="tiramisu" name="tiramisu" />
+						</div>
+					</section>
+					<div>
+						<input type="submit" />
+					</div>
+				</form>
 			</div>
-			<section>
-				<h2 class="menu__title">
-					Le délice des sens
-					<i class="far fa-heart"></i>
-				</h2>
-			</section>
-			<form>
-				<section>
-					<h3>Entrées</h3>
-					<div>
-						<div>
-							<label for="tartare">Tartare de thon</label>
-							<div>
-								<label for="tartare">Assaisonné au yuzu</label>
-								<label for="tartare">25€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="tartare" name="tartare" />
-					</div>
-					<div>
-						<div>
-							<label for="homard">Bouchée de homard croustillant</label>
-							<div>
-								<label for="homard">Et sa farandole de petits légumes</label>
-								<label for="homard">35€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="homard" name="homard" />
-					</div>
-					<div>
-						<div>
-							<label for="veloute">Velouté de cèpes</label>
-							<div>
-								<label for="veloute">Aux truffes</label>
-								<label for="veloute">20€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="veloute" name="veloute" />
-					</div>
-				</section>
-				<section>
-					<h3>Plats</h3>
-					<div>
-						<div>
-							<label for="poulet">Poulet rôti aux herbes de Provence</label>
-							<div>
-								<label for="poulet">Et sa crème de truffe</label>
-								<label for="poulet">40€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="poulet" name="poulet" />
-					</div>
-					<div>
-						<div>
-							<label for="langouste">Langouste rôtie</label>
-							<div>
-								<label for="langouste">Et ses légumes de saison</label>
-								<label for="langouste">35€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="langouste" name="langouste" />
-					</div>
-					<div>
-						<div>
-							<label for="angus">Côte de boeuf Angus</label>
-							<div>
-								<label for="angus">Et sa purée de panais</label>
-								<label for="angus">44€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="angus" name="angus" />
-					</div>
-				</section>
-				<section>
-					<h3>Desserts</h3>
-					<div>
-						<div>
-							<label for="farandole">Farandole de desserts</label>
-							<div>
-								<label for="farandole">Du chef</label>
-								<label for="farandole">18€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="farandole" name="farandole" />
-					</div>
-					<div>
-						<div>
-							<label for="creme">Crème brulée</label>
-							<div>
-								<label for="creme">Revisitée</label>
-								<label for="creme">22€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="creme" name="creme" />
-					</div>
-					<div>
-						<div>
-							<label for="tiramisu">Tiramisu</label>
-							<div>
-								<label for="tiramisu">À la noisette</label>
-								<label for="tiramisu">23€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="tiramisu" name="tiramisu" />
-					</div>
-				</section>
-				<div>
-					<input type="submit" />
-				</div>
-			</form>
 		</main>
-		<footer>
-			<h2>
-				<img src="./public/ohmyfood.png" alt="logo blanc ohmyfood" />
+		<footer class="footer">
+			<h2 class="footer__title">
+				<img
+					class="footer__logo"
+					src="./public/ohmyfood@2x.svg"
+					alt="logo blanc ohmyfood"
+				/>
 			</h2>
-			<nav>
-				<ul>
-					<li>
-						<a href="#">
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#">
 							<i class="fas fa-utensils"></i>
-							Proposer un restaurant
+							&nbsp; Proposer un restaurant
 						</a>
 					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-hands-helping"></i>
-							Devenir partenaire
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							<i class="fas fa-hands-helping fa-xs"></i>
+							&nbsp; Devenir partenaire
 						</a>
 					</li>
-					<li>
-						<a href="#">Mentions légales</a>
+					<li class="footer__item">
+						<a class="footer__link" href="#">Mentions légales</a>
 					</li>
-					<li>
-						<a href="mailto:email@exemple.com">Contact</a>
+					<li class="footer__item">
+						<a class="footer__link" href="mailto:email@exemple.com">Contact</a>
 					</li>
 				</ul>
 			</nav>

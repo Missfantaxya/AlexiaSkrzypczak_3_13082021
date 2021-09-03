@@ -40,151 +40,160 @@
 		</header>
 		<main>
 			<!--  TODO grossir l'image -->
-			<div class="menu__image">
-				<img
+			<div class="menu__image menu__image--alafrancaise"></div>
+			<div class="menu__content">
+				<!-- <img
 					class="menu__picture"
 					src="./public/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
 					alt="assiette d'un toast composé au restaurant"
-				/>
+				/> -->
+				<section>
+					<h2 class="menu__title">
+						À la française
+						<i class="far fa-heart"></i>
+					</h2>
+				</section>
+				<form>
+					<section>
+						<h3>Entrées</h3>
+						<div class="menu__card">
+							<div>
+								<label for="poulpe">Tartare de poulpe acidulé</label>
+								<div>
+									<label for="poulpe">Aux zestes d'orange</label>
+									<label for="poulpe">25€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="poulpe" name="poulpe" />
+						</div>
+						<div class="menu__card">
+							<div>
+								<label for="legumes">Velouté de légumes d'antan</label>
+								<div>
+									<label for="legumes">Carotte, panais, topinambour</label>
+									<label for="legumes">35€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="legumes" name="legumes" />
+						</div>
+						<div class="menu__card">
+							<div>
+								<label for="soupe">Soupe à l'oignon</label>
+								<div>
+									<label for="soupe">Revisitée</label>
+									<label for="soupe">20€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="soupe" name="soupe" />
+						</div>
+					</section>
+					<section>
+						<h3>Plats</h3>
+						<div class="menu__card">
+							<div>
+								<label for="coquillepanais">Coquilles Saint-Jacques</label>
+								<div>
+									<label for="coquillepanais"
+										>Accompagnées d'une purée de panais</label
+									>
+									<label for="coquillepanais">40€</label>
+								</div>
+							</div>
+							<input
+								type="checkbox"
+								id="coquillepanais"
+								name="coquillepanais"
+							/>
+						</div>
+						<div class="menu__card">
+							<div>
+								<label for="magret">Magret de canard</label>
+								<div>
+									<label for="magret">Et parmentier de pommes de terre</label>
+									<label for="magret">35€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="magret" name="magret" />
+						</div>
+						<div class="menu__card">
+							<div>
+								<label for="pigeonneau">Pigeonneau d’Ille-et-Vilaine</label>
+								<div>
+									<label for="pigeonneau"
+										>Sur son lit de gnocchis aux légumes</label
+									>
+									<label for="pigeonneau">44€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="pigeonneau" name="pigeonneau" />
+						</div>
+					</section>
+					<section>
+						<h3>Desserts</h3>
+						<div class="menu__card">
+							<div>
+								<label for="petales">Pétales de violettes glacés</label>
+								<div>
+									<label for="petales">Et purée de noisettes</label>
+									<label for="petales">18€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="petales" name="petales" />
+						</div>
+						<div class="menu__card">
+							<div>
+								<label for="fondant">Fondant au chocolat</label>
+								<div>
+									<label for="fondant">Revisité</label>
+									<label for="fondant">22€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="fondant" name="fondant" />
+						</div>
+						<div class="menu__card">
+							<div>
+								<label for="millefeuille">Millefeuille croustillant</label>
+								<div>
+									<label for="millefeuille">Myrtilles et pâte d’amande</label>
+									<label for="millefeuille">23€</label>
+								</div>
+							</div>
+							<input type="checkbox" id="millefeuille" name="millefeuille" />
+						</div>
+					</section>
+					<div class="menu__button btn">
+						<input type="submit" />
+					</div>
+				</form>
 			</div>
-			<section>
-				<h2 class="menu__title">
-					À la française
-					<i class="far fa-heart"></i>
-				</h2>
-			</section>
-			<form>
-				<section>
-					<h3>Entrées</h3>
-					<div>
-						<div>
-							<label for="poulpe">Tartare de poulpe acidulé</label>
-							<div>
-								<label for="poulpe">Aux zestes d'orange</label>
-								<label for="poulpe">25€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="poulpe" name="poulpe" />
-					</div>
-					<div>
-						<div>
-							<label for="legumes">Velouté de légumes d'antan</label>
-							<div>
-								<label for="legumes">Carotte, panais, topinambour</label>
-								<label for="legumes">35€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="legumes" name="legumes" />
-					</div>
-					<div>
-						<div>
-							<label for="soupe">Soupe à l'oignon</label>
-							<div>
-								<label for="soupe">Revisitée</label>
-								<label for="soupe">20€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="soupe" name="soupe" />
-					</div>
-				</section>
-				<section>
-					<h3>Plats</h3>
-					<div>
-						<div>
-							<label for="coquillepanais">Coquilles Saint-Jacques</label>
-							<div>
-								<label for="coquillepanais"
-									>Accompagnées d'une purée de panais</label
-								>
-								<label for="coquillepanais">40€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="coquillepanais" name="coquillepanais" />
-					</div>
-					<div>
-						<div>
-							<label for="magret">Magret de canard</label>
-							<div>
-								<label for="magret">Et parmentier de pommes de terre</label>
-								<label for="magret">35€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="magret" name="magret" />
-					</div>
-					<div>
-						<div>
-							<label for="pigeonneau">Pigeonneau d’Ille-et-Vilaine</label>
-							<div>
-								<label for="pigeonneau"
-									>Sur son lit de gnocchis aux légumes</label
-								>
-								<label for="pigeonneau">44€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="pigeonneau" name="pigeonneau" />
-					</div>
-				</section>
-				<section>
-					<h3>Desserts</h3>
-					<div>
-						<div>
-							<label for="petales">Pétales de violettes glacés</label>
-							<div>
-								<label for="petales">Et purée de noisettes</label>
-								<label for="petales">18€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="petales" name="petales" />
-					</div>
-					<div>
-						<div>
-							<label for="fondant">Fondant au chocolat</label>
-							<div>
-								<label for="fondant">Revisité</label>
-								<label for="fondant">22€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="fondant" name="fondant" />
-					</div>
-					<div>
-						<div>
-							<label for="millefeuille">Millefeuille croustillant</label>
-							<div>
-								<label for="millefeuille">Myrtilles et pâte d’amande</label>
-								<label for="millefeuille">23€</label>
-							</div>
-						</div>
-						<input type="checkbox" id="millefeuille" name="millefeuille" />
-					</div>
-				</section>
-				<div>
-					<input type="submit" />
-				</div>
-			</form>
 		</main>
-		<footer>
-			<h2>
-				<img src="./public/ohmyfood.png" alt="logo blanc ohmyfood" />
+		<footer class="footer">
+			<h2 class="footer__title">
+				<img
+					class="footer__logo"
+					src="./public/ohmyfood@2x.svg"
+					alt="logo blanc ohmyfood"
+				/>
 			</h2>
-			<nav>
-				<ul>
-					<li>
-						<a href="#">
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__link" href="#">
 							<i class="fas fa-utensils"></i>
-							Proposer un restaurant
+							&nbsp; Proposer un restaurant
 						</a>
 					</li>
-					<li>
-						<a href="#">
-							<i class="fas fa-hands-helping"></i>
-							Devenir partenaire
+					<li class="footer__item">
+						<a class="footer__link" href="#">
+							<i class="fas fa-hands-helping fa-xs"></i>
+							&nbsp; Devenir partenaire
 						</a>
 					</li>
-					<li>
-						<a href="#">Mentions légales</a>
+					<li class="footer__item">
+						<a class="footer__link" href="#">Mentions légales</a>
 					</li>
-					<li>
-						<a href="mailto:email@exemple.com">Contact</a>
+					<li class="footer__item">
+						<a class="footer__link" href="mailto:email@exemple.com">Contact</a>
 					</li>
 				</ul>
 			</nav>

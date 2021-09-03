@@ -11,7 +11,7 @@
 
 @mixin typography-subtitle {
 	font-family: $font-content;
-	font-weight: $weight-title;
+	font-weight: $weight-subtitle;
 	font-size: $size-subtitle;
 }
 
@@ -93,4 +93,13 @@
 	background-color: $color-light;
 	padding-bottom: $gutter * 1.2;
 	@include shadow;
+}
+
+@mixin dish {
+	background-color: $color-light;
+	padding: $gutter;
+	margin: $gutter 0;
+	border-radius: 15px;
+	@include flexrowno;
+	justify-content: space-between;
 }
