@@ -109,9 +109,13 @@
 	&__card {
 		@include card;
 	}
+	&__link {
+		width: 100%;
+		height: 100%;
+	}
 	&__image {
 		width: 100%;
-		height: 75%;
+		height: 27vh;
 		overflow: hidden;
 	}
 	&__tag {
@@ -121,25 +125,28 @@
 		}
 	}
 	&__picture {
-		width: 100%;
 		&--1 {
-			object-position: 0 -7vh;
+			width: 103%;
+			object-position: -2vw -8vh;
 		}
 		&--2 {
-			object-position: 0 -20vh;
+			width: 100%;
+			object-position: 0 -22vh;
 		}
 		&--3 {
+			width: 101%;
 			object-position: 0 -8vh;
 		}
 		&--4 {
-			object-position: 0 -8vh;
+			width: 102%;
+			object-position: -1vw -9vh;
 		}
 	}
 	&__content {
 		@include flexrowno;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 $gutter;
+		padding: $gutter;
 	}
 	&__title {
 		@include typography-subtitle;
