@@ -48,6 +48,11 @@
 	&__type {
 		text-transform: uppercase;
 	}
+	&__underline {
+		width: $gutter * 2.5;
+		height: 3px;
+		background-color: $color-tertiary;
+	}
 	&__card {
 		background-color: $color-light;
 		margin: $gutter 0;
