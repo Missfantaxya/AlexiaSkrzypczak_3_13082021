@@ -22,205 +22,210 @@
 	</head>
 
 	<body>
-		<!-- TODO aligner la flêche -->
-		<header class="header header--page">
-			<a class="header__link" href="./index.html">
-				<div>
-					<i class="fas fa-arrow-left fa-2x"></i>
+		<div class="wrapper">
+			<header class="header--restaurant">
+				<div class="header__wrapper">
+					<a class="header__link" href="./index.html">
+						<div>
+							<i class="fas fa-arrow-left fa-lg"></i>
+						</div>
+					</a>
+					<h1 class="header__title--restaurant">
+						<img
+							class="header__logo"
+							src="./public/ohmyfood.png"
+							alt="logo noir ohmyfood"
+						/>
+					</h1>
 				</div>
-			</a>
-			<h1 class="header__title">
-				<img
-					class="header__logo"
-					src="./public/ohmyfood.png"
-					alt="logo noir ohmyfood"
-				/>
-			</h1>
-		</header>
-		<main>
-			<!--  TODO grossir l'image -->
-			<div class="menu__image menu__image--palettedugout"></div>
-			<div class="menu__content">
-				<section>
-					<h2 class="menu__title">
-						La palette du goût
-						<i class="far fa-heart"></i>
-					</h2>
-				</section>
-				<form>
+			</header>
+			<main>
+				<!--  TODO grossir l'image -->
+				<div class="menu__image menu__image--palettedugout"></div>
+				<div class="menu__content">
 					<section>
-						<h3 class="menu__type">Entrées</h3>
-						<div class="menu__card">
-							<div class="menu__item">
-								<label for="escargot" class="menu__dish"
-									>Fricassée d'escargot</label
-								>
-								<div class="menu__info">
-									<label class="menu__detail" for="escargot"
-										>Au piment d'Espelette</label
+						<h2 class="menu__title">
+							La palette du goût
+							<i class="far fa-heart"></i>
+						</h2>
+					</section>
+					<form>
+						<section>
+							<h3 class="menu__type">Entrées</h3>
+							<div class="menu__card">
+								<div class="menu__item">
+									<label for="escargot" class="menu__dish"
+										>Fricassée d'escargot</label
 									>
-									<label class="menu__price" for="escargot">25€</label>
+									<div class="menu__info">
+										<label class="menu__detail" for="escargot"
+											>Au piment d'Espelette</label
+										>
+										<label class="menu__price" for="escargot">25€</label>
+									</div>
+								</div>
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="escargot"
+										name="escargot"
+									/>
 								</div>
 							</div>
-							<div class="menu__choice">
+							<div class="menu__card">
+								<div class="menu__item">
+									<label for="foiegrasmicuit" class="menu__dish"
+										>Foie gras de canard mi-cuit</label
+									>
+									<div class="menu__info">
+										<label for="foiegrasmicuit" class="menu__detail"
+											>Et ses copeaux de truffe noire</label
+										>
+										<label for="foiegrasmicuit" class="menu__price">35€</label>
+									</div>
+								</div>
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="foiegrasmicuit"
+										name="foiegrasmicuit"
+									/>
+								</div>
+							</div>
+							<div class="menu__card">
+								<div>
+									<label for="oeuf">Oeuf au plat</label>
+									<div>
+										<label for="oeuf"
+											>Assaisonné à la truffe sur lit de caviar</label
+										>
+										<label for="oeuf">20€</label>
+									</div>
+								</div>
+								<input type="checkbox" id="oeuf" name="oeuf" />
+							</div>
+						</section>
+						<section>
+							<h3 class="menu__type">Plats</h3>
+							<div class="menu__card">
+								<div>
+									<label for="boeufauxherbes">Filet de boeuf aux herbes</label>
+									<div>
+										<label for="boeufauxherbes"
+											>Accompagné de sa ribambelle de légumes</label
+										>
+										<label for="boeufauxherbes">40€</label>
+									</div>
+								</div>
 								<input
-									class="menu__checkbox"
 									type="checkbox"
-									id="escargot"
-									name="escargot"
+									id="boeufauxherbes"
+									name="boeufauxherbes"
 								/>
 							</div>
-						</div>
-						<div class="menu__card">
-							<div class="menu__item">
-								<label for="foiegrasmicuit" class="menu__dish"
-									>Foie gras de canard mi-cuit</label
-								>
-								<div class="menu__info">
-									<label for="foiegrasmicuit" class="menu__detail"
-										>Et ses copeaux de truffe noire</label
-									>
-									<label for="foiegrasmicuit" class="menu__price">35€</label>
-								</div>
-							</div>
-							<div class="menu__choice">
-								<input
-									class="menu__checkbox"
-									type="checkbox"
-									id="foiegrasmicuit"
-									name="foiegrasmicuit"
-								/>
-							</div>
-						</div>
-						<div class="menu__card">
-							<div>
-								<label for="oeuf">Oeuf au plat</label>
+							<div class="menu__card">
 								<div>
-									<label for="oeuf"
-										>Assaisonné à la truffe sur lit de caviar</label
-									>
-									<label for="oeuf">20€</label>
+									<label for="parmentier">Parmentier de queue de boeuf</label>
+									<div>
+										<label for="parmentier"
+											>À la truffe noire sur sa purée de panais</label
+										>
+										<label for="parmentier">35€</label>
+									</div>
 								</div>
+								<input type="checkbox" id="parmentier" name="parmentier" />
 							</div>
-							<input type="checkbox" id="oeuf" name="oeuf" />
-						</div>
-					</section>
-					<section>
-						<h3 class="menu__type">Plats</h3>
-						<div class="menu__card">
-							<div>
-								<label for="boeufauxherbes">Filet de boeuf aux herbes</label>
+							<div class="menu__card">
 								<div>
-									<label for="boeufauxherbes"
-										>Accompagné de sa ribambelle de légumes</label
-									>
-									<label for="boeufauxherbes">40€</label>
+									<label for="filetturbot">Filet de turbot</label>
+									<div>
+										<label for="filetturbot">Aux agrumes</label>
+										<label for="filetturbot">44€</label>
+									</div>
 								</div>
+								<input type="checkbox" id="filetturbot" name="filetturbot" />
 							</div>
-							<input
-								type="checkbox"
-								id="boeufauxherbes"
-								name="boeufauxherbes"
-							/>
-						</div>
-						<div class="menu__card">
-							<div>
-								<label for="parmentier">Parmentier de queue de boeuf</label>
+						</section>
+						<section>
+							<h3 class="menu__type">Desserts</h3>
+							<div class="menu__card">
 								<div>
-									<label for="parmentier"
-										>À la truffe noire sur sa purée de panais</label
-									>
-									<label for="parmentier">35€</label>
+									<label for="parisbrest">Paris-Brest</label>
+									<div>
+										<label for="parisbrest">Revisité</label>
+										<label for="parisbrest">18€</label>
+									</div>
 								</div>
+								<input type="checkbox" id="parisbrest" name="parisbrest" />
 							</div>
-							<input type="checkbox" id="parmentier" name="parmentier" />
-						</div>
-						<div class="menu__card">
-							<div>
-								<label for="filetturbot">Filet de turbot</label>
-								<div>
-									<label for="filetturbot">Aux agrumes</label>
-									<label for="filetturbot">44€</label>
-								</div>
-							</div>
-							<input type="checkbox" id="filetturbot" name="filetturbot" />
-						</div>
-					</section>
-					<section>
-						<h3 class="menu__type">Desserts</h3>
-						<div class="menu__card">
-							<div>
-								<label for="parisbrest">Paris-Brest</label>
-								<div>
-									<label for="parisbrest">Revisité</label>
-									<label for="parisbrest">18€</label>
-								</div>
-							</div>
-							<input type="checkbox" id="parisbrest" name="parisbrest" />
-						</div>
-						<div class="menu__card">
-							<div>
-								<label for="macaronchoco"
-									>Macaron au chocolat d'exception</label
-								>
+							<div class="menu__card">
 								<div>
 									<label for="macaronchoco"
-										>Et glace à la vanille de Madagascar</label
+										>Macaron au chocolat d'exception</label
 									>
-									<label for="macaronchoco">22€</label>
+									<div>
+										<label for="macaronchoco"
+											>Et glace à la vanille de Madagascar</label
+										>
+										<label for="macaronchoco">22€</label>
+									</div>
 								</div>
+								<input type="checkbox" id="macaronchoco" name="macaronchoco" />
 							</div>
-							<input type="checkbox" id="macaronchoco" name="macaronchoco" />
-						</div>
-						<div class="menu__card">
-							<div>
-								<label for="mousse">Mousse au chocolat</label>
+							<div class="menu__card">
 								<div>
-									<label for="mousse"
-										>Au piment d'Espelette et à la truffe noire</label
-									>
-									<label for="mousse">23€</label>
+									<label for="mousse">Mousse au chocolat</label>
+									<div>
+										<label for="mousse"
+											>Au piment d'Espelette et à la truffe noire</label
+										>
+										<label for="mousse">23€</label>
+									</div>
 								</div>
+								<input type="checkbox" id="mousse" name="mousse" />
 							</div>
-							<input type="checkbox" id="mousse" name="mousse" />
+						</section>
+						<div>
+							<input class="menu__nutton btn" type="submit" />
 						</div>
-					</section>
-					<div>
-						<input class="menu__nutton btn" type="submit" />
-					</div>
-				</form>
-			</div>
-		</main>
-		<footer class="footer">
-			<h2 class="footer__title">
-				<img
-					class="footer__logo"
-					src="./public/ohmyfood@2x.svg"
-					alt="logo blanc ohmyfood"
-				/>
-			</h2>
-			<nav class="footer__nav">
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a class="footer__link" href="#">
-							<i class="fas fa-utensils"></i>
-							&nbsp; Proposer un restaurant
-						</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">
-							<i class="fas fa-hands-helping fa-xs"></i>
-							&nbsp; Devenir partenaire
-						</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Mentions légales</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="mailto:email@exemple.com">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</footer>
+					</form>
+				</div>
+			</main>
+			<footer class="footer">
+				<h2 class="footer__title">
+					<img
+						class="footer__logo"
+						src="./public/ohmyfood@2x.svg"
+						alt="logo blanc ohmyfood"
+					/>
+				</h2>
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#">
+								<i class="fas fa-utensils"></i>
+								&nbsp; Proposer un restaurant
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">
+								<i class="fas fa-hands-helping fa-xs"></i>
+								&nbsp; Devenir partenaire
+							</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#">Mentions légales</a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="mailto:email@exemple.com"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</footer>
+		</div>
 	</body>
 </html>

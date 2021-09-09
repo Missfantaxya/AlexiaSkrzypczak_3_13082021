@@ -6263,11 +6263,6 @@ readers do not read off random characters that represent icons */
 }
 
 body {
-  width: 100vw;
-  padding: 0 0;
-}
-
-body {
   color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -6584,22 +6579,29 @@ body {
   opacity: 0;
 }
 
-.header {
-  width: 100vw;
+.header--home {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
 }
-.header__link {
-  display: inline;
-  position: relative;
-  top: 5rem;
-  left: 3rem;
-  padding: 1.5rem;
+.header__wrapper {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 70vw;
+  padding: 1rem 0;
 }
-.header__title {
+.header__link {
+  margin: auto 1.5rem;
+}
+.header__title--home {
   display: flex;
   justify-content: center;
   padding-top: 1.4rem;
   padding-bottom: 1rem;
+}
+.header__title--restaurant {
+  justify-self: start;
+  align-self: center;
 }
 .header__logo {
   width: 50vw;

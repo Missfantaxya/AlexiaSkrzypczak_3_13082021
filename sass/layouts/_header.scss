@@ -1,21 +1,30 @@
 .header {
-	width: 100vw;
-	justify-content: center;
+	&--home {
+		@include flexrowno;
+		justify-content: center;
+	}
+	&__wrapper {
+		width: 100vw;
+		display: grid;
+		grid-template-columns: 1fr 70vw;
+		padding: $gutter 0;
+	}
 	&__link {
-		display: inline;
-		position: relative;
-		top: $gutter * 5;
-		left: $gutter * 3;
-		padding: $gutter * 1.5;
+		margin: auto $gutter * 1.5;
 	}
 	&__title {
-		display: flex;
-		justify-content: center;
-		padding-top: $gutter * 1.4;
-		padding-bottom: $gutter;
+		&--home {
+			display: flex;
+			justify-content: center;
+			padding-top: $gutter * 1.4;
+			padding-bottom: $gutter;
+		}
+		&--restaurant {
+			justify-self: start;
+			align-self: center;
+		}
 	}
 	&__logo {
 		width: 50vw;
 	}
 }
-//TODO reduire le margin/*padding top aux header__page
