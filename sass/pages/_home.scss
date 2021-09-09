@@ -143,14 +143,19 @@
 		}
 	}
 	&__content {
+		height: 12vh;
 		@include flexrowno;
 		justify-content: space-between;
 		align-items: center;
-		padding: $gutter;
+		padding: 0 $gutter;
+	}
+	&__text {
+		height: 100%;
+		@include flexcolno;
+		justify-content: space-evenly;
 	}
 	&__title {
 		@include typography-subtitle;
-		padding-bottom: $gutter * 0.5;
 	}
 	&__icone {
 		font-size: 1.5rem;
