@@ -15,6 +15,7 @@
 	font-size: $size-subtitle;
 }
 
+// TODO faire une condition pour rendre l'ombre plus visible au survol si c'est sur un des boutons principaux.
 @mixin shadow {
 	box-shadow: 0 3px 4px 2px darken($color-main, 7%);
 }
@@ -32,9 +33,10 @@
 @mixin button {
 	width: max-content;
 	min-width: 40vw;
-	max-width: 100px;
+	//* attention au vieaw plus grande
+	max-width: 75vw;
 	height: 2.5rem;
-	margin: $gutter * 2 $gutter;
+	margin: $gutter * 2 $gutter 0 $gutter;
 	padding: $gutter * 0.8 $gutter * 1.2;
 	border-radius: 50px;
 	color: $color-light;
@@ -42,6 +44,13 @@
 	text-align: center;
 	vertical-align: middle;
 	@include shadow;
+	&:hover {
+		background: linear-gradient(
+			175deg,
+			lighten($color-secondary, 3%),
+			lighten($color-primary, 3%)
+		);
+	}
 }
 
 @mixin stepcontent {

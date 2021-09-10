@@ -6271,9 +6271,9 @@ body {
 .btn {
   width: max-content;
   min-width: 40vw;
-  max-width: 100px;
+  max-width: 75vw;
   height: 2.5rem;
-  margin: 2rem 1rem;
+  margin: 2rem 1rem 0 1rem;
   padding: 0.8rem 1.2rem;
   border-radius: 50px;
   color: white;
@@ -6281,6 +6281,9 @@ body {
   text-align: center;
   vertical-align: middle;
   box-shadow: 0 3px 4px 2px #e4e4e4;
+}
+.btn:hover {
+  background: linear-gradient(175deg, #ff88de, #9b63df);
 }
 
 .home__top {
@@ -6491,6 +6494,10 @@ body {
   content: "";
 }
 
+.main__menu {
+  background-color: #eeeeee;
+}
+
 .menu__image {
   width: 100vw;
   height: 41vh;
@@ -6519,6 +6526,7 @@ body {
 .menu__picture {
   width: 100%;
   object-fit: cover;
+  position: absolute;
 }
 .menu__content {
   box-sizing: border-box;
@@ -6526,7 +6534,7 @@ body {
   background-color: #eeeeee;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 0 1rem;
   position: relative;
   top: -8vh;
 }
@@ -6559,7 +6567,10 @@ body {
 }
 .menu__item {
   padding: 1rem;
-  flex-grow: 1;
+  width: 100%;
+}
+.menu__item:hover + .menu__choice {
+  transform: scale(1);
 }
 .menu__dish {
   font-family: "Roboto", sans-serif;
@@ -6584,6 +6595,8 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  transform: scale(0);
+  transition: transform 400ms;
 }
 .menu__checkbox {
   opacity: 0;

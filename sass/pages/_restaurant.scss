@@ -1,3 +1,9 @@
+.main {
+	&__menu {
+		background-color: darken($color-main, 3%);
+	}
+}
+
 .menu {
 	&__image {
 		width: 100vw;
@@ -27,6 +33,7 @@
 	&__picture {
 		width: 100%;
 		object-fit: cover;
+		position: absolute;
 	}
 	&__content {
 		box-sizing: border-box;
@@ -34,7 +41,7 @@
 		background-color: darken($color-main, 3%);
 		border-top-left-radius: 50px;
 		border-top-right-radius: 50px;
-		padding: $gutter * 3 $gutter;
+		padding: $gutter * 3 $gutter 0 $gutter;
 		position: relative;
 		top: -8vh;
 	}
@@ -54,25 +61,24 @@
 		height: 3px;
 		background-color: $color-tertiary;
 	}
+	// TODO apparition progressive des plats ou des type de plats
 	&__card {
 		background-color: $color-light;
 		margin: $gutter 0;
 		border-radius: 15px;
 		@include flexrowno;
 		justify-content: space-between;
-		// TODO animation de la checkbox à faire
-		//! ne fonctionne pas
-		// &:hover + .menu__choice {
-		// 	transform: scalex(1);
-		// }
-		//! ne fonctionne pas (voir flex-grow/flex-shrink)
-		// &hover + .menu__item {
-		// 	transform: scalex(1);
-		// }
 	}
 	&__item {
 		padding: $gutter;
-		flex-grow: 1;
+		// TODO voir pour le redimensionnement avec le choice ouvert
+		// flex-grow: 1;
+		width: 100%;
+		// *au click sur mobile & tablette et hover sur desktop
+		// TODO translate de la droite vers la gauche pas scale
+		&:hover + .menu__choice {
+			transform: scale(1);
+		}
 	}
 	&__dish {
 		@include typography-subtitle;
@@ -94,15 +100,8 @@
 		@include flexrowno;
 		justify-content: center;
 		align-items: center;
-		//!mauvaise idée le flex-grow
-		// flex-grow: 1;
-		//! mettre scale(0) quand ça fonctionnera
-		// transform: translateX(100%);
-		// transition: transform 400ms, translateX 400ms;
-		//! fonctionne
-		// &:hover {
-		// 	transform: translateX(?);
-		// }
+		transform: scale(0);
+		transition: transform 400ms;
 	}
 	&__checkbox {
 		opacity: 0;
