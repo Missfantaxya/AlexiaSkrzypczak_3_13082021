@@ -6284,6 +6284,7 @@ body {
 }
 .btn:hover {
   background: linear-gradient(175deg, #ff88de, #9b63df);
+  box-shadow: 0 3px 4px 2px #d0d0d0;
 }
 
 .home__top {

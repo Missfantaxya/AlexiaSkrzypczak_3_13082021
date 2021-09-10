@@ -75,7 +75,7 @@
 		// flex-grow: 1;
 		width: 100%;
 		// *au click sur mobile & tablette et hover sur desktop
-		// TODO translate de la droite vers la gauche pas scale
+		// TODO faire une trasition de retour au blur
 		&:hover + .menu__choice {
 			transform: translateX(0);
 			opacity: 1;
@@ -89,6 +89,7 @@
 		@include flexrowno;
 		justify-content: space-between;
 		padding-top: $gutter * 0.5;
+		//TODO adapter la taille si coche visible ou pas
 		//TODO empécher le retour à la ligne du texte, le couper si nécessaire et mettre ...
 	}
 	&__price {

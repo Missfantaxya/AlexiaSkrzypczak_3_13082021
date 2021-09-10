@@ -15,9 +15,12 @@
 	font-size: $size-subtitle;
 }
 
-// TODO faire une condition pour rendre l'ombre plus visible au survol si c'est sur un des boutons principaux.
 @mixin shadow {
 	box-shadow: 0 3px 4px 2px darken($color-main, 7%);
+}
+
+@mixin shadowdark {
+	box-shadow: 0 3px 4px 2px darken($color-main, 15%);
 }
 
 @mixin flexrowno {
@@ -50,6 +53,7 @@
 			lighten($color-secondary, 3%),
 			lighten($color-primary, 3%)
 		);
+		@include shadowdark;
 	}
 }
 
