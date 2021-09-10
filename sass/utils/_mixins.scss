@@ -30,8 +30,8 @@
 }
 
 @mixin button {
-	width: 75%;
-	min-width: min-content;
+	width: max-content;
+	min-width: 40vw;
 	max-width: 100px;
 	height: 2.5rem;
 	margin: $gutter * 2 $gutter;

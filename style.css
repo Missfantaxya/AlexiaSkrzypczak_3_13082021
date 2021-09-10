@@ -6269,8 +6269,8 @@ body {
 }
 
 .btn {
-  width: 75%;
-  min-width: min-content;
+  width: max-content;
+  min-width: 40vw;
   max-width: 100px;
   height: 2.5rem;
   margin: 2rem 1rem;
@@ -6542,6 +6542,7 @@ body {
 }
 .menu__type {
   text-transform: uppercase;
+  padding: 0.5rem 0;
 }
 .menu__underline {
   width: 2.5rem;
@@ -6554,12 +6555,14 @@ body {
   border-radius: 15px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: stretch;
   justify-content: space-between;
 }
+.menu__card:hover + .menu__choice {
+  transform: scalex(1);
+}
 .menu__item {
-  width: 100%;
   padding: 1rem;
+  flex-grow: 1;
 }
 .menu__dish {
   font-family: "Roboto", sans-serif;
@@ -6577,11 +6580,37 @@ body {
   font-weight: 700;
 }
 .menu__choice {
-  height: 100%;
   background-color: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  transform: translateX(100%);
+  transition: transform 400ms, translateX 400ms;
 }
 .menu__checkbox {
   opacity: 0;
+  position: absolute;
+}
+.menu__check {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0 1.3rem;
+  border-radius: 50%;
+  background-color: white;
+  color: #99e2d0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.menu__button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .header--home {

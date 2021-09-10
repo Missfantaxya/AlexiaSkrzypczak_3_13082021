@@ -39,7 +39,7 @@
 					</h1>
 				</div>
 			</header>
-			<main>
+			<main class="main">
 				<div class="menu__image menu__image--palettedugout"></div>
 				<div class="menu__content">
 					<section>
@@ -71,6 +71,9 @@
 										id="escargot"
 										name="escargot"
 									/>
+									<div class="menu__check">
+										<i class="fas fa-check fa-sm"></i>
+									</div>
 								</div>
 							</div>
 							<div class="menu__card">
@@ -92,104 +95,162 @@
 										id="foiegrasmicuit"
 										name="foiegrasmicuit"
 									/>
+									<div class="menu__check">
+										<i class="fas fa-check fa-sm"></i>
+									</div>
 								</div>
 							</div>
 							<div class="menu__card">
-								<div>
-									<label for="oeuf">Oeuf au plat</label>
-									<div>
+								<div class="menu__item">
+									<label class="menu__dish" for="oeuf">Oeuf au plat</label>
+									<div class="menu__info">
+										<!-- TODO mettre les ... à info -->
 										<label for="oeuf"
 											>Assaisonné à la truffe sur lit de caviar</label
 										>
-										<label for="oeuf">20€</label>
+										<label class="menu__price" for="oeuf">20€</label>
 									</div>
 								</div>
-								<input type="checkbox" id="oeuf" name="oeuf" />
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="oeuf"
+										name="oeuf"
+									/>
+								</div>
 							</div>
 						</section>
 						<section>
 							<h3 class="menu__type">Plats</h3>
 							<div class="menu__underline"></div>
 							<div class="menu__card">
-								<div>
-									<label for="boeufauxherbes">Filet de boeuf aux herbes</label>
-									<div>
+								<div class="menu__item">
+									<label class="menu__dish" for="boeufauxherbes"
+										>Filet de boeuf aux herbes</label
+									>
+									<div class="menu__info">
+										<!-- TODO mettre les ... à info -->
 										<label for="boeufauxherbes"
 											>Accompagné de sa ribambelle de légumes</label
 										>
-										<label for="boeufauxherbes">40€</label>
+										<label class="menu__price" for="boeufauxherbes">40€</label>
 									</div>
 								</div>
-								<input
-									type="checkbox"
-									id="boeufauxherbes"
-									name="boeufauxherbes"
-								/>
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="boeufauxherbes"
+										name="boeufauxherbes"
+									/>
+								</div>
 							</div>
 							<div class="menu__card">
-								<div>
-									<label for="parmentier">Parmentier de queue de boeuf</label>
-									<div>
+								<div class="menu__item">
+									<label class="menu__dish" for="parmentier"
+										>Parmentier de queue de boeuf</label
+									>
+									<div class="menu__info">
 										<label for="parmentier"
 											>À la truffe noire sur sa purée de panais</label
 										>
-										<label for="parmentier">35€</label>
+										<label class="menu__price" for="parmentier">35€</label>
 									</div>
 								</div>
-								<input type="checkbox" id="parmentier" name="parmentier" />
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="parmentier"
+										name="parmentier"
+									/>
+								</div>
 							</div>
 							<div class="menu__card">
-								<div>
-									<label for="filetturbot">Filet de turbot</label>
-									<div>
+								<div class="menu__item">
+									<label class="menu__dish" for="filetturbot"
+										>Filet de turbot</label
+									>
+									<div class="menu__info">
 										<label for="filetturbot">Aux agrumes</label>
-										<label for="filetturbot">44€</label>
+										<label class="menu__price" for="filetturbot">44€</label>
 									</div>
 								</div>
-								<input type="checkbox" id="filetturbot" name="filetturbot" />
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="filetturbot"
+										name="filetturbot"
+									/>
+								</div>
 							</div>
 						</section>
 						<section>
 							<h3 class="menu__type">Desserts</h3>
 							<div class="menu__underline"></div>
 							<div class="menu__card">
-								<div>
-									<label for="parisbrest">Paris-Brest</label>
-									<div>
+								<div class="menu__item">
+									<label class="menu__dish" for="parisbrest">Paris-Brest</label>
+									<div class="menu__info">
 										<label for="parisbrest">Revisité</label>
-										<label for="parisbrest">18€</label>
+										<label class="menu__price" for="parisbrest">18€</label>
 									</div>
 								</div>
-								<input type="checkbox" id="parisbrest" name="parisbrest" />
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="parisbrest"
+										name="parisbrest"
+									/>
+								</div>
 							</div>
 							<div class="menu__card">
-								<div>
-									<label for="macaronchoco"
+								<div class="menu__item">
+									<label class="menu__dish" for="macaronchoco"
 										>Macaron au chocolat d'exception</label
 									>
-									<div>
+									<div class="menu__info">
 										<label for="macaronchoco"
 											>Et glace à la vanille de Madagascar</label
 										>
-										<label for="macaronchoco">22€</label>
+										<label class="menu__price" for="macaronchoco">22€</label>
 									</div>
 								</div>
-								<input type="checkbox" id="macaronchoco" name="macaronchoco" />
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="macaronchoco"
+										name="macaronchoco"
+									/>
+								</div>
 							</div>
 							<div class="menu__card">
-								<div>
-									<label for="mousse">Mousse au chocolat</label>
-									<div>
+								<div class="menu__item">
+									<label class="menu__dish" for="mousse"
+										>Mousse au chocolat</label
+									>
+									<div class="menu__info">
 										<label for="mousse"
 											>Au piment d'Espelette et à la truffe noire</label
 										>
-										<label for="mousse">23€</label>
+										<label class="menu__price" for="mousse">23€</label>
 									</div>
 								</div>
-								<input type="checkbox" id="mousse" name="mousse" />
+								<div class="menu__choice">
+									<input
+										class="menu__checkbox"
+										type="checkbox"
+										id="mousse"
+										name="mousse"
+									/>
+								</div>
 							</div>
 						</section>
-						<div>
+						<div class="menu__button">
 							<input class="menu__nutton btn" type="submit" value="Commander" />
 						</div>
 					</form>
