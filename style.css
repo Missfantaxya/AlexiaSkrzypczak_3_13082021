@@ -6570,7 +6570,8 @@ body {
   width: 100%;
 }
 .menu__item:hover + .menu__choice {
-  transform: scale(1);
+  transform: translateX(0);
+  opacity: 1;
 }
 .menu__dish {
   font-family: "Roboto", sans-serif;
@@ -6589,13 +6590,14 @@ body {
 }
 .menu__choice {
   background-color: #99e2d0;
+  opacity: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  transform: scale(0);
+  transform: translateX(100%);
   transition: transform 400ms;
 }
 .menu__checkbox {
