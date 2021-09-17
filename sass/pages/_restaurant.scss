@@ -1,3 +1,25 @@
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    margin-top: 10%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 5%;
+  }
+}
+
+@keyframes choice-animation {
+  0% {
+    opacity: 0;
+    margin-right: -100%;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0%;
+  }
+}
+
 .main {
   &__menu {
     background-color: darken($color-main, 3%);
@@ -66,18 +88,22 @@
     background-color: $color-light;
     margin: $gutter 0;
     border-radius: 15px;
+    height: 20vw;
     @include flexrowno;
     justify-content: space-between;
     overflow: hidden;
     opacity: 0;
-    @keyframes card-animation {
-      0% {
-        opacity: 0;
-        margin-top: 10%;
+    &:hover {
+      // *au click sur mobile & tablette et hover sur desktop
+      & .menu__choice {
+        transition: position 400ms ease-in-out, right 400ms;
+        display: flex;
+        position: relative;
+        right: 0;
       }
-      100% {
-        opacity: 1;
-        margin-top: 5%;
+      & .menu__v {
+        transition: transform 700ms ease-in-out;
+        transform: rotate(-360deg);
       }
     }
     &--1 {
@@ -126,26 +152,6 @@
     padding: $gutter;
     width: 100%;
     display: flex;
-    // TODO voir pour le redimensionnement avec le choice ouvert
-    flex: 4 2 auto;
-    // *au click sur mobile & tablette et hover sur desktop
-    // TODO faire une trasition de retour au blur
-    &:hover {
-      & + .menu__choice {
-        transition: transform 400ms;
-        transform-origin: right;
-        right: 0;
-        display: flex;
-        position: relative;
-        // transform: scaleX(1);
-        opacity: 1;
-      }
-      // TODO faire tourner le coche
-      & + .menu__v {
-        transition: transform 400ms;
-        transform: rotate(360deg);
-      }
-    }
   }
   &__info {
     min-width: 0;
@@ -170,16 +176,14 @@
     align-self: flex-end;
   }
   &__choice {
-    flex: 2 4 auto;
-    @include flexrowno;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 20vw;
     background-color: $color-tertiary;
-    // transform: scaleX(0);
-    transition: transform 400ms;
-    transform-origin: right;
     position: absolute;
-    right: -5000px;
+    right: -100%;
+    transition: position 400ms, right 800ms ease-in-out 50ms;
   }
   &__checkbox {
     opacity: 0;

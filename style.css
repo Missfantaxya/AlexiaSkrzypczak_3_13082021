@@ -6495,6 +6495,26 @@ body {
   content: "";
 }
 
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    margin-top: 10%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 5%;
+  }
+}
+@keyframes choice-animation {
+  0% {
+    opacity: 0;
+    margin-right: -100%;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0%;
+  }
+}
 .main__menu {
   background-color: #eeeeee;
 }
@@ -6563,21 +6583,22 @@ body {
   background-color: white;
   margin: 1rem 0;
   border-radius: 15px;
+  height: 20vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   overflow: hidden;
   opacity: 0;
 }
-@keyframes card-animation {
-  0% {
-    opacity: 0;
-    margin-top: 10%;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 5%;
-  }
+.menu__card:hover .menu__choice {
+  transition: position 400ms ease-in-out, right 400ms;
+  display: flex;
+  position: relative;
+  right: 0;
+}
+.menu__card:hover .menu__v {
+  transition: transform 700ms ease-in-out;
+  transform: rotate(-360deg);
 }
 .menu__card--1 {
   animation-name: card-animation;
@@ -6654,19 +6675,6 @@ body {
   padding: 1rem;
   width: 100%;
   display: flex;
-  flex: 4 2 auto;
-}
-.menu__item:hover + .menu__choice {
-  transition: transform 400ms;
-  transform-origin: right;
-  right: 0;
-  display: flex;
-  position: relative;
-  opacity: 1;
-}
-.menu__item:hover + .menu__v {
-  transition: transform 400ms;
-  transform: rotate(360deg);
 }
 .menu__info {
   min-width: 0;
@@ -6694,16 +6702,14 @@ body {
   align-self: flex-end;
 }
 .menu__choice {
-  flex: 2 4 auto;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  height: 20vw;
   background-color: #99e2d0;
-  transition: transform 400ms;
-  transform-origin: right;
   position: absolute;
-  right: -5000px;
+  right: -100%;
+  transition: position 400ms, right 800ms ease-in-out 50ms;
 }
 .menu__checkbox {
   opacity: 0;
