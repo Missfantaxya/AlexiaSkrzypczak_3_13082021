@@ -110,4 +110,6 @@
 @mixin card-animation {
   animation-name: card-opacity;
   animation-fill-mode: forwards;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
 }
