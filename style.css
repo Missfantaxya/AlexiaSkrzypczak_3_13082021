@@ -6559,6 +6559,7 @@ body {
   background-color: #99e2d0;
 }
 .menu__card {
+  position: relative;
   background-color: white;
   margin: 1rem 0;
   border-radius: 15px;
@@ -6649,30 +6650,48 @@ body {
   animation-delay: 2000ms;
 }
 .menu__item {
+  min-width: 0;
   padding: 1rem;
   width: 100%;
+  display: flex;
   flex: 4 2 auto;
 }
 .menu__item:hover + .menu__choice {
   transition: transform 400ms;
   transform-origin: right;
-  transform: scaleX(1);
+  right: 0;
+  display: flex;
+  position: relative;
   opacity: 1;
+}
+.menu__item:hover + .menu__v {
+  transition: transform 400ms;
+  transform: rotate(360deg);
+}
+.menu__info {
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 .menu__dish {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 0.7rem;
 }
-.menu__info {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding-top: 0.5rem;
+.menu__detail {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__price {
   font-weight: 700;
+  align-self: flex-end;
 }
 .menu__choice {
   flex: 2 4 auto;
@@ -6681,11 +6700,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  transform: scaleX(0);
   transition: transform 400ms;
   transform-origin: right;
+  position: absolute;
+  right: -5000px;
 }
 .menu__checkbox {
   opacity: 0;

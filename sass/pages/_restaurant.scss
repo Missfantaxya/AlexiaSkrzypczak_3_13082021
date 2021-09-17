@@ -62,6 +62,7 @@
     background-color: $color-tertiary;
   }
   &__card {
+    position: relative;
     background-color: $color-light;
     margin: $gutter 0;
     border-radius: 15px;
@@ -121,8 +122,10 @@
     }
   }
   &__item {
+    min-width: 0;
     padding: $gutter;
     width: 100%;
+    display: flex;
     // TODO voir pour le redimensionnement avec le choice ouvert
     flex: 4 2 auto;
     // *au click sur mobile & tablette et hover sur desktop
@@ -131,24 +134,40 @@
       & + .menu__choice {
         transition: transform 400ms;
         transform-origin: right;
-        transform: scaleX(1);
+        right: 0;
+        display: flex;
+        position: relative;
+        // transform: scaleX(1);
         opacity: 1;
+      }
+      // TODO faire tourner le coche
+      & + .menu__v {
+        transition: transform 400ms;
+        transform: rotate(360deg);
       }
     }
   }
+  &__info {
+    min-width: 0;
+    width: 100%;
+    @include flexcolno;
+    justify-content: space-between;
+  }
   &__dish {
     @include typography-subtitle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: $gutter * 0.7;
   }
-  &__info {
-    width: 100%;
-    @include flexrowno;
-    justify-content: space-between;
-    padding-top: $gutter * 0.5;
-    //TODO adapter la taille si coche visible ou pas
-    //TODO empécher le retour à la ligne du texte, le couper si nécessaire et mettre ...
+  &__detail {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   &__price {
     font-weight: $weight-subtitle;
+    align-self: flex-end;
   }
   &__choice {
     flex: 2 4 auto;
@@ -156,11 +175,11 @@
     justify-content: center;
     align-items: center;
     background-color: $color-tertiary;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transform: scaleX(0);
+    // transform: scaleX(0);
     transition: transform 400ms;
     transform-origin: right;
+    position: absolute;
+    right: -5000px;
   }
   &__checkbox {
     opacity: 0;
