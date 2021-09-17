@@ -6565,6 +6565,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  overflow: hidden;
   opacity: 0;
 }
 @keyframes card-animation {
@@ -6653,6 +6654,8 @@ body {
   flex: 4 2 auto;
 }
 .menu__item:hover + .menu__choice {
+  transition: transform 400ms;
+  transform-origin: right;
   transform: scaleX(1);
   opacity: 1;
 }
@@ -6682,6 +6685,7 @@ body {
   border-bottom-right-radius: 15px;
   transform: scaleX(0);
   transition: transform 400ms;
+  transform-origin: right;
 }
 .menu__checkbox {
   opacity: 0;

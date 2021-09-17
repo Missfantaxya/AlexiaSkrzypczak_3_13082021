@@ -61,13 +61,13 @@
     height: 3px;
     background-color: $color-tertiary;
   }
-  // TODO apparition progressive des plats ou des type de plats
   &__card {
     background-color: $color-light;
     margin: $gutter 0;
     border-radius: 15px;
     @include flexrowno;
     justify-content: space-between;
+    overflow: hidden;
     opacity: 0;
     @keyframes card-animation {
       0% {
@@ -127,10 +127,13 @@
     flex: 4 2 auto;
     // *au click sur mobile & tablette et hover sur desktop
     // TODO faire une trasition de retour au blur
-    &:hover + .menu__choice {
-      // transform: translateX(0);
-      transform: scaleX(1);
-      opacity: 1;
+    &:hover {
+      & + .menu__choice {
+        transition: transform 400ms;
+        transform-origin: right;
+        transform: scaleX(1);
+        opacity: 1;
+      }
     }
   }
   &__dish {
@@ -153,12 +156,11 @@
     justify-content: center;
     align-items: center;
     background-color: $color-tertiary;
-    // opacity: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    // transform: translateX(100%);
     transform: scaleX(0);
     transition: transform 400ms;
+    transform-origin: right;
   }
   &__checkbox {
     opacity: 0;
