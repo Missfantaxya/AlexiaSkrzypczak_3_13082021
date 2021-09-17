@@ -6567,79 +6567,81 @@ body {
   justify-content: space-between;
   opacity: 0;
 }
-@keyframes card-opacity {
+@keyframes card-animation {
   0% {
     opacity: 0;
+    margin-top: 10%;
   }
   100% {
     opacity: 1;
+    margin-top: 5%;
   }
 }
 .menu__card--1 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 0ms;
 }
 .menu__card--2 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 250ms;
 }
 .menu__card--2 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 250ms;
 }
 .menu__card--3 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 500ms;
 }
 .menu__card--4 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 750ms;
 }
 .menu__card--5 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 1000ms;
 }
 .menu__card--6 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 1250ms;
 }
 .menu__card--7 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 1500ms;
 }
 .menu__card--8 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-delay: 1750ms;
 }
 .menu__card--9 {
-  animation-name: card-opacity;
+  animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;

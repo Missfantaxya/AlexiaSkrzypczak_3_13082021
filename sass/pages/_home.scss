@@ -1,180 +1,180 @@
 .home {
-	&__top {
-		background: linear-gradient(
-			90deg,
-			darken($color-main, 2%),
-			lighten($color-main, 2%)
-		);
-		padding-bottom: $gutter * 3;
-	}
-	&__first {
-		background: linear-gradient(
-			175deg,
-			darken($color-main, 7%),
-			darken($color-main, 5%)
-		);
-		padding: $gutter * 0.8 0;
-		box-shadow: inset 0 1px 1px 1px darken($color-main, 10%);
-	}
+  &__top {
+    background: linear-gradient(
+      90deg,
+      darken($color-main, 2%),
+      lighten($color-main, 2%)
+    );
+    padding-bottom: $gutter * 3;
+  }
+  &__first {
+    background: linear-gradient(
+      175deg,
+      darken($color-main, 7%),
+      darken($color-main, 5%)
+    );
+    padding: $gutter * 0.8 0;
+    box-shadow: inset 0 1px 1px 1px darken($color-main, 10%);
+  }
 }
 
 .location {
-	width: 75%;
-	@include flexrowno;
-	justify-content: center;
-	margin: 0 auto;
-	&__button {
-		padding-right: $gutter * 0.8;
-	}
-	//TODO faire fonctionner la weight dans l'input
-	&__input {
-		width: 50%;
-		font-weight: $weight-middle;
-	}
+  width: 75%;
+  @include flexrowno;
+  justify-content: center;
+  margin: 0 auto;
+  &__button {
+    padding-right: $gutter * 0.8;
+  }
+  //TODO faire fonctionner la weight dans l'input
+  &__input {
+    width: 50%;
+    font-weight: $weight-middle;
+  }
 }
 
 .search {
-	width: 100vw;
-	@include flexcolno;
-	justify-content: center;
-	&__title {
-		margin: $gutter * 2 auto $gutter * 0.8 auto;
-		width: 65%;
-		@include typography-subtitle;
-		text-align: center;
-	}
-	&__content {
-		@include flexcolno;
-		justify-content: center;
-		padding: 0 $gutter $gutter $gutter;
-		margin-bottom: $gutter;
-	}
-	&__text {
-		text-align: center;
-	}
-	&__button {
-		margin: auto;
-	}
+  width: 100vw;
+  @include flexcolno;
+  justify-content: center;
+  &__title {
+    margin: $gutter * 2 auto $gutter * 0.8 auto;
+    width: 65%;
+    @include typography-subtitle;
+    text-align: center;
+  }
+  &__content {
+    @include flexcolno;
+    justify-content: center;
+    padding: 0 $gutter $gutter $gutter;
+    margin-bottom: $gutter;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__button {
+    margin: auto;
+  }
 }
 
 .notice {
-	margin: $gutter * 3 0;
-	&__title {
-		@include typography-subtitle;
-		padding: 0 $gutter;
-	}
-	&__steps {
-		@include flexcolno;
-		justify-content: center;
-		align-items: center;
-	}
-	&__step {
-		display: inline-block;
-		width: 90%;
-	}
-	&__number {
-		@include stepnumber;
-		position: relative;
-		top: $gutter * 3.4;
-		left: $gutter * 0.3;
-	}
-	&__content {
-		@include stepcontent;
-		background-color: $color-main;
-		&--dif {
-			background: linear-gradient(
-				175deg,
-				lighten($color-primary, 33%),
-				lighten($color-primary, 35%)
-			);
-		}
-	}
-	&__icone {
-		padding-right: $gutter;
-		color: darken($color-main, 50%);
-	}
+  margin: $gutter * 3 0;
+  &__title {
+    @include typography-subtitle;
+    padding: 0 $gutter;
+  }
+  &__steps {
+    @include flexcolno;
+    justify-content: center;
+    align-items: center;
+  }
+  &__step {
+    display: inline-block;
+    width: 90%;
+  }
+  &__number {
+    @include stepnumber;
+    position: relative;
+    top: $gutter * 3.4;
+    left: $gutter * 0.3;
+  }
+  &__content {
+    @include stepcontent;
+    background-color: $color-main;
+    &--dif {
+      background: linear-gradient(
+        175deg,
+        lighten($color-primary, 33%),
+        lighten($color-primary, 35%)
+      );
+    }
+  }
+  &__icone {
+    padding-right: $gutter;
+    color: darken($color-main, 50%);
+  }
 }
 
 .restaurants {
-	background: linear-gradient(
-		darken($color-main, 2%),
-		lighten($color-main, 2%)
-	);
-	padding: $gutter * 3.2 $gutter;
-	&__title {
-		@include typography-subtitle;
-	}
+  background: linear-gradient(
+    darken($color-main, 2%),
+    lighten($color-main, 2%)
+  );
+  padding: $gutter * 3.2 $gutter;
+  &__title {
+    @include typography-subtitle;
+  }
 }
 .restaurant {
-	&__card {
-		@include card;
-	}
-	&__link {
-		width: 100%;
-		height: 100%;
-	}
-	&__image {
-		width: 100%;
-		height: 27vh;
-		overflow: hidden;
-	}
-	&__tag {
-		@include tag;
-		&--new {
-			@include tagnew;
-		}
-	}
-	&__picture {
-		&--1 {
-			width: 103%;
-			object-position: -2vw -8vh;
-		}
-		&--2 {
-			width: 100%;
-			object-position: 0 -22vh;
-		}
-		&--3 {
-			width: 101%;
-			object-position: 0 -8vh;
-		}
-		&--4 {
-			width: 102%;
-			object-position: -1vw -9vh;
-		}
-	}
-	&__content {
-		height: 12vh;
-		@include flexrowno;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0 $gutter;
-	}
-	&__text {
-		height: 100%;
-		@include flexcolno;
-		justify-content: space-evenly;
-	}
-	&__title {
-		@include typography-subtitle;
-	}
-	&__icone {
-		font-size: 1.5rem;
-		color: darken($color-main, 50%);
-		@include fa-icon;
-		&:hover {
-			@extend .fas;
-			background: linear-gradient(195deg, $color-primary, $color-secondary);
-			background-clip: border-box;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-	}
+  &__card {
+    @include card;
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+  &__image {
+    width: 100%;
+    height: 27vh;
+    overflow: hidden;
+  }
+  &__tag {
+    @include tag;
+    &--new {
+      @include tagnew;
+    }
+  }
+  &__picture {
+    &--1 {
+      width: 103%;
+      object-position: -2vw -8vh;
+    }
+    &--2 {
+      width: 100%;
+      object-position: 0 -22vh;
+    }
+    &--3 {
+      width: 101%;
+      object-position: 0 -8vh;
+    }
+    &--4 {
+      width: 102%;
+      object-position: -1vw -9vh;
+    }
+  }
+  &__content {
+    height: 12vh;
+    @include flexrowno;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $gutter;
+  }
+  &__text {
+    height: 100%;
+    @include flexcolno;
+    justify-content: space-evenly;
+  }
+  &__title {
+    @include typography-subtitle;
+  }
+  &__icone {
+    font-size: 1.5rem;
+    color: darken($color-main, 50%);
+    @include fa-icon;
+    &:hover {
+      @extend .fas;
+      background: linear-gradient(195deg, $color-primary, $color-secondary);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 .heart {
-	@extend %fa-icon;
-	@extend .fas;
-	&:before {
-		content: fa-content($fa-var-heart);
-	}
+  @extend %fa-icon;
+  @extend .fas;
+  &:before {
+    content: fa-content($fa-var-heart);
+  }
 }

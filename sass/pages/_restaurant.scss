@@ -68,14 +68,15 @@
     border-radius: 15px;
     @include flexrowno;
     justify-content: space-between;
-    // TODO les card disparaisse après aparition => les faire rester visible
     opacity: 0;
-    @keyframes card-opacity {
+    @keyframes card-animation {
       0% {
         opacity: 0;
+        margin-top: 10%;
       }
       100% {
         opacity: 1;
+        margin-top: 5%;
       }
     }
     &--1 {
