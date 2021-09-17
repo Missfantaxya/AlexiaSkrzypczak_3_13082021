@@ -6565,13 +6565,73 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  opacity: 0;
+}
+@keyframes card-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu__card--1 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+}
+.menu__card--2 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.menu__card--2 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.menu__card--3 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+}
+.menu__card--4 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.menu__card--5 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 2500ms;
+}
+.menu__card--6 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+.menu__card--7 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 3500ms;
+}
+.menu__card--8 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+.menu__card--9 {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 4500ms;
 }
 .menu__item {
   padding: 1rem;
   width: 100%;
+  flex: 4 2 auto;
 }
 .menu__item:hover + .menu__choice {
-  transform: translateX(0);
+  transform: scaleX(1);
   opacity: 1;
 }
 .menu__dish {
@@ -6590,15 +6650,15 @@ body {
   font-weight: 700;
 }
 .menu__choice {
-  background-color: #99e2d0;
-  opacity: 0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  flex: 2 4 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  transform: translateX(100%);
+  background-color: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scaleX(0);
   transition: transform 400ms;
 }
 .menu__checkbox {

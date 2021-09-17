@@ -1,128 +1,181 @@
 .main {
-	&__menu {
-		background-color: darken($color-main, 3%);
-	}
+  &__menu {
+    background-color: darken($color-main, 3%);
+  }
 }
 
 .menu {
-	&__image {
-		width: 100vw;
-		height: 41vh;
-		overflow: hidden;
-		background-repeat: no-repeat;
-		&--palettedugout {
-			background-image: url("../../public/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-			background-size: 110%;
-		}
-		&--alafrancaise {
-			background-image: url("../../public/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-			background-size: 110%;
-			background-position: -8vw -0.5vh;
-		}
-		&--lanoteenchantee {
-			background-image: url("../../public/stil-u2Lp8tXIcjw-unsplash.jpg");
-			background-size: 100%;
-			background-position: 50% 50%;
-		}
-		&--delicedessens {
-			background-image: url("../../public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-			background-size: 110%;
-			background-position: 50% 40%;
-		}
-	}
-	&__picture {
-		width: 100%;
-		object-fit: cover;
-		position: absolute;
-	}
-	&__content {
-		box-sizing: border-box;
-		width: 100%;
-		background-color: darken($color-main, 3%);
-		border-top-left-radius: 50px;
-		border-top-right-radius: 50px;
-		padding: $gutter * 3 $gutter 0 $gutter;
-		position: relative;
-		top: -8vh;
-	}
-	&__title {
-		@include typography-title;
-		font-size: $size-title;
-		@include flexrowno;
-		justify-content: space-between;
-		padding-bottom: $gutter * 1.2;
-	}
-	&__type {
-		text-transform: uppercase;
-		padding: $gutter * 0.5 0;
-	}
-	&__underline {
-		width: $gutter * 2.5;
-		height: 3px;
-		background-color: $color-tertiary;
-	}
-	// TODO apparition progressive des plats ou des type de plats
-	&__card {
-		background-color: $color-light;
-		margin: $gutter 0;
-		border-radius: 15px;
-		@include flexrowno;
-		justify-content: space-between;
-	}
-	&__item {
-		padding: $gutter;
-		// TODO voir pour le redimensionnement avec le choice ouvert
-		// flex-grow: 1;
-		width: 100%;
-		// *au click sur mobile & tablette et hover sur desktop
-		// TODO faire une trasition de retour au blur
-		&:hover + .menu__choice {
-			transform: translateX(0);
-			opacity: 1;
-		}
-	}
-	&__dish {
-		@include typography-subtitle;
-	}
-	&__info {
-		width: 100%;
-		@include flexrowno;
-		justify-content: space-between;
-		padding-top: $gutter * 0.5;
-		//TODO adapter la taille si coche visible ou pas
-		//TODO empécher le retour à la ligne du texte, le couper si nécessaire et mettre ...
-	}
-	&__price {
-		font-weight: $weight-subtitle;
-	}
-	&__choice {
-		background-color: $color-tertiary;
-		opacity: 0;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		@include flexrowno;
-		justify-content: center;
-		align-items: center;
-		transform: translateX(100%);
-		transition: transform 400ms;
-	}
-	&__checkbox {
-		opacity: 0;
-		position: absolute;
-	}
-	&__check {
-		width: $gutter * 1.3;
-		height: $gutter * 1.3;
-		margin: 0 $gutter * 1.3;
-		border-radius: 50%;
-		background-color: $color-light;
-		color: $color-tertiary;
-		@include flexrowno;
-		justify-content: center;
-		align-items: center;
-	}
-	&__button {
-		@include flexrowno;
-		justify-content: center;
-	}
+  &__image {
+    width: 100vw;
+    height: 41vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    &--palettedugout {
+      background-image: url("../../public/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+      background-size: 110%;
+    }
+    &--alafrancaise {
+      background-image: url("../../public/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+      background-size: 110%;
+      background-position: -8vw -0.5vh;
+    }
+    &--lanoteenchantee {
+      background-image: url("../../public/stil-u2Lp8tXIcjw-unsplash.jpg");
+      background-size: 100%;
+      background-position: 50% 50%;
+    }
+    &--delicedessens {
+      background-image: url("../../public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+      background-size: 110%;
+      background-position: 50% 40%;
+    }
+  }
+  &__picture {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  &__content {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: darken($color-main, 3%);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: $gutter * 3 $gutter 0 $gutter;
+    position: relative;
+    top: -8vh;
+  }
+  &__title {
+    @include typography-title;
+    font-size: $size-title;
+    @include flexrowno;
+    justify-content: space-between;
+    padding-bottom: $gutter * 1.2;
+  }
+  &__type {
+    text-transform: uppercase;
+    padding: $gutter * 0.5 0;
+  }
+  &__underline {
+    width: $gutter * 2.5;
+    height: 3px;
+    background-color: $color-tertiary;
+  }
+  // TODO apparition progressive des plats ou des type de plats
+  &__card {
+    background-color: $color-light;
+    margin: $gutter 0;
+    border-radius: 15px;
+    @include flexrowno;
+    justify-content: space-between;
+    // TODO les card disparaisse après aparition => les faire rester visible
+    opacity: 0;
+    @keyframes card-opacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    &--1 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 1);
+    }
+    &--2 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 2);
+    }
+    &--2 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 2);
+    }
+    &--3 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 3);
+    }
+    &--4 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 4);
+    }
+    &--5 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 5);
+    }
+    &--6 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 6);
+    }
+    &--7 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 7);
+    }
+    &--8 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 8);
+    }
+    &--9 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 9);
+    }
+  }
+  &__item {
+    padding: $gutter;
+    width: 100%;
+    // TODO voir pour le redimensionnement avec le choice ouvert
+    flex: 4 2 auto;
+    // *au click sur mobile & tablette et hover sur desktop
+    // TODO faire une trasition de retour au blur
+    &:hover + .menu__choice {
+      // transform: translateX(0);
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  &__dish {
+    @include typography-subtitle;
+  }
+  &__info {
+    width: 100%;
+    @include flexrowno;
+    justify-content: space-between;
+    padding-top: $gutter * 0.5;
+    //TODO adapter la taille si coche visible ou pas
+    //TODO empécher le retour à la ligne du texte, le couper si nécessaire et mettre ...
+  }
+  &__price {
+    font-weight: $weight-subtitle;
+  }
+  &__choice {
+    flex: 2 4 auto;
+    @include flexrowno;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-tertiary;
+    // opacity: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    // transform: translateX(100%);
+    transform: scaleX(0);
+    transition: transform 400ms;
+  }
+  &__checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  &__check {
+    width: $gutter * 1.3;
+    height: $gutter * 1.3;
+    margin: 0 $gutter * 1.3;
+    border-radius: 50%;
+    background-color: $color-light;
+    color: $color-tertiary;
+    @include flexrowno;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button {
+    @include flexrowno;
+    justify-content: center;
+  }
 }

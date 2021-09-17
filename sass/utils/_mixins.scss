@@ -1,108 +1,113 @@
 @mixin typography-content {
-	font-family: $font-content;
-	font-weight: $weight-content;
+  font-family: $font-content;
+  font-weight: $weight-content;
 }
 
 @mixin typography-title {
-	font-family: $font-title;
-	font-weight: $weight-title;
-	text-align: left;
+  font-family: $font-title;
+  font-weight: $weight-title;
+  text-align: left;
 }
 
 @mixin typography-subtitle {
-	font-family: $font-content;
-	font-weight: $weight-subtitle;
-	font-size: $size-subtitle;
+  font-family: $font-content;
+  font-weight: $weight-subtitle;
+  font-size: $size-subtitle;
 }
 
 @mixin shadow {
-	box-shadow: 0 3px 4px 2px darken($color-main, 7%);
+  box-shadow: 0 3px 4px 2px darken($color-main, 7%);
 }
 
 @mixin shadowdark {
-	box-shadow: 0 3px 4px 2px darken($color-main, 15%);
+  box-shadow: 0 3px 4px 2px darken($color-main, 15%);
 }
 
 @mixin flexrowno {
-	display: flex;
-	flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 @mixin flexcolno {
-	display: flex;
-	flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 @mixin button {
-	width: max-content;
-	min-width: 40vw;
-	//* attention au vieaw plus grande
-	max-width: 75vw;
-	height: 2.5rem;
-	margin: $gutter * 2 $gutter 0 $gutter;
-	padding: $gutter * 0.8 $gutter * 1.2;
-	border-radius: 50px;
-	color: $color-light;
-	background: linear-gradient(175deg, $color-secondary, $color-primary);
-	text-align: center;
-	vertical-align: middle;
-	@include shadow;
-	&:hover {
-		background: linear-gradient(
-			175deg,
-			lighten($color-secondary, 3%),
-			lighten($color-primary, 3%)
-		);
-		@include shadowdark;
-	}
+  width: max-content;
+  min-width: 40vw;
+  //* attention au vieaw plus grande
+  max-width: 75vw;
+  height: 2.5rem;
+  margin: $gutter * 2 $gutter 0 $gutter;
+  padding: $gutter * 0.8 $gutter * 1.2;
+  border-radius: 50px;
+  color: $color-light;
+  background: linear-gradient(175deg, $color-secondary, $color-primary);
+  text-align: center;
+  vertical-align: middle;
+  @include shadow;
+  &:hover {
+    background: linear-gradient(
+      175deg,
+      lighten($color-secondary, 3%),
+      lighten($color-primary, 3%)
+    );
+    @include shadowdark;
+  }
 }
 
 @mixin stepcontent {
-	min-width: max-content;
-	@include flexrowno;
-	justify-content: flex-start;
-	margin: $gutter * 0.2 $gutter;
-	padding: $gutter * 2 $gutter $gutter * 1.5 $gutter * 2;
-	border-radius: 20px;
-	@include shadow;
-	font-weight: $weight-title;
+  min-width: max-content;
+  @include flexrowno;
+  justify-content: flex-start;
+  margin: $gutter * 0.2 $gutter;
+  padding: $gutter * 2 $gutter $gutter * 1.5 $gutter * 2;
+  border-radius: 20px;
+  @include shadow;
+  font-weight: $weight-title;
 }
 
 @mixin stepnumber {
-	display: flex;
-	@include flexrowno;
-	justify-content: center;
-	align-items: center;
-	width: 1.5rem;
-	height: 1.5rem;
-	background-color: $color-primary;
-	border-radius: 50%;
-	color: $color-light;
+  display: flex;
+  @include flexrowno;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: $color-primary;
+  border-radius: 50%;
+  color: $color-light;
 }
 @mixin tag {
-	display: inline;
-	border-radius: 2px;
-	width: max-content;
-	padding: $gutter * 0.4 $gutter;
-	position: relative;
-	top: -37vh;
-	right: -62vw;
-	font-weight: $weight-title;
-	font-size: $size-small;
-	text-align: center;
+  display: inline;
+  border-radius: 2px;
+  width: max-content;
+  padding: $gutter * 0.4 $gutter;
+  position: relative;
+  top: -37vh;
+  right: -62vw;
+  font-weight: $weight-title;
+  font-size: $size-small;
+  text-align: center;
 }
 
 @mixin tagnew {
-	background-color: $color-tertiary;
-	color: darken($color-tertiary, 37%);
+  background-color: $color-tertiary;
+  color: darken($color-tertiary, 37%);
 }
 
 @mixin card {
-	width: 90vw;
-	height: 39vh;
-	margin: $gutter auto;
-	overflow: hidden;
-	border-radius: 20px;
-	background-color: $color-light;
-	@include shadow;
+  width: 90vw;
+  height: 39vh;
+  margin: $gutter auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: $color-light;
+  @include shadow;
+}
+
+@mixin card-animation {
+  animation-name: card-opacity;
+  animation-fill-mode: forwards;
 }
