@@ -6287,6 +6287,127 @@ body {
   box-shadow: 0 3px 4px 2px #d0d0d0;
 }
 
+.loader {
+  animation: loader 3000ms ease-in-out backwards;
+}
+@keyframes loader {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+  99% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    display: none;
+  }
+}
+.loader__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.loader__wrapper {
+  animation: loader-wrapper 2900ms ease-in-out;
+}
+@keyframes loader-wrapper {
+  0% {
+    width: 50vw;
+    height: 50vw;
+  }
+  99% {
+    width: 50vw;
+    height: 50vw;
+  }
+  100% {
+    display: none;
+  }
+}
+.loader__flatware {
+  background-image: url("../../public/forkandknifeneon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: flatware 2800ms ease-in-out backwards;
+}
+@keyframes flatware {
+  0% {
+    width: 50vw;
+    height: 50vw;
+    transform: rotate(0deg);
+  }
+  99% {
+    width: 50vw;
+    height: 50vw;
+    transform: rotate(1080deg);
+  }
+  100% {
+    display: none;
+  }
+}
+.loader__text {
+  margin-top: 5vh;
+  animation: loader-text 2900ms ease-in-out backwards;
+}
+@keyframes loader-text {
+  0% {
+    width: 50vw;
+    height: 30vw;
+  }
+  99% {
+    width: 50vw;
+    height: 30vw;
+  }
+  100% {
+    display: none;
+  }
+}
+.loader__openingsoon {
+  position: relative;
+  top: 0;
+  background-image: url("../../public/openingsoonneon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: openingsoon 2800ms ease-in-out 100ms backwards;
+}
+@keyframes openingsoon {
+  0% {
+    width: 50vw;
+    height: 30vw;
+    transform: scale(1);
+  }
+  2% {
+    transform: scale(1);
+  }
+  99% {
+    transform: scale(0);
+  }
+}
+.loader__nowserving {
+  position: relative;
+  top: 0;
+  background-image: url("../../public/nowservingneon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: nowserving 1200ms ease-in-out 1300ms backwards;
+}
+@keyframes nowserving {
+  0% {
+    width: 50vw;
+    height: 30vw;
+    transform: scale(0);
+  }
+  95% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
 .home__top {
   background: linear-gradient(90deg, #f1f1f1, #fbfbfb);
   padding-bottom: 3rem;
@@ -6750,7 +6871,6 @@ body {
 .header__title--home {
   display: flex;
   justify-content: center;
-  padding-top: 1.4rem;
   padding-bottom: 1rem;
 }
 .header__title--restaurant {
