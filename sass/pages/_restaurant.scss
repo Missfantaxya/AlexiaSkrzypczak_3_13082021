@@ -146,6 +146,10 @@
       @include card-animation;
       animation-delay: nth($card-opacity-delai, 9);
     }
+    &--10 {
+      @include card-animation;
+      animation-delay: nth($card-opacity-delai, 10);
+    }
   }
   &__item {
     min-width: 0;
