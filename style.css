@@ -6643,7 +6643,7 @@ body {
   color: #2a947a;
 }
 .restaurant__content {
-  height: 24vw;
+  height: 12vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -6662,7 +6662,7 @@ body {
 .restaurant__icon {
   position: relative;
   right: -77vw;
-  top: -22vw;
+  top: -10vw;
   width: 2rem;
   height: 2rem;
 }
