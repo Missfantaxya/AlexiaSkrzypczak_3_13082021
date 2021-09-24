@@ -6698,21 +6698,21 @@ body {
   background-repeat: no-repeat;
 }
 .menu__image--palettedugout {
-  background-image: url("../../public/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("public/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: 110%;
 }
 .menu__image--alafrancaise {
-  background-image: url("../../public/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("public/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: 110%;
   background-position: -8vw -0.5vh;
 }
 .menu__image--lanoteenchantee {
-  background-image: url("../../public/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("public/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: 100%;
   background-position: 50% 50%;
 }
 .menu__image--delicedessens {
-  background-image: url("../../public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("public/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: 110%;
   background-position: 50% 40%;
 }
