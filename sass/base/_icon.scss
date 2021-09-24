@@ -15,9 +15,10 @@
     &:before {
       content: fa-content($fa-var-heart);
     }
+    // TODO hover version desktop et au click pour le reste
     &:hover + {
       & .heart__solid {
-        transform: scale(1.1);
+        transform: scale(1);
       }
     }
   }

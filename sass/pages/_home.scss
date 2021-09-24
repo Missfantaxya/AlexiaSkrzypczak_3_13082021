@@ -279,6 +279,9 @@
     @include typography-subtitle;
   }
   &__icon {
+    position: relative;
+    right: -77vw;
+    top: -10vh;
     width: 2rem;
     height: 2rem;
   }

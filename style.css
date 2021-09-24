@@ -6296,7 +6296,7 @@ body {
   content: "";
 }
 .heart__regular:hover + .heart__solid {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .heart__solid {
   background: linear-gradient(195deg, #9356dc, #ff79da);
@@ -6594,8 +6594,8 @@ body {
   width: max-content;
   padding: 0.4rem 1rem;
   position: relative;
-  top: -37vh;
-  right: -62vw;
+  top: -25vh;
+  right: -66vw;
   font-weight: 500;
   font-size: 0.7rem;
   text-align: center;
@@ -6640,6 +6640,9 @@ body {
   font-size: 1.2rem;
 }
 .restaurant__icon {
+  position: relative;
+  right: -77vw;
+  top: -10vh;
   width: 2rem;
   height: 2rem;
 }
