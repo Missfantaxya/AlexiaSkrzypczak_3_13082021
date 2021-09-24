@@ -6486,7 +6486,7 @@ body {
 }
 
 .location {
-  width: 75%;
+  width: 75vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -6496,8 +6496,13 @@ body {
   padding-right: 0.8rem;
 }
 .location__input {
-  width: 50%;
-  font-weight: 500;
+  width: 40vw;
+  height: 8vw;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.location__input:placeholder-shown {
+  text-overflow: ellipsis;
 }
 
 .search {

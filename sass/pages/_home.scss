@@ -163,17 +163,22 @@
 }
 
 .location {
-  width: 75%;
+  width: 75vw;
   @include flexrowno;
   justify-content: center;
   margin: 0 auto;
   &__button {
     padding-right: $gutter * 0.8;
   }
-  //TODO faire fonctionner la weight dans l'input
+  //TODO faire fonctionner la font-weight et font-size dans l'input
   &__input {
-    width: 50%;
-    font-weight: $weight-middle;
+    width: 40vw;
+    height: 8vw;
+    font-size: $size-content;
+    font-weight: $weight-subtitle;
+    &:placeholder-shown {
+      text-overflow: ellipsis;
+    }
   }
 }
 
