@@ -292,7 +292,7 @@
     @include flexrowno;
     justify-content: space-between;
     align-items: center;
-    padding: 0 $gutter;
+    padding: $gutter;
   }
   &__text {
     height: 100%;
