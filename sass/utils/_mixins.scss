@@ -85,7 +85,7 @@
   width: max-content;
   padding: $gutter * 0.4 $gutter;
   position: relative;
-  top: -25vh;
+  top: -43vw;
   right: -66vw;
   font-weight: $weight-title;
   font-size: $size-small;
@@ -99,7 +99,7 @@
 
 @mixin card {
   width: 90vw;
-  height: 39vh;
+  height: 70vw;
   margin: $gutter auto;
   overflow: hidden;
   border-radius: 20px;
