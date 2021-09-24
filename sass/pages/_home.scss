@@ -178,6 +178,11 @@
     &:placeholder-shown {
       text-overflow: ellipsis;
     }
+    // TODO
+    //! ne fonctionne pas voir pour l'interpolation ?
+    //     @include tablet-only{
+    //       font-size: $size-subtitle;
+    //     }
   }
 }
 

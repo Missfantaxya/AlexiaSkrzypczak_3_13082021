@@ -164,8 +164,6 @@
 
 //~comment se serv ir de @content :
 // .proj-grid {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
 //   @include mobile-only{
 //       grid-template-columns: 1fr;
 //   }
