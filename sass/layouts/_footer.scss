@@ -1,20 +1,20 @@
 .footer {
-	background-color: lighten($color-dark, 20%);
-	color: $color-light;
-	font-size: $size-small;
+  background-color: lighten($color-dark, 20%);
+  color: $color-light;
+  font-size: $size-small;
 
-	&__logo {
-		width: 25vw;
-		padding: $gutter * 1.2 $gutter $gutter * 0.3 $gutter * 1.5;
-	}
+  &__logo {
+    width: 40vw;
+    padding: $gutter * 1.2 $gutter $gutter * 0.3 $gutter * 1.5;
+  }
 
-	&__list {
-		padding: $gutter * 0.5 $gutter $gutter * 2.5 $gutter * 1.5;
-	}
+  &__list {
+    padding: $gutter * 0.5 $gutter $gutter * 2.5 $gutter * 1.5;
+  }
 
-	&__item {
-		padding: $gutter * 0.4;
-		font-weight: $weight-middle;
-	}
+  &__item {
+    padding: $gutter * 0.4;
+    font-weight: $weight-middle;
+    font-size: $size-content;
+  }
 }
-// TODO diminuer police et weight
