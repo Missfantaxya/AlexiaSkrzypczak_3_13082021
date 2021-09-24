@@ -239,12 +239,6 @@
     height: 27vh;
     overflow: hidden;
   }
-  &__tag {
-    @include tag;
-    &--new {
-      @include tagnew;
-    }
-  }
   &__picture {
     &--1 {
       width: 103%;
@@ -263,6 +257,12 @@
       object-position: -1vw -9vh;
     }
   }
+  &__tag {
+    @include tag;
+    &--new {
+      @include tagnew;
+    }
+  }
   &__content {
     height: 12vh;
     @include flexrowno;
@@ -272,11 +272,10 @@
   }
   &__text {
     height: 100%;
-    @include flexcolno;
-    justify-content: space-evenly;
   }
   &__title {
     @include typography-subtitle;
+    padding-bottom: $gutter * 0.5;
   }
   &__icon {
     position: relative;

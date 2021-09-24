@@ -6588,22 +6588,6 @@ body {
   height: 27vh;
   overflow: hidden;
 }
-.restaurant__tag {
-  display: inline;
-  border-radius: 2px;
-  width: max-content;
-  padding: 0.4rem 1rem;
-  position: relative;
-  top: -25vh;
-  right: -66vw;
-  font-weight: 500;
-  font-size: 0.7rem;
-  text-align: center;
-}
-.restaurant__tag--new {
-  background-color: #99e2d0;
-  color: #2a947a;
-}
 .restaurant__picture--1 {
   width: 103%;
   object-position: -2vw -8vh;
@@ -6620,6 +6604,22 @@ body {
   width: 102%;
   object-position: -1vw -9vh;
 }
+.restaurant__tag {
+  display: inline;
+  border-radius: 2px;
+  width: max-content;
+  padding: 0.4rem 1rem;
+  position: relative;
+  top: -25vh;
+  right: -66vw;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.restaurant__tag--new {
+  background-color: #99e2d0;
+  color: #2a947a;
+}
 .restaurant__content {
   height: 12vh;
   display: flex;
@@ -6630,14 +6630,12 @@ body {
 }
 .restaurant__text {
   height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
 }
 .restaurant__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
+  padding-bottom: 0.5rem;
 }
 .restaurant__icon {
   position: relative;
