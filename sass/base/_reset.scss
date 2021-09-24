@@ -123,19 +123,17 @@ q {
 }
 
 blockquote {
-
   &:before,
   &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
 
 q {
-
   &:before,
   &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
@@ -156,4 +154,11 @@ input,
 button {
   border: none;
   background-color: transparent;
+}
+
+//ajouts personnels
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

@@ -1,0 +1,42 @@
+//TODO transition ou animation
+.heart {
+  &__icone {
+    width: 1.5rem;
+    height: 1.5rem;
+    // overflow: hidden;
+  }
+  font-size: 1.5rem;
+  color: darken($color-main, 50%);
+  //* configuration en tant qu'icône
+  @include fa-icon;
+  @extend %fa-icon;
+  //* icône de style regular
+  @extend .far;
+  &__regular {
+    &:before {
+      content: fa-content($fa-var-heart);
+    }
+    &:hover + {
+      & .heart__solid {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__solid {
+    //* icône de style solid
+    @extend .fas;
+    background: linear-gradient(195deg, $color-primary, $color-secondary);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: -100%;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: transform 500ms ease-in-out;
+    &:before {
+      @extend .fas;
+      content: fa-content($fa-var-heart);
+    }
+  }
+}
