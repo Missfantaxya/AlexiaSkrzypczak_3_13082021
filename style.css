@@ -6394,8 +6394,9 @@ body {
   }
 }
 .loader__text {
+  background-color: transparent;
   margin-top: 5vh;
-  animation: loader-text 2900ms ease-in-out backwards;
+  animation: loader-text 3000ms ease-in-out backwards;
 }
 @keyframes loader-text {
   0% {
@@ -6416,20 +6417,7 @@ body {
   background-image: url("../../public/openingsoonneon.png");
   background-size: contain;
   background-repeat: no-repeat;
-  animation: openingsoon 2800ms ease-in-out 100ms backwards;
-}
-@keyframes openingsoon {
-  0% {
-    width: 50vw;
-    height: 30vw;
-    transform: scale(1);
-  }
-  2% {
-    transform: scale(1);
-  }
-  99% {
-    transform: scale(0);
-  }
+  animation: appearance 3000ms ease-in-out backwards;
 }
 .loader__nowserving {
   position: relative;
@@ -6437,22 +6425,30 @@ body {
   background-image: url("../../public/nowservingneon.png");
   background-size: contain;
   background-repeat: no-repeat;
-  animation: nowserving 1200ms ease-in-out 1300ms backwards;
+  animation: appearance 2600ms ease-in-out 300ms reverse backwards;
 }
-@keyframes nowserving {
+
+@keyframes appearance {
   0% {
     width: 50vw;
     height: 30vw;
-    transform: scale(0);
+    transform: scale(1.1);
+    opacity: 1;
   }
-  95% {
-    transform: scale(1.5);
+  2% {
+    width: 50vw;
+    height: 30vw;
+    transform: scale(1.1);
+  }
+  99% {
+    transform: scale(0);
+    opacity: 0.5;
   }
   100% {
-    transform: scale(1.5);
+    transform: scale(0);
+    opacity: 0;
   }
 }
-
 .home__top {
   background: linear-gradient(90deg, #f1f1f1, #fbfbfb);
   padding-bottom: 3rem;
