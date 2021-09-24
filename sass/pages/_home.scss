@@ -43,6 +43,25 @@
         width: 50vw;
         height: 50vw;
         transform: rotate(0deg);
+        filter: blur(8vw);
+      }
+      5% {
+        filter: blur(5vw);
+      }
+      15% {
+        filter: blur(4vw);
+      }
+      25% {
+        filter: blur(3vw);
+      }
+      55% {
+        filter: blur(2vw);
+      }
+      70% {
+        filter: blur(1vw);
+      }
+      90% {
+        filter: blur(0);
       }
       99% {
         width: 50vw;
@@ -106,9 +125,16 @@
     height: 30vw;
     transform: scale(1.1);
   }
+  80% {
+    filter: blur(0);
+  }
+  90% {
+    filter: blur(1vw);
+  }
   99% {
     transform: scale(0);
     opacity: 0.5;
+    filter: blur(2vw);
   }
   100% {
     transform: scale(0);
