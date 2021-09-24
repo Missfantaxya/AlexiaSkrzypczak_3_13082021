@@ -30,3 +30,12 @@ $gutter: 1rem;
 //animation
 $card-opacity-delai: 0ms 250ms 500ms 750ms 1000ms 1250ms 1500ms 1750ms 2000ms
   2250ms;
+
+//responsive
+$breackpoints: (
+  mobile: 640px,
+  tablet: 768px,
+  tabletxl: 1024px,
+  desktop: 1280px,
+  desktopxl: 1536px,
+);

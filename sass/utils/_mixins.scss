@@ -113,3 +113,60 @@
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
 }
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breackpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: map-get($breackpoints, mobile)) and (max-width: map-get($breackpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin tablet-min {
+  @media screen and (min-width: map-get($breackpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin tabletxl-only {
+  @media screen and (min-width: map-get($breackpoints, tablet)) and (max-width: map-get($breackpoints, tabletxl)) {
+    @content;
+  }
+}
+
+@mixin tabletxl-min {
+  @media screen and (min-width: map-get($breackpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breackpoints, tabletxl)) and (max-width: map-get($breackpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin desktop-min {
+  @media screen and (min-width: map-get($breackpoints, tabletxl)) {
+    @content;
+  }
+}
+
+@mixin desktopxl-only {
+  @media screen and (min-width: map-get($breackpoints, desktop)) and (max-width: map-get($breackpoints, desktopxl)) {
+    @content;
+  }
+}
+
+//~comment se serv ir de @content :
+// .proj-grid {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   @include mobile-only{
+//       grid-template-columns: 1fr;
+//   }
+// }
