@@ -6600,6 +6600,7 @@ body {
   border-radius: 20px;
   background-color: white;
   box-shadow: 0 3px 4px 2px #e4e4e4;
+  position: relative;
 }
 .restaurant__link {
   width: 100%;
@@ -6631,9 +6632,9 @@ body {
   border-radius: 2px;
   width: max-content;
   padding: 0.4rem 1rem;
-  position: relative;
-  top: -43vw;
-  right: -66vw;
+  position: absolute;
+  top: 3vw;
+  right: 2vw;
   font-weight: 500;
   font-size: 0.7rem;
   text-align: center;

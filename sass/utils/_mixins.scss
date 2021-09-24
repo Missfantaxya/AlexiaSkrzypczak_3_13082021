@@ -84,9 +84,9 @@
   border-radius: 2px;
   width: max-content;
   padding: $gutter * 0.4 $gutter;
-  position: relative;
-  top: -43vw;
-  right: -66vw;
+  position: absolute;
+  top: 3vw;
+  right: 2vw;
   font-weight: $weight-title;
   font-size: $size-small;
   text-align: center;

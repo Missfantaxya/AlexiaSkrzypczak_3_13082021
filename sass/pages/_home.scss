@@ -252,6 +252,7 @@
 .restaurant {
   &__card {
     @include card;
+    position: relative;
   }
   &__link {
     width: 100%;
