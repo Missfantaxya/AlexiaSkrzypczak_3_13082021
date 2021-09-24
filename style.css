@@ -6373,7 +6373,7 @@ body {
   }
 }
 .loader__flatware {
-  background-image: url("../../public/forkandknifeneon.png");
+  background-image: url("public/forkandknifeneon.png");
   background-size: contain;
   background-repeat: no-repeat;
   animation: flatware 2800ms ease-in-out backwards;
@@ -6433,7 +6433,7 @@ body {
 .loader__openingsoon {
   position: relative;
   top: 0;
-  background-image: url("../../public/openingsoonneon.png");
+  background-image: url("public/openingsoonneon.png");
   background-size: contain;
   background-repeat: no-repeat;
   animation: appearance 3000ms ease-in-out backwards;
@@ -6441,7 +6441,7 @@ body {
 .loader__nowserving {
   position: relative;
   top: 0;
-  background-image: url("../../public/nowservingneon.png");
+  background-image: url("public/nowservingneon.png");
   background-size: contain;
   background-repeat: no-repeat;
   animation: appearance 2600ms ease-in-out 300ms reverse backwards;
