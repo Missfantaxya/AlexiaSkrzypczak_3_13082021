@@ -6331,6 +6331,18 @@ body {
   background: linear-gradient(175deg, #ff88de, #9b63df);
   box-shadow: 0 3px 4px 2px #d0d0d0;
 }
+@media screen and (min-width: 768px) {
+  .btn {
+    min-width: 30vw;
+    height: 8vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn {
+    min-width: 20vw;
+    height: 5vw;
+  }
+}
 
 .loader {
   animation: loader 3000ms ease-in-out backwards;
@@ -6526,6 +6538,16 @@ body {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .location__input {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .location__input {
+    width: 15vw;
+  }
+}
 
 .search {
   width: 100vw;
@@ -6540,6 +6562,11 @@ body {
   font-weight: 700;
   font-size: 1.2rem;
   text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .search__title {
+    width: 15vw;
+  }
 }
 .search__content {
   display: flex;
@@ -6558,11 +6585,22 @@ body {
 .notice {
   margin: 3rem 0;
 }
+@media screen and (min-width: 768px) {
+  .notice {
+    width: 50vw;
+    margin: 3rem auto;
+  }
+}
 .notice__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   padding: 0 1rem;
+}
+@media screen and (min-width: 1280px) {
+  .notice__title {
+    font-size: 1.6rem;
+  }
 }
 .notice__steps {
   display: flex;
@@ -6613,10 +6651,22 @@ body {
   background: linear-gradient(#f1f1f1, #fbfbfb);
   padding: 3.2rem 1rem;
 }
+@media screen and (min-width: 1280px) {
+  .restaurants__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+}
 .restaurants__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
+}
+@media screen and (min-width: 1280px) {
+  .restaurants__title {
+    font-size: 1.6rem;
+  }
 }
 
 .restaurant__card {
@@ -6629,6 +6679,23 @@ body {
   box-shadow: 0 3px 4px 2px #e4e4e4;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__card {
+    height: 50vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__card {
+    width: 70vw;
+    height: 30vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant__card {
+    width: 40vw;
+    height: 20vw;
+  }
+}
 .restaurant__link {
   width: 100%;
   height: 100%;
@@ -6638,21 +6705,56 @@ body {
   height: 50vw;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__image {
+    height: 40vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__image {
+    height: 20vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant__image {
+    height: 14vw;
+  }
+}
 .restaurant__picture--1 {
   width: 103%;
   object-position: -2vw -12vw;
+}
+@media screen and (min-width: 1280px) {
+  .restaurant__picture--1 {
+    object-position: 0vw -10vw;
+  }
 }
 .restaurant__picture--2 {
   width: 100%;
   object-position: 0 -40vw;
 }
+@media screen and (min-width: 1280px) {
+  .restaurant__picture--2 {
+    object-position: 0vw -22vw;
+  }
+}
 .restaurant__picture--3 {
   width: 110%;
   object-position: -2vw -16vw;
 }
+@media screen and (min-width: 1280px) {
+  .restaurant__picture--3 {
+    object-position: -1vw -12vw;
+  }
+}
 .restaurant__picture--4 {
   width: 104%;
   object-position: -2vw -14vw;
+}
+@media screen and (min-width: 1280px) {
+  .restaurant__picture--4 {
+    object-position: -2vw -12vw;
+  }
 }
 .restaurant__tag {
   display: inline;
@@ -6678,11 +6780,31 @@ body {
   align-items: center;
   padding: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__content {
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__content {
+    padding: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant__content {
+    height: 5vw;
+  }
+}
 .restaurant__text {
   height: 85%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
+}
+@media screen and (min-width: 1280px) {
+  .restaurant__text {
+    margin-left: 2rem;
+  }
 }
 .restaurant__title {
   font-family: "Roboto", sans-serif;
@@ -6692,6 +6814,25 @@ body {
 .restaurant__icon {
   width: 5vw;
   height: 5vw;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__icon {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__icon {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant__icon {
+    width: 1vw;
+    height: 1vw;
+    margin-right: 2rem;
+  }
 }
 
 @keyframes card-animation {
@@ -6768,14 +6909,36 @@ body {
   justify-content: space-between;
   padding-bottom: 1.2rem;
 }
+@media screen and (min-width: 768px) {
+  .menu__title {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}
 .menu__type {
   text-transform: uppercase;
   padding: 0.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .menu__type {
+    padding: 0.5rem 1rem;
+  }
 }
 .menu__underline {
   width: 2.5rem;
   height: 3px;
   background-color: #99e2d0;
+}
+@media screen and (min-width: 768px) {
+  .menu__underline {
+    margin: 0 1rem;
+  }
 }
 .menu__card {
   position: relative;
@@ -6798,6 +6961,19 @@ body {
 .menu__card:hover .menu__v {
   transition: transform 700ms ease-in-out;
   transform: rotate(360deg);
+}
+@media screen and (min-width: 768px) {
+  .menu__card {
+    width: 80vw;
+    height: 10vw;
+    margin: 1rem auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__card {
+    width: 30vw;
+    height: 7vw;
+  }
 }
 .menu__card--1 {
   animation-name: card-animation;
@@ -6917,6 +7093,16 @@ body {
   right: -100%;
   transition: position 400ms, right 800ms ease-in-out 50ms;
 }
+@media screen and (min-width: 768px) {
+  .menu__choice {
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__choice {
+    height: 7vw;
+  }
+}
 .menu__checkbox {
   opacity: 0;
   position: absolute;
@@ -6982,18 +7168,49 @@ body {
 .header__logo {
   width: 50vw;
 }
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    width: 40vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    width: 30vw;
+  }
+}
 
 .footer {
   background-color: #333333;
   color: white;
   font-size: 0.7rem;
 }
+.footer__title {
+  width: max-content;
+}
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    margin: 0 auto 1rem auto;
+    padding-top: 1rem;
+  }
+}
 .footer__logo {
   width: 40vw;
   padding: 1.2rem 1rem 0.3rem 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    width: 20vw;
+  }
+}
 .footer__list {
   padding: 0.5rem 1rem 2.5rem 1.5rem;
+}
+@media screen and (min-width: 1280px) {
+  .footer__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
 }
 .footer__item {
   padding: 0.4rem;

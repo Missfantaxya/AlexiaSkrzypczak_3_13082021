@@ -180,6 +180,12 @@
     @include media-min(mobile) {
       font-size: $size-subtitle;
     }
+    @include media-min(tablet) {
+      width: 30vw;
+    }
+    @include media-min(desktop) {
+      width: 15vw;
+    }
   }
 }
 
@@ -192,6 +198,9 @@
     width: 65%;
     @include typography-subtitle;
     text-align: center;
+    @include media-min(desktop) {
+      width: 15vw;
+    }
   }
   &__content {
     @include flexcolno;
@@ -209,9 +218,16 @@
 
 .notice {
   margin: $gutter * 3 0;
+  @include media-min(tablet) {
+    width: 50vw;
+    margin: $gutter * 3 auto;
+  }
   &__title {
     @include typography-subtitle;
     padding: 0 $gutter;
+    @include media-min(desktop) {
+      font-size: $size-title;
+    }
   }
   &__steps {
     @include flexcolno;
@@ -251,8 +267,19 @@
     lighten($color-main, 2%)
   );
   padding: $gutter * 3.2 $gutter;
+  &__wrapper {
+    @include media-min(desktop) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+    }
+  }
+
   &__title {
     @include typography-subtitle;
+    @include media-min(desktop) {
+      font-size: $size-title;
+    }
   }
 }
 .restaurant {
@@ -268,23 +295,44 @@
     width: 100%;
     height: 50vw;
     overflow: hidden;
+    @include media-min(tablet) {
+      height: 40vw;
+    }
+    @include media-min(tabletxl) {
+      height: 20vw;
+    }
+    @include media-min(desktop) {
+      height: 14vw;
+    }
   }
   &__picture {
     &--1 {
       width: 103%;
       object-position: -2vw -12vw;
+      @include media-min(desktop) {
+        object-position: 0vw -10vw;
+      }
     }
     &--2 {
       width: 100%;
       object-position: 0 -40vw;
+      @include media-min(desktop) {
+        object-position: 0vw -22vw;
+      }
     }
     &--3 {
       width: 110%;
       object-position: -2vw -16vw;
+      @include media-min(desktop) {
+        object-position: -1vw -12vw;
+      }
     }
     &--4 {
       width: 104%;
       object-position: -2vw -14vw;
+      @include media-min(desktop) {
+        object-position: -2vw -12vw;
+      }
     }
   }
   &__tag {
@@ -299,12 +347,24 @@
     justify-content: space-between;
     align-items: center;
     padding: $gutter;
+    @include media-min(tablet) {
+      height: 10vw;
+    }
+    @include media-min(tabletxl) {
+      padding: $gutter * 1.2;
+    }
+    @include media-min(desktop) {
+      height: 5vw;
+    }
   }
   &__text {
     height: 85%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    @include media-min(desktop) {
+      margin-left: $gutter * 2;
+    }
   }
   &__title {
     @include typography-subtitle;
@@ -312,5 +372,18 @@
   &__icon {
     width: 5vw;
     height: 5vw;
+    @include media-min(tablet) {
+      width: 4vw;
+      height: 4vw;
+    }
+    @include media-min(tabletxl) {
+      width: 3vw;
+      height: 3vw;
+    }
+    @include media-min(desktop) {
+      width: 1vw;
+      height: 1vw;
+      margin-right: $gutter * 2;
+    }
   }
 }

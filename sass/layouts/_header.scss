@@ -26,5 +26,11 @@
   }
   &__logo {
     width: 50vw;
+    @include media-min(tabletxl) {
+      width: 40vw;
+    }
+    @include media-min(desktop) {
+      width: 30vw;
+    }
   }
 }

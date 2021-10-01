@@ -73,15 +73,30 @@
     @include flexrowno;
     justify-content: space-between;
     padding-bottom: $gutter * 1.2;
+    @include media-min(tablet) {
+      padding: $gutter;
+    }
+  }
+  &__wrapper {
+    @include media-min(desktop) {
+      @include flexrowno;
+      justify-content: space-around;
+    }
   }
   &__type {
     text-transform: uppercase;
     padding: $gutter * 0.5 0;
+    @include media-min(tablet) {
+      padding: $gutter * 0.5 $gutter;
+    }
   }
   &__underline {
     width: $gutter * 2.5;
     height: 3px;
     background-color: $color-tertiary;
+    @include media-min(tablet) {
+      margin: 0 $gutter;
+    }
   }
   &__card {
     position: relative;
@@ -105,6 +120,15 @@
         transition: transform 700ms ease-in-out;
         transform: rotate(360deg);
       }
+    }
+    @include media-min(tablet) {
+      width: 80vw;
+      height: 10vw;
+      margin: $gutter auto;
+    }
+    @include media-min(desktop) {
+      width: 30vw;
+      height: 7vw;
     }
     &--1 {
       @include card-animation;
@@ -188,6 +212,12 @@
     position: absolute;
     right: -100%;
     transition: position 400ms, right 800ms ease-in-out 50ms;
+    @include media-min(tablet) {
+      height: 10vw;
+    }
+    @include media-min(desktop) {
+      height: 7vw;
+    }
   }
   &__checkbox {
     opacity: 0;

@@ -2,14 +2,30 @@
   background-color: lighten($color-dark, 20%);
   color: $color-light;
   font-size: $size-small;
-
+  &__title {
+    width: max-content;
+    @include media-min(desktop) {
+      margin: 0 auto $gutter auto;
+      padding-top: $gutter;
+    }
+  }
   &__logo {
     width: 40vw;
     padding: $gutter * 1.2 $gutter $gutter * 0.3 $gutter * 1.5;
+    @include media-min(tablet) {
+      width: 20vw;
+    }
+    // @include media-min(desktop) {
+    //   width: 20vw;
+    // }
   }
 
   &__list {
     padding: $gutter * 0.5 $gutter $gutter * 2.5 $gutter * 1.5;
+    @include media-min(desktop) {
+      @include flexrowno;
+      justify-content: space-evenly;
+    }
   }
 
   &__item {

@@ -21,7 +21,6 @@
 
     <title>ohmyfood - Le délice des sens</title>
   </head>
-  <!-- TODO class et structure à copier -->
   <body>
     <header class="header header--restaurant">
       <div class="header__wrapper">
@@ -39,7 +38,7 @@
         </h1>
       </div>
     </header>
-    <main>
+    <main class="main__menu">
       <div class="menu__image menu__image--delicedessens"></div>
       <div class="menu__content">
         <section>
@@ -51,108 +50,228 @@
             </div>
           </div>
         </section>
-        <form>
-          <section>
-            <h3>Entrées</h3>
-            <div>
-              <div>
-                <label for="tartare">Tartare de thon</label>
-                <div>
-                  <label for="tartare">Assaisonné au yuzu</label>
-                  <label for="tartare">25€</label>
+        <form class="menu__form">
+          <section class="menu__section">
+            <h3 class="menu__type">Entrées</h3>
+            <div class="menu__underline"></div>
+            <div class="menu__card menu__card--1">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="tartare"
+                    >Tartare de thon</label
+                  >
+                  <label class="menu__detail" for="tartare"
+                    >Assaisonné au yuzu</label
+                  >
+                </div>
+                <label class="menu__price" for="tartare">25€</label>
+              </div>
+
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="tartare"
+                  name="tartare"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
                 </div>
               </div>
-              <input type="checkbox" id="tartare" name="tartare" />
             </div>
-            <div>
-              <div>
-                <label for="homard">Bouchée de homard croustillant</label>
-                <div>
-                  <label for="homard">Et sa farandole de petits légumes</label>
-                  <label for="homard">35€</label>
+            <div class="menu__card menu__card--2">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="homard"
+                    >Bouchée de homard croustillant</label
+                  >
+                  <label class="menu__detail" for="homard"
+                    >Et sa farandole de petits légumes</label
+                  >
+                </div>
+                <label class="menu__price" for="homard">35€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="homard"
+                  name="homard"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
                 </div>
               </div>
-              <input type="checkbox" id="homard" name="homard" />
             </div>
-            <div>
-              <div>
-                <label for="veloute">Velouté de cèpes</label>
-                <div>
-                  <label for="veloute">Aux truffes</label>
-                  <label for="veloute">20€</label>
+            <div class="menu__card menu__card--3">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="veloute"
+                    >Velouté de cèpes</label
+                  >
+                  <label class="menu__detail" for="veloute">Aux truffes</label>
+                </div>
+                <label class="menu__price" for="veloute">20€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="veloute"
+                  name="veloute"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
                 </div>
               </div>
-              <input type="checkbox" id="veloute" name="veloute" />
-            </div>
-          </section>
-          <section>
-            <h3>Plats</h3>
-            <div>
-              <div>
-                <label for="poulet">Poulet rôti aux herbes de Provence</label>
-                <div>
-                  <label for="poulet">Et sa crème de truffe</label>
-                  <label for="poulet">40€</label>
-                </div>
-              </div>
-              <input type="checkbox" id="poulet" name="poulet" />
-            </div>
-            <div>
-              <div>
-                <label for="langouste">Langouste rôtie</label>
-                <div>
-                  <label for="langouste">Et ses légumes de saison</label>
-                  <label for="langouste">35€</label>
-                </div>
-              </div>
-              <input type="checkbox" id="langouste" name="langouste" />
-            </div>
-            <div>
-              <div>
-                <label for="angus">Côte de boeuf Angus</label>
-                <div>
-                  <label for="angus">Et sa purée de panais</label>
-                  <label for="angus">44€</label>
-                </div>
-              </div>
-              <input type="checkbox" id="angus" name="angus" />
-            </div>
-          </section>
-          <section>
-            <h3>Desserts</h3>
-            <div>
-              <div>
-                <label for="farandole">Farandole de desserts</label>
-                <div>
-                  <label for="farandole">Du chef</label>
-                  <label for="farandole">18€</label>
-                </div>
-              </div>
-              <input type="checkbox" id="farandole" name="farandole" />
-            </div>
-            <div>
-              <div>
-                <label for="creme">Crème brulée</label>
-                <div>
-                  <label for="creme">Revisitée</label>
-                  <label for="creme">22€</label>
-                </div>
-              </div>
-              <input type="checkbox" id="creme" name="creme" />
-            </div>
-            <div>
-              <div>
-                <label for="tiramisu">Tiramisu</label>
-                <div>
-                  <label for="tiramisu">À la noisette</label>
-                  <label for="tiramisu">23€</label>
-                </div>
-              </div>
-              <input type="checkbox" id="tiramisu" name="tiramisu" />
             </div>
           </section>
-          <div>
-            <input type="submit" />
+          <section class="menu__section">
+            <h3 class="menu__type">Plats</h3>
+            <div class="menu__underline"></div>
+            <div class="menu__card menu__card--4">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="poulet"
+                    >Poulet rôti aux herbes de Provence</label
+                  >
+                  <label class="menu__detail" for="poulet"
+                    >Et sa crème de truffe</label
+                  >
+                </div>
+                <label class="menu__price" for="poulet">40€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="poulet"
+                  name="poulet"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__card menu__card--4">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="langouste"
+                    >Langouste rôtie</label
+                  >
+                  <label class="menu__detail" for="langouste"
+                    >Et ses légumes de saison</label
+                  >
+                </div>
+                <label class="menu__price" for="langouste">35€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="langouste"
+                  name="langouste"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__card menu__card--5">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="angus"
+                    >Côte de boeuf Angus</label
+                  >
+                  <label class="menu__detail" for="angus"
+                    >Et sa purée de panais</label
+                  >
+                </div>
+                <label class="menu__price" for="angus">44€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="angus"
+                  name="angus"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="menu__section">
+            <h3 class="menu__type">Desserts</h3>
+            <div class="menu__underline"></div>
+            <div class="menu__card menu__card--6">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="farandole"
+                    >Farandole de desserts</label
+                  >
+                  <label class="menu__detail" for="farandole">Du chef</label>
+                </div>
+                <label class="menu__price" for="farandole">18€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="farandole"
+                  name="farandole"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__card menu__card--7">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="creme">Crème brulée</label>
+                  <label class="menu__detail" for="creme">Revisitée</label>
+                </div>
+                <label class="menu__price" for="creme">22€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="creme"
+                  name="creme"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__card menu__card--8">
+              <div class="menu__item">
+                <div class="menu__info">
+                  <label class="menu__dish" for="tiramisu">Tiramisu</label>
+                  <label class="menu__detail" for="tiramisu"
+                    >À la noisette</label
+                  >
+                </div>
+                <label class="menu__price" for="tiramisu">23€</label>
+              </div>
+              <div class="menu__choice">
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  id="tiramisu"
+                  name="tiramisu"
+                />
+                <div class="menu__check">
+                  <i class="fas fa-check fa-sm menu__v"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="menu__button">
+            <input class="menu__nutton btn" type="submit" value="Commander" />
           </div>
         </form>
       </div>
