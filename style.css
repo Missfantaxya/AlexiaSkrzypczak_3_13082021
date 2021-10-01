@@ -6476,20 +6476,21 @@ body {
   }
 }
 .home {
-  animation: home-loader 3000ms ease-in-out backwards;
+  animation: home 3000ms ease-in-out backwards;
 }
 @keyframes home-loader {
   0% {
+    width: 0vw;
     height: 0vh;
     transform: scale(0);
   }
   99% {
+    width: 0vw;
     height: 0vh;
     opacity: 0.5;
     transform: scale(0);
   }
   100% {
-    height: auto;
     transform: scale(1);
   }
 }
@@ -6504,23 +6505,26 @@ body {
 }
 
 .location {
-  width: 75vw;
+  width: 50%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   margin: 0 auto;
 }
-.location__button {
-  padding-right: 0.8rem;
-}
 .location__input {
   width: 40vw;
   height: 8vw;
+  text-align: center;
   font-size: 1rem;
   font-weight: 700;
 }
 .location__input:placeholder-shown {
   text-overflow: ellipsis;
+}
+@media screen and (min-width: ) {
+  .location__input {
+    font-size: 1.2rem;
+  }
 }
 
 .search {
@@ -6936,23 +6940,24 @@ body {
 }
 
 .header--home {
-  animation: home-loader 3000ms ease-in-out backwards;
+  animation: home 3000ms ease-in-out backwards;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
 @keyframes home-loader {
   0% {
+    width: 0vw;
     height: 0vh;
     transform: scale(0);
   }
   99% {
+    width: 0vw;
     height: 0vh;
     opacity: 0.5;
     transform: scale(0);
   }
   100% {
-    height: auto;
     transform: scale(1);
   }
 }
@@ -6996,20 +7001,21 @@ body {
   font-size: 1rem;
 }
 .footer__home {
-  animation: home-loader 3000ms ease-in-out backwards;
+  animation: home 3000ms ease-in-out backwards;
 }
 @keyframes home-loader {
   0% {
+    width: 0vw;
     height: 0vh;
     transform: scale(0);
   }
   99% {
+    width: 0vw;
     height: 0vh;
     opacity: 0.5;
     transform: scale(0);
   }
   100% {
-    height: auto;
     transform: scale(1);
   }
 }

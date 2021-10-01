@@ -107,6 +107,21 @@
   @include shadow;
 }
 
+// @mixin screen {
+//   width: $space-x-screen;
+//   height: $space-y-screen;
+// }
+
+// @mixin half-screen-x {
+//   width: $space-x-screen/2;
+//   height: $space-x-screen/2;
+// }
+
+// @mixin full {
+//   width: $space-full;
+//   height: $space-full;
+// }
+
 @mixin card-animation {
   animation-name: card-animation;
   animation-fill-mode: forwards;
@@ -117,73 +132,27 @@
 @mixin home-loader {
   @keyframes home-loader {
     0% {
+      width: 0vw;
       height: 0vh;
       transform: scale(0);
     }
     99% {
+      width: 0vw;
       height: 0vh;
       opacity: 0.5;
       transform: scale(0);
     }
     100% {
-      height: auto;
       transform: scale(1);
     }
   }
-  animation: home-loader 3000ms ease-in-out backwards;
+  animation: home 3000ms ease-in-out backwards;
 }
 
-@mixin mobile-only {
-  @media screen and (max-width: map-get($breackpoints, mobile)) {
-    @content;
+@mixin media-min($_key) {
+  @media screen and (min-width: map-get($breackpoints, $_key)) {
+    & {
+      @content;
+    }
   }
 }
-
-@mixin tablet-only {
-  @media screen and (min-width: map-get($breackpoints, mobile)) and (max-width: map-get($breackpoints, tablet)) {
-    @content;
-  }
-}
-
-@mixin tablet-min {
-  @media screen and (min-width: map-get($breackpoints, mobile)) {
-    @content;
-  }
-}
-
-@mixin tabletxl-only {
-  @media screen and (min-width: map-get($breackpoints, tablet)) and (max-width: map-get($breackpoints, tabletxl)) {
-    @content;
-  }
-}
-
-@mixin tabletxl-min {
-  @media screen and (min-width: map-get($breackpoints, tablet)) {
-    @content;
-  }
-}
-
-@mixin desktop-only {
-  @media screen and (min-width: map-get($breackpoints, tabletxl)) and (max-width: map-get($breackpoints, desktop)) {
-    @content;
-  }
-}
-
-@mixin desktop-min {
-  @media screen and (min-width: map-get($breackpoints, tabletxl)) {
-    @content;
-  }
-}
-
-@mixin desktopxl-only {
-  @media screen and (min-width: map-get($breackpoints, desktop)) and (max-width: map-get($breackpoints, desktopxl)) {
-    @content;
-  }
-}
-
-//~comment se servir de @content :
-// .proj-grid {
-//   @include mobile-only{
-//       grid-template-columns: 1fr;
-//   }
-// }

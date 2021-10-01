@@ -14,7 +14,7 @@ $font-content: "Roboto", sans-serif;
 $weight-title: 500;
 $weight-subtitle: 700;
 $weight-content: 300;
-$weight-middle: 500;
+// $weight-middle: 400;
 
 //font-size
 $size-title: 1.6rem;
@@ -23,17 +23,25 @@ $size-content: 1rem;
 $size-small: 0.7rem;
 $size-info: 0.9rem;
 
+//space
+$space-x-screen: 100vw;
+$space-y-screen: 100vh;
+$space-full: 100%;
+// $space-rem: 10rem;
+
 //gutter
 $gutter: 1rem;
-//* faire une variable avec plusieurs valeurs (list) pour le padding
+// TODO voir pour faire une variable avec plusieurs valeurs (list) pour le padding
 
 //animation
 $card-opacity-delai: 0ms 250ms 500ms 750ms 1000ms 1250ms 1500ms 1750ms 2000ms
   2250ms;
+// TODO voir pour faire un array
 
 //responsive
 $breackpoints: (
-  mobile: 640px,
+  mobile-landscape: 500px,
+  mobilexl: 640px,
   tablet: 768px,
   tabletxl: 1024px,
   desktop: 1280px,

@@ -164,26 +164,22 @@
 }
 
 .location {
-  width: 75vw;
+  width: 50%;
   @include flexrowno;
   justify-content: center;
   margin: 0 auto;
-  &__button {
-    padding-right: $gutter * 0.8;
-  }
   &__input {
     width: 40vw;
     height: 8vw;
+    text-align: center;
     font-size: $size-content;
     font-weight: $weight-subtitle;
     &:placeholder-shown {
       text-overflow: ellipsis;
     }
-    // TODO
-    //! ne fonctionne pas voir pour l'interpolation ?
-    //     @include tablet-only {
-    //       font-size: $size-subtitle
-    //     };
+    @include media-min(mobile) {
+      font-size: $size-subtitle;
+    }
   }
 }
 
