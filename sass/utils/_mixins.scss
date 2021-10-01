@@ -129,6 +129,7 @@
   animation-timing-function: ease-in-out;
 }
 
+//TODO voir car ne fonctionne pas
 @mixin home-loader {
   @keyframes home-loader {
     0% {
