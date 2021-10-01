@@ -17,4 +17,7 @@
     font-weight: $weight-middle;
     font-size: $size-content;
   }
+  &__home {
+    @include home-loader;
+  }
 }

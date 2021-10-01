@@ -114,6 +114,25 @@
   animation-timing-function: ease-in-out;
 }
 
+@mixin home-loader {
+  @keyframes home-loader {
+    0% {
+      height: 0vh;
+      transform: scale(0);
+    }
+    99% {
+      height: 0vh;
+      opacity: 0.5;
+      transform: scale(0);
+    }
+    100% {
+      height: auto;
+      transform: scale(1);
+    }
+  }
+  animation: home-loader 3000ms ease-in-out backwards;
+}
+
 @mixin mobile-only {
   @media screen and (max-width: map-get($breackpoints, mobile)) {
     @content;
@@ -162,7 +181,7 @@
   }
 }
 
-//~comment se serv ir de @content :
+//~comment se servir de @content :
 // .proj-grid {
 //   @include mobile-only{
 //       grid-template-columns: 1fr;

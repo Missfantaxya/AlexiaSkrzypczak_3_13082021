@@ -143,6 +143,7 @@
 }
 
 .home {
+  @include home-loader;
   &__top {
     background: linear-gradient(
       90deg,
@@ -180,9 +181,9 @@
     }
     // TODO
     //! ne fonctionne pas voir pour l'interpolation ?
-    //     @include tablet-only{
-    //       font-size: $size-subtitle;
-    //     }
+    //     @include tablet-only {
+    //       font-size: $size-subtitle
+    //     };
   }
 }
 
