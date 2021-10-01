@@ -103,7 +103,7 @@
       }
       & .menu__v {
         transition: transform 700ms ease-in-out;
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
       }
     }
     &--1 {
