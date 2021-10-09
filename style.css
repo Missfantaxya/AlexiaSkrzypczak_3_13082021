@@ -6835,26 +6835,6 @@ body {
   }
 }
 
-@keyframes card-animation {
-  0% {
-    opacity: 0;
-    margin-top: 10%;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 5%;
-  }
-}
-@keyframes choice-animation {
-  0% {
-    opacity: 0;
-    margin-right: -100%;
-  }
-  100% {
-    opacity: 1;
-    margin-right: 0%;
-  }
-}
 .main__menu {
   background-color: #eeeeee;
 }
@@ -6938,6 +6918,16 @@ body {
 @media screen and (min-width: 768px) {
   .menu__underline {
     margin: 0 1rem;
+  }
+}
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    margin-top: 10%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 5%;
   }
 }
 .menu__card {
@@ -7082,6 +7072,16 @@ body {
 .menu__price {
   font-weight: 700;
   align-self: flex-end;
+}
+@keyframes choice-animation {
+  0% {
+    opacity: 0;
+    margin-right: -100%;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0%;
+  }
 }
 .menu__choice {
   display: flex;

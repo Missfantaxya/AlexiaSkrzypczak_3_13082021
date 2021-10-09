@@ -1,25 +1,3 @@
-@keyframes card-animation {
-  0% {
-    opacity: 0;
-    margin-top: 10%;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 5%;
-  }
-}
-
-@keyframes choice-animation {
-  0% {
-    opacity: 0;
-    margin-right: -100%;
-  }
-  100% {
-    opacity: 1;
-    margin-right: 0%;
-  }
-}
-
 .main {
   &__menu {
     background-color: darken($color-main, 3%);
@@ -96,6 +74,16 @@
     background-color: $color-tertiary;
     @include media-min(tablet) {
       margin: 0 $gutter;
+    }
+  }
+  @keyframes card-animation {
+    0% {
+      opacity: 0;
+      margin-top: 10%;
+    }
+    100% {
+      opacity: 1;
+      margin-top: 5%;
     }
   }
   &__card {
@@ -204,6 +192,16 @@
   &__price {
     font-weight: $weight-subtitle;
     align-self: flex-end;
+  }
+  @keyframes choice-animation {
+    0% {
+      opacity: 0;
+      margin-right: -100%;
+    }
+    100% {
+      opacity: 1;
+      margin-right: 0%;
+    }
   }
   &__choice {
     display: flex;
