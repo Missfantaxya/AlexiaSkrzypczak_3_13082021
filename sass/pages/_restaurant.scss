@@ -109,6 +109,8 @@
     overflow: hidden;
     opacity: 0;
     &:hover {
+      //TODO revoir la transition
+      //! apparait directe et fait gisserle texte en mode responsive (desktop ok qu'importe le taille de l'écran.
       // *au click sur mobile & tablette et hover sur desktop
       & .menu__choice {
         transition: position 400ms ease-in-out, right 400ms;
