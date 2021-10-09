@@ -36,7 +36,6 @@
 @mixin button {
   width: max-content;
   min-width: 40vw;
-  //* attention au vieaw plus grande
   max-width: 75vw;
   height: 2.5rem;
   margin: $gutter * 2 $gutter 0 $gutter;
@@ -126,21 +125,6 @@
   }
 }
 
-// @mixin screen {
-//   width: $space-x-screen;
-//   height: $space-y-screen;
-// }
-
-// @mixin half-screen-x {
-//   width: $space-x-screen/2;
-//   height: $space-x-screen/2;
-// }
-
-// @mixin full {
-//   width: $space-full;
-//   height: $space-full;
-// }
-
 @mixin card-animation {
   animation-name: card-animation;
   animation-fill-mode: forwards;
@@ -152,21 +136,16 @@
 @mixin home-loader {
   @keyframes home-loader {
     0% {
-      width: 0vw;
-      height: 0vh;
-      transform: scale(0);
+      display: none;
     }
     99% {
-      width: 0vw;
-      height: 0vh;
-      opacity: 0.5;
-      transform: scale(0);
+      display: none;
     }
     100% {
-      transform: scale(1);
+      display: block;
     }
   }
-  animation: home 3000ms ease-in-out backwards;
+  animation: home 100ms ease-in-out backwards 2900ms;
 }
 
 @mixin media-min($_key) {
