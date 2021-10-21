@@ -6345,83 +6345,32 @@ body {
 }
 
 .loader {
-  animation: loader 3000ms ease-in-out backwards;
-}
-@keyframes appearance {
-  0% {
-    width: 50vw;
-    height: 30vw;
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  2% {
-    width: 50vw;
-    height: 30vw;
-    transform: scale(1.1);
-  }
-  80% {
-    filter: blur(0);
-  }
-  90% {
-    filter: blur(1vw);
-  }
-  99% {
-    transform: scale(0);
-    opacity: 0.5;
-    filter: blur(2vw);
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  0% {
-    width: 100vw;
-    height: 100vh;
-  }
-  99% {
-    width: 100vw;
-    height: 100vh;
-  }
-  100% {
-    display: none;
-  }
+  width: 100vw;
+  height: 100vh;
 }
 .loader__container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 .loader__wrapper {
-  animation: loader-wrapper 2900ms ease-in-out;
-}
-@keyframes loader-wrapper {
-  0% {
-    width: 50vw;
-    height: 50vw;
-  }
-  99% {
-    width: 50vw;
-    height: 50vw;
-  }
-  100% {
-    display: none;
-  }
+  width: 40vw;
+  height: 40vw;
 }
 .loader__flatware {
   background-image: url("public/forkandknifeneon.png");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  animation: flatware 2800ms ease-in-out backwards;
+  animation: flatware 3000ms ease-in-out;
 }
 @keyframes flatware {
   0% {
-    width: 50vw;
-    height: 50vw;
+    width: 100%;
+    height: 100%;
     transform: rotate(0deg);
     filter: blur(8vw);
   }
@@ -6443,30 +6392,44 @@ body {
   90% {
     filter: blur(0);
   }
-  99% {
-    width: 50vw;
-    height: 50vw;
-    transform: rotate(1080deg);
-  }
   100% {
-    display: none;
+    width: 100%;
+    height: 100%;
+    transform: rotate(1080deg);
   }
 }
 .loader__text {
+  width: 50vw;
+  height: 30vw;
   background-color: transparent;
-  margin-top: 5vw;
-  animation: loader-text 3000ms ease-in-out backwards;
+  margin-top: 2vw;
 }
-@keyframes loader-text {
+@keyframes appearance {
   0% {
-    width: 50vw;
-    height: 30vw;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    opacity: 1;
+  }
+  2% {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+  }
+  80% {
+    filter: blur(0);
+  }
+  90% {
+    filter: blur(1vw);
   }
   99% {
-    width: 50vw;
-    height: 30vw;
+    transform: scale(0);
+    opacity: 0.5;
+    filter: blur(2vw);
   }
   100% {
+    transform: scale(0);
+    opacity: 0;
     display: none;
   }
 }
@@ -6475,16 +6438,18 @@ body {
   top: 0;
   background-image: url("public/openingsoonneon.png");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  animation: appearance 3000ms ease-in-out backwards;
+  animation: appearance 3000ms ease-in-out;
 }
 .loader__nowserving {
   position: relative;
   top: 0;
   background-image: url("public/nowservingneon.png");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  animation: appearance 2600ms ease-in-out 300ms reverse backwards;
+  animation: appearance 2700ms ease-in-out 300ms reverse;
 }
 
 .home__top {
