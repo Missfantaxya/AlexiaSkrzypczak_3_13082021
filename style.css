@@ -6826,9 +6826,20 @@ body {
   overflow: hidden;
   opacity: 0;
 }
+@keyframes choice-animation {
+  0% {
+    position: absolute;
+  }
+  99% {
+    position: absolute;
+  }
+  100% {
+    position: relative;
+  }
+}
 .menu__card:hover .menu__choice {
-  transition: position 400ms ease-in-out, right 400ms;
-  display: flex;
+  transition: right 400ms ease-in-out 50ms;
+  animation: choice-animation 400ms ease-in-out;
   position: relative;
   right: 0;
 }
@@ -6956,16 +6967,6 @@ body {
 .menu__price {
   font-weight: 700;
   align-self: flex-end;
-}
-@keyframes choice-animation {
-  0% {
-    opacity: 0;
-    margin-right: -100%;
-  }
-  100% {
-    opacity: 1;
-    margin-right: 0%;
-  }
 }
 .menu__choice {
   display: flex;
