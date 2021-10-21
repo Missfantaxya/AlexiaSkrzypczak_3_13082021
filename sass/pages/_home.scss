@@ -173,12 +173,12 @@
     width: 40vw;
     height: 8vw;
     text-align: center;
-    font-size: $size-content;
+    font-size: $size-info;
     font-weight: $weight-subtitle;
     &:placeholder-shown {
       text-overflow: ellipsis;
     }
-    @include media-min(mobile) {
+    @include media-min(mobilexl) {
       font-size: $size-subtitle;
     }
     @include media-min(tablet) {

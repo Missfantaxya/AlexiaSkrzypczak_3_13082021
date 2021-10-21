@@ -6411,13 +6411,13 @@ body {
   width: 40vw;
   height: 8vw;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 .location__input:placeholder-shown {
   text-overflow: ellipsis;
 }
-@media screen and (min-width: ) {
+@media screen and (min-width: 640px) {
   .location__input {
     font-size: 1.2rem;
   }
