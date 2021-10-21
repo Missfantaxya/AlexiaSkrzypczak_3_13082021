@@ -1,24 +1,24 @@
-.wrapper {
-  &__home {
-    width: 100%;
-    height: 100%;
-    @keyframes home-loader {
-      0% {
-        opacity: 0;
-        transform: scale(0);
-      }
-      99% {
-        opacity: 0;
-        transform: scale(0);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-    animation: home-loader 3000ms ease-in-out backwards;
-  }
-}
+// .wrapper {
+//   &__home {
+//     width: 100%;
+//     height: 100%;
+//     @keyframes home-loader {
+//       0% {
+//         opacity: 0;
+//         transform: scale(0);
+//       }
+//       99% {
+//         opacity: 0;
+//         transform: scale(0);
+//       }
+//       100% {
+//         opacity: 1;
+//         transform: scale(1);
+//       }
+//     }
+//     animation: home-loader 3000ms ease-in-out backwards;
+//   }
+// }
 // TODO screen desktop
 .home {
   &__top {
