@@ -48,7 +48,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    animation: flatware 3000ms ease-in-out;
+    animation: flatware 2000ms ease-in-out;
   }
   &__text {
     width: 50vw;
@@ -92,7 +92,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    animation: appearance 3000ms ease-in-out;
+    animation: appearance 2000ms ease-in-out;
   }
   &__nowserving {
     position: relative;
@@ -101,6 +101,6 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    animation: appearance 2700ms ease-in-out 300ms reverse;
+    animation: appearance 2000ms ease-in-out reverse;
   }
 }

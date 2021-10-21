@@ -6365,7 +6365,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  animation: flatware 3000ms ease-in-out;
+  animation: flatware 2000ms ease-in-out;
 }
 @keyframes flatware {
   0% {
@@ -6440,7 +6440,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  animation: appearance 3000ms ease-in-out;
+  animation: appearance 2000ms ease-in-out;
 }
 .loader__nowserving {
   position: relative;
@@ -6449,7 +6449,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  animation: appearance 2700ms ease-in-out 300ms reverse;
+  animation: appearance 2000ms ease-in-out reverse;
 }
 
 .home__top {
