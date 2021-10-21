@@ -6449,7 +6449,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  animation: appearance 2000ms ease-in-out reverse;
+  animation: appearance 2000ms ease-in-out reverse 100ms;
 }
 
 .home__top {
