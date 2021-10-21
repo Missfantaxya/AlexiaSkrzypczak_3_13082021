@@ -2,9 +2,6 @@
   background-color: lighten($color-dark, 20%);
   color: $color-light;
   font-size: $size-small;
-  &--home {
-    @include home-loader;
-  }
   &__title {
     width: max-content;
     @include media-min(desktop) {
@@ -35,8 +32,5 @@
     padding: $gutter * 0.4;
     font-weight: $weight-title;
     font-size: $size-content;
-  }
-  &__home {
-    @include home-loader;
   }
 }

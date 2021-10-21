@@ -1,6 +1,5 @@
 .header {
   &--home {
-    @include home-loader;
     @include flexrowno;
     justify-content: center;
     align-items: center;

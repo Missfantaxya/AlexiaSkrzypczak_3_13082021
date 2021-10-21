@@ -132,22 +132,6 @@
   animation-timing-function: ease-in-out;
 }
 
-//TODO voir car ne fonctionne pas
-@mixin home-loader {
-  @keyframes home-loader {
-    0% {
-      display: none;
-    }
-    99% {
-      display: none;
-    }
-    100% {
-      display: block;
-    }
-  }
-  animation: home 100ms ease-in-out backwards 2900ms;
-}
-
 @mixin media-min($_key) {
   @media screen and (min-width: map-get($breackpoints, $_key)) {
     & {
