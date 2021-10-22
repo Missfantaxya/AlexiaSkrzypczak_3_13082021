@@ -6,7 +6,7 @@
 
 .menu {
   &__image {
-    width: 100vw;
+    width: 100%;
     height: 41vh;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -114,6 +114,7 @@
         position: relative;
         right: 0;
       }
+      //TODO rotation comme vidéo
       & .menu__v {
         transition: transform 700ms ease-in-out;
         transform: rotate(360deg);
