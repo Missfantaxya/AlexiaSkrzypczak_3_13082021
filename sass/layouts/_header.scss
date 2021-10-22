@@ -1,8 +1,6 @@
 .header {
   &--home {
-    @include flexrowno;
-    justify-content: center;
-    align-items: center;
+    @include flexrownocenterdble;
     margin-top: $gutter * 1.3;
   }
   &__wrapper {
@@ -16,8 +14,7 @@
   }
   &__title {
     &--home {
-      display: flex;
-      justify-content: center;
+      @include flexrownocenter;
       padding-bottom: $gutter;
     }
     &--restaurant {

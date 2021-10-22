@@ -1,7 +1,5 @@
 .footer {
   background-color: lighten($color-dark, 20%);
-  color: $color-light;
-  font-size: $size-small;
   &__title {
     width: max-content;
     @include media-min(desktop) {
@@ -15,9 +13,6 @@
     @include media-min(tablet) {
       width: 20vw;
     }
-    // @include media-min(desktop) {
-    //   width: 20vw;
-    // }
   }
 
   &__list {
@@ -30,7 +25,5 @@
 
   &__item {
     padding: $gutter * 0.4;
-    font-weight: $weight-title;
-    font-size: $size-content;
   }
 }

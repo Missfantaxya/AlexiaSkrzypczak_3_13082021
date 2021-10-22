@@ -1,3 +1,30 @@
 .btn {
-	@include button;
+  width: max-content;
+  min-width: 40vw;
+  max-width: 75vw;
+  height: 2.5rem;
+  margin: $gutter * 2 $gutter 0 $gutter;
+  padding: $gutter * 0.8 $gutter * 1.2;
+  border-radius: 50px;
+  color: $color-light;
+  background: linear-gradient(175deg, $color-secondary, $color-primary);
+  text-align: center;
+  vertical-align: middle;
+  @include shadow;
+  &:hover {
+    background: linear-gradient(
+      175deg,
+      lighten($color-secondary, 3%),
+      lighten($color-primary, 3%)
+    );
+    @include shadowdark;
+  }
+  @include media-min(tablet) {
+    min-width: 30vw;
+    height: 8vw;
+  }
+  @include media-min(desktop) {
+    min-width: 20vw;
+    height: 5vw;
+  }
 }

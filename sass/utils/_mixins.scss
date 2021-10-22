@@ -1,3 +1,4 @@
+// mixins de typographie
 @mixin typography-content {
   font-family: $font-content;
   font-weight: $weight-content;
@@ -15,6 +16,49 @@
   font-size: $size-subtitle;
 }
 
+//mixins de positionnement
+@mixin flexrowno {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@mixin flexrownobtw {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+@mixin flexrownocenter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+@mixin flexrownocenterdble {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexcolno {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@mixin flexcolnocenter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+@mixin text-cut {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+//mixins de couleurs
 @mixin shadow {
   box-shadow: 0 3px 4px 2px darken($color-main, 7%);
 }
@@ -23,115 +67,17 @@
   box-shadow: 0 3px 4px 2px darken($color-main, 15%);
 }
 
-@mixin flexrowno {
-  display: flex;
-  flex-flow: row nowrap;
-}
+//mixin d'animation
 
-@mixin flexcolno {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-@mixin button {
-  width: max-content;
-  min-width: 40vw;
-  max-width: 75vw;
-  height: 2.5rem;
-  margin: $gutter * 2 $gutter 0 $gutter;
-  padding: $gutter * 0.8 $gutter * 1.2;
-  border-radius: 50px;
-  color: $color-light;
-  background: linear-gradient(175deg, $color-secondary, $color-primary);
-  text-align: center;
-  vertical-align: middle;
-  @include shadow;
-  &:hover {
-    background: linear-gradient(
-      175deg,
-      lighten($color-secondary, 3%),
-      lighten($color-primary, 3%)
-    );
-    @include shadowdark;
-  }
-  @include media-min(tablet) {
-    min-width: 30vw;
-    height: 8vw;
-  }
-  @include media-min(desktop) {
-    min-width: 20vw;
-    height: 5vw;
-  }
-}
-
-@mixin stepcontent {
-  min-width: max-content;
-  @include flexrowno;
-  justify-content: flex-start;
-  margin: $gutter * 0.2 $gutter;
-  padding: $gutter * 2 $gutter $gutter * 1.5 $gutter * 2;
-  border-radius: 20px;
-  @include shadow;
-  font-weight: $weight-title;
-}
-
-@mixin stepnumber {
-  display: flex;
-  @include flexrowno;
-  justify-content: center;
-  align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: $color-primary;
-  border-radius: 50%;
-  color: $color-light;
-}
-@mixin tag {
-  display: inline;
-  border-radius: 2px;
-  width: max-content;
-  padding: $gutter * 0.4 $gutter;
-  position: absolute;
-  top: 3vw;
-  right: 2vw;
-  font-weight: $weight-title;
-  font-size: $size-small;
-  text-align: center;
-}
-
-@mixin tagnew {
-  background-color: $color-tertiary;
-  color: darken($color-tertiary, 37%);
-}
-
-@mixin card {
-  width: 90vw;
-  height: 70vw;
-  margin: $gutter auto;
-  overflow: hidden;
-  border-radius: 20px;
-  background-color: $color-light;
-  @include shadow;
-  @include media-min(tablet) {
-    height: 50vw;
-  }
-  @include media-min(tabletxl) {
-    width: 70vw;
-    height: 30vw;
-  }
-  @include media-min(desktop) {
-    width: 40vw;
-    height: 20vw;
-  }
-}
-
-@mixin card-animation {
+@mixin card-animation($key) {
   animation-name: card-animation;
   animation-fill-mode: forwards;
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
+  animation-delay: nth($card-opacity-delai, $key);
 }
 
+// mixins responsives
 @mixin media-min($_key) {
   @media screen and (min-width: map-get($breackpoints, $_key)) {
     & {

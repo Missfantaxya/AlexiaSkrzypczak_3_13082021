@@ -47,10 +47,7 @@
     top: -8vh;
   }
   &__title {
-    @include typography-title;
-    font-size: $size-title;
-    @include flexrowno;
-    justify-content: space-between;
+    @include flexrownobtw;
     padding-bottom: $gutter * 1.2;
     @include media-min(tablet) {
       padding: $gutter;
@@ -63,7 +60,6 @@
     }
   }
   &__type {
-    text-transform: uppercase;
     padding: $gutter * 0.5 0;
     @include media-min(tablet) {
       padding: $gutter * 0.5 $gutter;
@@ -83,8 +79,8 @@
     margin: $gutter 0;
     border-radius: 15px;
     height: 20vw;
-    @include flexrowno;
-    justify-content: space-between;
+    opacity: 0;
+    @include flexrownobtw;
     overflow: hidden;
     @include media-max(mobilexs) {
       height: 15vh;
@@ -138,6 +134,7 @@
         }
       }
     }
+    // TODO ne fonctionne pas ---------------------------------------
     //transition au focus sur la carte en vue mobile et tablette
     &:focus {
       & .menu__dish {
@@ -189,48 +186,34 @@
       }
     }
     &--1 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 1);
+      @include card-animation(1);
     }
     &--2 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 2);
-    }
-    &--2 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 2);
+      @include card-animation(2);
     }
     &--3 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 3);
+      @include card-animation(3);
     }
     &--4 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 4);
+      @include card-animation(4);
     }
     &--5 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 5);
+      @include card-animation(5);
     }
     &--6 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 6);
+      @include card-animation(6);
     }
     &--7 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 7);
+      @include card-animation(7);
     }
     &--8 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 8);
+      @include card-animation(8);
     }
     &--9 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 9);
+      @include card-animation(9);
     }
     &--10 {
-      @include card-animation;
-      animation-delay: nth($card-opacity-delai, 10);
+      @include card-animation(10);
     }
   }
   &__item {
@@ -246,22 +229,17 @@
     justify-content: space-between;
   }
   &__dish {
-    @include typography-subtitle;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+    @include text-cut;
     padding-bottom: $gutter * 0.7;
     width: 100%;
   }
   &__detail {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+    @include text-cut;
+
     width: 85%;
     transition: width 1000ms ease-in-out 50ms;
   }
   &__price {
-    font-weight: $weight-subtitle;
     align-self: flex-end;
     position: absolute;
     right: 0;
@@ -270,9 +248,7 @@
     transition: transform 1000ms ease-in-out 50ms;
   }
   &__choice {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexrownocenterdble;
     height: 20vw;
     background-color: $color-tertiary;
     position: absolute;
@@ -305,13 +281,9 @@
     margin: 0 $gutter * 1.3;
     border-radius: 50%;
     background-color: $color-light;
-    color: $color-tertiary;
-    @include flexrowno;
-    justify-content: center;
-    align-items: center;
+    @include flexrownocenterdble;
   }
   &__button {
-    @include flexrowno;
-    justify-content: center;
+    @include flexrownocenter;
   }
 }

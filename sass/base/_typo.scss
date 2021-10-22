@@ -1,4 +1,84 @@
 body {
-	color: $color-dark;
-	@include typography-content;
+  color: $color-dark;
+  @include typography-content;
+}
+
+//FOOTER
+.footer {
+  font-size: $size-small;
+  color: $color-light;
+  &__item {
+    font-weight: $weight-title;
+    font-size: $size-content;
+  }
+}
+
+//PAGE D'ACCUEIL
+.location {
+  &__input {
+    font-size: $size-info;
+    font-weight: $weight-subtitle;
+    @include media-min(mobilexl) {
+      font-size: $size-subtitle;
+    }
+  }
+}
+.search {
+  &__title {
+    @include typography-subtitle;
+  }
+}
+
+.notice {
+  &__title {
+    @include typography-subtitle;
+    @include media-min(desktop) {
+      font-size: $size-title;
+    }
+  }
+  &__number {
+    color: $color-light;
+  }
+  &__content {
+    font-weight: $weight-title;
+  }
+}
+.restaurants {
+  &__title {
+    @include typography-subtitle;
+    @include media-min(desktop) {
+      font-size: $size-title;
+    }
+  }
+}
+.restaurant {
+  &__title {
+    @include typography-subtitle;
+  }
+  &__tag {
+    font-weight: $weight-title;
+    font-size: $size-small;
+    &--new {
+      color: darken($color-tertiary, 37%);
+    }
+  }
+}
+//PAGES RESTAURANT
+.menu {
+  &__title {
+    @include typography-title;
+    font-size: $size-title;
+  }
+  &__type {
+    text-transform: uppercase;
+  }
+  &__dish {
+    @include typography-subtitle;
+  }
+  &__price {
+    font-weight: $weight-subtitle;
+  }
+  &__check {
+    color: $color-tertiary;
+  }
 }

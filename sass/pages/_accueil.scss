@@ -20,20 +20,14 @@
 
 .location {
   width: 50%;
-  @include flexrowno;
-  justify-content: center;
+  @include flexrownocenter;
   margin: 0 auto;
   &__input {
     width: 40vw;
     height: 8vw;
     text-align: center;
-    font-size: $size-info;
-    font-weight: $weight-subtitle;
     &:placeholder-shown {
       text-overflow: ellipsis;
-    }
-    @include media-min(mobilexl) {
-      font-size: $size-subtitle;
     }
     @include media-min(tablet) {
       width: 30vw;
@@ -46,20 +40,17 @@
 
 .search {
   width: 100%;
-  @include flexcolno;
-  justify-content: center;
+  @include flexcolnocenter;
   &__title {
     margin: $gutter * 2 auto $gutter * 0.8 auto;
     width: 65%;
-    @include typography-subtitle;
     text-align: center;
     @include media-min(desktop) {
       width: 15vw;
     }
   }
   &__content {
-    @include flexcolno;
-    justify-content: center;
+    @include flexcolnocenter;
     padding: 0 $gutter $gutter $gutter;
     margin-bottom: $gutter;
   }
@@ -78,15 +69,11 @@
     margin: $gutter * 3 auto;
   }
   &__title {
-    @include typography-subtitle;
     padding: 0 $gutter;
-    @include media-min(desktop) {
-      font-size: $size-title;
-    }
   }
   &__steps {
-    @include flexcolno;
-    justify-content: center;
+    //////
+    @include flexcolnocenter;
     align-items: center;
   }
   &__step {
@@ -94,13 +81,24 @@
     width: 90%;
   }
   &__number {
-    @include stepnumber;
+    @include flexrownocenterdble;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $color-primary;
+    border-radius: 50%;
+    color: $color-light;
     position: relative;
     top: $gutter * 3.4;
     left: $gutter * 0.3;
   }
   &__content {
-    @include stepcontent;
+    min-width: max-content;
+    @include flexrowno;
+    justify-content: flex-start;
+    margin: $gutter * 0.2 $gutter;
+    padding: $gutter * 2 $gutter $gutter * 1.5 $gutter * 2;
+    border-radius: 20px;
+    @include shadow;
     background-color: $color-main;
     &--dif {
       background: linear-gradient(
@@ -129,17 +127,27 @@
       justify-content: space-evenly;
     }
   }
-
-  &__title {
-    @include typography-subtitle;
-    @include media-min(desktop) {
-      font-size: $size-title;
-    }
-  }
 }
 .restaurant {
   &__card {
-    @include card;
+    width: 90vw;
+    height: 70vw;
+    margin: $gutter auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: $color-light;
+    @include shadow;
+    @include media-min(tablet) {
+      height: 50vw;
+    }
+    @include media-min(tabletxl) {
+      width: 70vw;
+      height: 30vw;
+    }
+    @include media-min(desktop) {
+      width: 40vw;
+      height: 20vw;
+    }
     position: relative;
   }
   &__link {
@@ -192,16 +200,23 @@
     }
   }
   &__tag {
-    @include tag;
+    display: inline;
+    border-radius: 2px;
+    width: max-content;
+    padding: $gutter * 0.4 $gutter;
+    position: absolute;
+    top: 3vw;
+    right: 2vw;
+    text-align: center;
     &--new {
-      @include tagnew;
+      background-color: $color-tertiary;
     }
   }
   //bas de la carte restaurant
   &__content {
     height: 20vw;
-    @include flexrowno;
-    justify-content: space-between;
+    //
+    @include flexrownobtw;
     align-items: center;
     padding: $gutter;
     @include media-min(tablet) {
@@ -216,15 +231,11 @@
   }
   &__text {
     height: 85%;
-    display: flex;
-    flex-flow: column nowrap;
+    @include flexcolno;
     justify-content: space-evenly;
     @include media-min(desktop) {
       margin-left: $gutter * 2;
     }
-  }
-  &__title {
-    @include typography-subtitle;
   }
   // favori
   &__icon {
