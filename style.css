@@ -6866,16 +6866,6 @@ body {
     margin: 0 1rem;
   }
 }
-@keyframes card-animation {
-  0% {
-    opacity: 0;
-    margin-top: 10%;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 5%;
-  }
-}
 .menu__card {
   position: relative;
   background-color: white;
@@ -6886,29 +6876,6 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   overflow: hidden;
-}
-@keyframes details-xs {
-  0% {
-    width: 80%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-.menu__card:hover .menu__details {
-  animation: details-xs 1000ms backwards;
-}
-.menu__card:hover .menu__price {
-  transform: translatex(-220%);
-  transition: transform 1000ms ease-in-out 50ms;
-}
-.menu__card:hover .menu__choice {
-  transform: translatex(-100%);
-  transition: transfrom 1000ms ease-in-out 50ms;
-}
-.menu__card:hover .menu__v {
-  transition: transform 1050ms ease-out;
-  transform: rotate(360deg);
 }
 @media screen and (max-width: 374px) {
   .menu__card {
@@ -6937,6 +6904,86 @@ body {
   .menu__card {
     width: 30vw;
     height: 7vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__card:hover .menu__dish {
+    transition: width 800ms ease-in-out 50ms;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__card:hover .menu__detail {
+    transition: width 1000ms ease-in-out 50ms;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__card:hover .menu__price {
+    transform: translatex(-220%);
+    transition: transform 800ms ease-in-out;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__card:hover .menu__choice {
+    transition: transform 800ms ease-in-out 50ms;
+    transform: translatex(-100%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__card:hover .menu__v {
+    transition: transform 850ms ease-out;
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .menu__card:focus .menu__dish {
+    transition: width 800ms ease-in-out 50ms;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 374px) {
+  .menu__card:focus .menu__dish {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .menu__card:focus .menu__detail {
+    transition: width 1000ms ease-in-out 50ms;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 374px) {
+  .menu__card:focus .menu__detail {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .menu__card:focus .menu__price {
+    transform: translatex(-220%);
+    transition: transform 800ms ease-in-out;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .menu__card:focus .menu__choice {
+    transition: transform 800ms ease-in-out 50ms;
+    transform: translatex(-100%);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .menu__card:focus .menu__v {
+    transition: transform 850ms ease-out;
+    transform: rotate(360deg);
+  }
+}
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    margin-top: 10%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 5%;
   }
 }
 .menu__card--1 {
@@ -7037,12 +7084,14 @@ body {
   overflow: hidden;
   white-space: nowrap;
   padding-bottom: 0.7rem;
+  width: 100%;
 }
 .menu__detail {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   width: 85%;
+  transition: width 1000ms ease-in-out 50ms;
 }
 .menu__price {
   font-weight: 700;
