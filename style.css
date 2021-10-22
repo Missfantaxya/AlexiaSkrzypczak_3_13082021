@@ -6291,20 +6291,31 @@ body {
 .heart__icone {
   width: 1.5rem;
   height: 1.5rem;
+  position: relative;
 }
 .heart__regular:before {
   content: "";
 }
-.heart__regular:hover + .heart__solid {
-  transform: scale(1);
+@media screen and (min-width: 1280px) {
+  .heart__regular:hover + .heart__solid {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .heart__regular:focus + .heart__solid {
+    transform: scale(1);
+  }
 }
 .heart__solid {
   background: linear-gradient(195deg, #9356dc, #ff79da);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
-  top: -100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   transform: scale(0);
   transform-origin: bottom;
   transition: transform 500ms ease-in-out;

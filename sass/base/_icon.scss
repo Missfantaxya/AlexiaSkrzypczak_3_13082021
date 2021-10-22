@@ -1,38 +1,49 @@
-// TODO ne reste pas plein au hover sur mozilla
-//TODO régler la position du coeur selon les view
-
 .heart {
   &__icone {
     width: 1.5rem;
     height: 1.5rem;
+    position: relative;
   }
   font-size: 1.5rem;
   color: darken($color-main, 50%);
-  //* configuration en tant qu'icône
+  // configuration en tant qu'icône par fontawesome
   @include fa-icon;
   @extend %fa-icon;
-  //* icône de style regular
+  // icône de style regular de fontawesome (vide)
   @extend .far;
   &__regular {
     &:before {
       content: fa-content($fa-var-heart);
     }
-    // TODO hover version desktop et au click pour le reste
+    // remplissage du coeur au hover en vue desktop
     &:hover + {
       & .heart__solid {
-        transform: scale(1);
+        @include media-min(desktop) {
+          transform: scale(1);
+        }
+      }
+    }
+    // remplissage du coeur au focus en vue mobile et tablette
+    &:focus + {
+      & .heart__solid {
+        @include media-max(desktop) {
+          transform: scale(1);
+        }
       }
     }
   }
   &__solid {
-    //* icône de style solid
+    // icône de style solid de fontawesome (rempli)
     @extend .fas;
     background: linear-gradient(195deg, $color-primary, $color-secondary);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: relative;
-    top: -100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     transform: scale(0);
     transform-origin: bottom;
     transition: transform 500ms ease-in-out;
