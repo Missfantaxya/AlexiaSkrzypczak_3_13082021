@@ -6918,13 +6918,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu__underline {
-    margin: 0 1rem;
+    margin: 0rem 1rem;
   }
 }
 .menu__card {
   position: relative;
   background-color: white;
-  margin: 1rem 0;
+  margin: 1rem 0rem;
   border-radius: 15px;
   height: 20vw;
   opacity: 0;
