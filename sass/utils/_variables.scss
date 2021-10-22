@@ -6,12 +6,13 @@ $color-dark: black;
 $color-light: white;
 $color-main: #f6f6f6;
 
-//taille
+//tailles et proportions
 $part-w: 1vw;
 $part-h: 1vh;
-$propor: 1%;
 $gutter: 1rem;
 $px: 1px;
+
+$propor: 1%;
 
 // typography
 $font-title: "Shrikhand", cursive;
@@ -31,7 +32,7 @@ $size-info: $gutter * 0.9;
 
 //animation
 //TODO tenter une fonction pour avoir une liste "card-opacity-delay qui en découle
-$delay: 250ms;
+// $delay: 250ms;
 
 $card-opacity-delai: 0ms 250ms 500ms 750ms 1000ms 1250ms 1500ms 1750ms 2000ms
   2250ms;
