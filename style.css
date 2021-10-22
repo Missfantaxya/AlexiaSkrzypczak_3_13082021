@@ -7114,8 +7114,8 @@ body {
 }
 .menu__item {
   min-width: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
   display: flex;
 }
 .menu__info {
