@@ -6886,34 +6886,51 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   overflow: hidden;
-  opacity: 0;
 }
-@keyframes choice-animation {
+@keyframes details-xs {
   0% {
-    position: absolute;
-  }
-  99% {
-    position: absolute;
+    width: 80%;
   }
   100% {
-    position: relative;
+    width: 70%;
   }
 }
+.menu__card:hover .menu__details {
+  animation: details-xs 1000ms backwards;
+}
+.menu__card:hover .menu__price {
+  transform: translatex(-220%);
+  transition: transform 1000ms ease-in-out 50ms;
+}
 .menu__card:hover .menu__choice {
-  transition: right 400ms ease-in-out 50ms;
-  animation: choice-animation 400ms ease-in-out;
-  position: relative;
-  right: 0;
+  transform: translatex(-100%);
+  transition: transfrom 1000ms ease-in-out 50ms;
 }
 .menu__card:hover .menu__v {
-  transition: transform 700ms ease-in-out;
+  transition: transform 1050ms ease-out;
   transform: rotate(360deg);
+}
+@media screen and (max-width: 374px) {
+  .menu__card {
+    height: 15vh;
+  }
+}
+@media screen and (min-width: 500px) {
+  .menu__card {
+    height: 15vw;
+  }
+}
+@media screen and (min-width: 640px) {
+  .menu__card {
+    width: 90vw;
+    height: 12vw;
+    margin: 1rem auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__card {
     width: 80vw;
     height: 10vw;
-    margin: 1rem auto;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -7025,10 +7042,16 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  width: 85%;
 }
 .menu__price {
   font-weight: 700;
   align-self: flex-end;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  transform: translatex(0);
+  transition: transform 1000ms ease-in-out 50ms;
 }
 .menu__choice {
   display: flex;
@@ -7037,8 +7060,24 @@ body {
   height: 20vw;
   background-color: #99e2d0;
   position: absolute;
-  right: -100%;
-  transition: position 400ms, right 800ms ease-in-out 50ms;
+  left: 100%;
+  transform: translatex(0);
+  transition: transfrom 1000ms ease-in-out 50ms;
+}
+@media screen and (max-width: 374px) {
+  .menu__choice {
+    height: 15vh;
+  }
+}
+@media screen and (min-width: 500px) {
+  .menu__choice {
+    height: 15vw;
+  }
+}
+@media screen and (min-width: 640px) {
+  .menu__choice {
+    height: 12vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__choice {

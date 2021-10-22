@@ -139,3 +139,10 @@
     }
   }
 }
+@mixin media-max($_key) {
+  @media screen and (max-width: map-get($breackpoints, $_key)) {
+    & {
+      @content;
+    }
+  }
+}

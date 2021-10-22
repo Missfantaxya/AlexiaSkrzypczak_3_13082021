@@ -94,36 +94,48 @@
     height: 20vw;
     @include flexrowno;
     justify-content: space-between;
+    //* test animation-transition
     overflow: hidden;
-    opacity: 0;
     &:hover {
-      @keyframes choice-animation {
+      //TODO finir cette keyframs et faire celle du dish
+      @keyframes details-xs {
         0% {
-          position: absolute;
-        }
-        99% {
-          position: absolute;
+          width: 80%;
         }
         100% {
-          position: relative;
+          width: 70%;
         }
       }
-      & .menu__choice {
-        transition: right 400ms ease-in-out 50ms;
-        animation: choice-animation 400ms ease-in-out;
-        position: relative;
-        right: 0;
+      & .menu__details {
+        animation: details-xs 1000ms backwards;
       }
-      //TODO rotation comme vidéo
+      & .menu__price {
+        transform: translatex(-220%);
+        transition: transform 1000ms ease-in-out 50ms;
+      }
+      & .menu__choice {
+        transform: translatex(-100%);
+        transition: transfrom 1000ms ease-in-out 50ms;
+      }
       & .menu__v {
-        transition: transform 700ms ease-in-out;
+        transition: transform 1050ms ease-out;
         transform: rotate(360deg);
       }
+    }
+    @include media-max(mobilexs) {
+      height: 15vh;
+    }
+    @include media-min(mobile-landscape) {
+      height: 15vw;
+    }
+    @include media-min(mobilexl) {
+      width: 90vw;
+      height: 12vw;
+      margin: $gutter auto;
     }
     @include media-min(tablet) {
       width: 80vw;
       height: 10vw;
-      margin: $gutter auto;
     }
     @include media-min(desktop) {
       width: 30vw;
@@ -197,10 +209,16 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    width: 85%;
   }
   &__price {
     font-weight: $weight-subtitle;
     align-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin-right: $gutter;
+    transform: translatex(0);
+    transition: transform 1000ms ease-in-out 50ms;
   }
   &__choice {
     display: flex;
@@ -209,8 +227,18 @@
     height: 20vw;
     background-color: $color-tertiary;
     position: absolute;
-    right: -100%;
-    transition: position 400ms, right 800ms ease-in-out 50ms;
+    left: 100%;
+    transform: translatex(0);
+    transition: transfrom 1000ms ease-in-out 50ms;
+    @include media-max(mobilexs) {
+      height: 15vh;
+    }
+    @include media-min(mobile-landscape) {
+      height: 15vw;
+    }
+    @include media-min(mobilexl) {
+      height: 12vw;
+    }
     @include media-min(tablet) {
       height: 10vw;
     }
