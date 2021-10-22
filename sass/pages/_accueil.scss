@@ -13,45 +13,45 @@
       darken($color-main, 7%),
       darken($color-main, 5%)
     );
-    padding: $gutter * 0.8 0;
+    padding: $gutter * 0.8 $gutter * 0;
     box-shadow: inset 0 1px 1px 1px darken($color-main, 10%);
   }
 }
 
 .location {
-  width: 50%;
+  width: $propor * 50;
   @include flexrownocenter;
-  margin: 0 auto;
+  margin: $gutter * 0 auto;
   &__input {
-    width: 40vw;
-    height: 8vw;
+    width: $part-w * 40;
+    height: $part-w 8;
     text-align: center;
     &:placeholder-shown {
       text-overflow: ellipsis;
     }
     @include media-min(tablet) {
-      width: 30vw;
+      width: $part-w * 30;
     }
     @include media-min(desktop) {
-      width: 15vw;
+      width: $part-w * 15;
     }
   }
 }
 
 .search {
-  width: 100%;
+  width: $propor * 100;
   @include flexcolnocenter;
   &__title {
     margin: $gutter * 2 auto $gutter * 0.8 auto;
-    width: 65%;
+    width: $propor * 65;
     text-align: center;
     @include media-min(desktop) {
-      width: 15vw;
+      width: $part-w * 15;
     }
   }
   &__content {
     @include flexcolnocenter;
-    padding: 0 $gutter $gutter $gutter;
+    padding: $gutter * 0 $gutter $gutter $gutter;
     margin-bottom: $gutter;
   }
   &__text {
@@ -65,11 +65,11 @@
 .notice {
   margin: $gutter * 3 0;
   @include media-min(tablet) {
-    width: 50vw;
+    width: $part-w * 50;
     margin: $gutter * 3 auto;
   }
   &__title {
-    padding: 0 $gutter;
+    padding: $gutter * 0 $gutter;
   }
   &__steps {
     @include flexcolnocenter;
@@ -77,14 +77,14 @@
   }
   &__step {
     display: inline-block;
-    width: 90%;
+    width: $propor * 90;
   }
   &__number {
     @include flexrownocenterdble;
     width: $gutter * 1.5;
     height: $gutter * 1.5;
     background-color: $color-primary;
-    border-radius: 50%;
+    border-radius: $propor * 50;
     color: $color-light;
     position: relative;
     top: $gutter * 3.4;
@@ -96,7 +96,7 @@
     justify-content: flex-start;
     margin: $gutter * 0.2 $gutter;
     padding: $gutter * 2 $gutter $gutter * 1.5 $gutter * 2;
-    border-radius: 20px;
+    border-radius: $px * 20;
     @include shadow;
     background-color: $color-main;
     &--dif {
@@ -129,83 +129,82 @@
 }
 .restaurant {
   &__card {
-    width: 90vw;
-    height: 70vw;
+    width: $part-w * 90;
+    height: $part-w * 70;
     margin: $gutter auto;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: $px * 20;
     background-color: $color-light;
     @include shadow;
     @include media-min(tablet) {
-      height: 50vw;
+      height: $part-w * 50;
     }
     @include media-min(tabletxl) {
-      width: 70vw;
-      height: 30vw;
+      width: $part-w * 70;
+      height: $part-w * 30;
     }
     @include media-min(desktop) {
-      width: 40vw;
-      height: 20vw;
+      width: $part-w * 40;
+      height: $part-w * 20;
     }
     position: relative;
   }
   &__link {
-    width: 100%;
-    height: 100%;
+    @include fullbox;
   }
   &__image {
-    width: 100%;
-    height: 50vw;
+    width: $propor * 100;
+    height: $part-w * 50;
     overflow: hidden;
     @include media-min(tablet) {
-      height: 40vw;
+      height: $part-w * 40;
     }
     @include media-min(tabletxl) {
-      height: 20vw;
+      height: $part-w * 20;
     }
     @include media-min(desktop) {
-      height: 14vw;
+      height: $part-w * 14;
     }
   }
   //placement des images sur les cartes des restaurants
   &__picture {
     &--1 {
-      width: 103%;
-      object-position: -2vw -12vw;
+      width: $propor * 103;
+      object-position: $part-w * -2 $part-w * -12;
       @include media-min(desktop) {
-        object-position: 0vw -10vw;
+        object-position: $part-w * 0 $part-w * -10;
       }
     }
     &--2 {
-      width: 100%;
-      object-position: 0 -40vw;
+      width: $propor * 100;
+      object-position: $part-w * 0 $part-w * -40;
       @include media-min(desktop) {
-        object-position: 0vw -22vw;
+        object-position: $part-w * 0 $part-w * -22;
       }
     }
     &--3 {
-      width: 110%;
-      object-position: -2vw -16vw;
+      width: $propor * 110;
+      object-position: $part-w * -2 $part-w * -16;
       @include media-min(desktop) {
-        object-position: -1vw -12vw;
+        object-position: $part-w * -1 $part-w * -12;
       }
     }
     &--4 {
-      width: 104%;
-      object-position: -2vw -14vw;
+      width: $propor * 104;
+      object-position: $part-w * -2 $part-w * -14;
       @include media-min(desktop) {
-        object-position: -2vw -12vw;
+        object-position: $part-w * -2 $part-w * -12;
       }
     }
   }
   &__tag {
     display: inline;
-    border-radius: 2px;
+    border-radius: $px * 2;
     width: max-content;
     padding: $gutter * 0.4 $gutter;
     position: absolute;
-    top: 3vw;
-    right: 2vw;
+    top: $part-w * 3;
+    right: $part-w * 2;
     text-align: center;
     &--new {
       background-color: $color-tertiary;
@@ -213,23 +212,23 @@
   }
   //bas de la carte restaurant
   &__content {
-    height: 20vw;
+    height: $part-w * 20;
     //
     @include flexrownobtw;
     align-items: center;
     padding: $gutter;
     @include media-min(tablet) {
-      height: 10vw;
+      height: $part-w * 10;
     }
     @include media-min(tabletxl) {
       padding: $gutter * 1.2;
     }
     @include media-min(desktop) {
-      height: 5vw;
+      height: $part-w * 5;
     }
   }
   &__text {
-    height: 85%;
+    height: $propor * 85;
     @include flexcolno;
     justify-content: space-evenly;
     @include media-min(desktop) {
@@ -238,19 +237,23 @@
   }
   // favori
   &__icon {
-    width: 5vw;
-    height: 5vw;
+    //TODO voir pour faire un mixin avec une variable
+    width: $part-w * 5;
+    height: $part-w * 5;
     @include media-min(tablet) {
-      width: 4vw;
-      height: 4vw;
+      //TODO voir pour faire un mixin avec une variable
+      width: $part-w * 4;
+      height: $part-w * 4;
     }
     @include media-min(tabletxl) {
-      width: 3vw;
-      height: 3vw;
+      //TODO voir pour faire un mixin avec une variable
+      width: $part-w * 3;
+      height: $part-w * 3;
     }
     @include media-min(desktop) {
-      width: 1vw;
-      height: 1vw;
+      //TODO voir pour faire un mixin avec une variable
+      width: $part-w * 1;
+      height: $part-w * 1;
       margin-right: $gutter * 2;
     }
   }

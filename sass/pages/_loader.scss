@@ -1,22 +1,20 @@
 .loader {
-  width: 100vw;
-  height: 100vh;
+  @include fullscreen;
   &__container {
-    width: 100vw;
-    height: 100vh;
+    @include fullscreen;
     @include flexcolno;
     justify-content: center;
     align-items: center;
   }
+  //TODO voir pour faire un mixin avec une variable
   &__wrapper {
-    width: 40vw;
-    height: 40vw;
+    width: $part-w * 40;
+    height: $part-w * 40;
   }
   &__flatware {
     @keyframes flatware {
       0% {
-        width: 100%;
-        height: 100%;
+        @include fullbox;
         transform: rotate(0deg);
         filter: blur(8vw);
       }
@@ -39,33 +37,28 @@
         filter: blur(0);
       }
       100% {
-        width: 100%;
-        height: 100%;
+        @include fullbox;
         transform: rotate(1080deg);
       }
     }
     background-image: url("public/forkandknifeneon.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include bg-cent-cont-norep;
     animation: flatware 2000ms ease-in-out;
   }
   &__text {
-    width: 50vw;
-    height: 30vw;
+    width: $part-w * 50;
+    height: $part-w * 30;
     background-color: transparent;
-    margin-top: 2vw;
+    margin-top: $part-w * 2;
   }
   @keyframes appearance {
     0% {
-      width: 100%;
-      height: 100%;
+      @include fullbox;
       transform: scale(1);
       opacity: 1;
     }
     2% {
-      width: 100%;
-      height: 100%;
+      @include fullbox;
       transform: scale(1);
     }
     80% {
@@ -86,21 +79,15 @@
     }
   }
   &__openingsoon {
-    position: relative;
-    top: 0;
     background-image: url("public/openingsoonneon.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include bg-cent-cont-norep;
+    @include relat-top-0;
     animation: appearance 2000ms ease-in-out;
   }
   &__nowserving {
-    position: relative;
-    top: 0;
     background-image: url("public/nowservingneon.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include bg-cent-cont-norep;
+    @include relat-top-0;
     animation: appearance 1900ms ease-in-out reverse 100ms;
   }
 }

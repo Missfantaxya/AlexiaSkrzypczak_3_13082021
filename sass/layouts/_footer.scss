@@ -3,15 +3,15 @@
   &__title {
     width: max-content;
     @include media-min(desktop) {
-      margin: 0 auto $gutter auto;
+      margin: $gutter * 0 auto $gutter auto;
       padding-top: $gutter;
     }
   }
   &__logo {
-    width: 40vw;
+    width: $part-w * 40;
     padding: $gutter * 1.2 $gutter $gutter * 0.3 $gutter * 1.5;
     @include media-min(tablet) {
-      width: 20vw;
+      width: $part-w * 20;
     }
   }
 

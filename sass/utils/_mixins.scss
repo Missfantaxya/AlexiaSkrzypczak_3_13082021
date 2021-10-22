@@ -52,6 +52,22 @@
   justify-content: center;
 }
 
+@mixin relat-top-0 {
+  position: relative;
+  top: 0;
+}
+
+//mixins de tailles
+@mixin fullscreen {
+  width: $part-w * 100;
+  height: $part-h * 100;
+}
+
+@mixin fullbox {
+  width: $propor * 100;
+  height: $propor * 100;
+}
+
 @mixin text-cut {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -96,4 +112,11 @@
       @content;
     }
   }
+}
+
+//mixin bacground
+@mixin bg-cent-cont-norep {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }

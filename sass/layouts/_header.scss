@@ -4,10 +4,10 @@
     margin-top: $gutter * 1.3;
   }
   &__wrapper {
-    width: 100vw;
+    width: $part-w * 100;
     display: grid;
-    grid-template-columns: 1fr 70vw;
-    padding: $gutter 0;
+    grid-template-columns: 1fr $part-w * 70;
+    padding: $gutter $gutter * 0;
   }
   &__link {
     margin: auto $gutter * 1.5;
@@ -23,12 +23,12 @@
     }
   }
   &__logo {
-    width: 50vw;
+    width: $part-w * 50;
     @include media-min(tabletxl) {
-      width: 40vw;
+      width: $part-w * 40;
     }
     @include media-min(desktop) {
-      width: 30vw;
+      width: $part-w * 30;
     }
   }
 }

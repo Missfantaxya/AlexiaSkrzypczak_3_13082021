@@ -6,6 +6,13 @@ $color-dark: black;
 $color-light: white;
 $color-main: #f6f6f6;
 
+//taille
+$part-w: 1vw;
+$part-h: 1vh;
+$propor: 1%;
+$gutter: 1rem;
+$px: 1px;
+
 // typography
 $font-title: "Shrikhand", cursive;
 $font-content: "Roboto", sans-serif;
@@ -14,19 +21,18 @@ $font-content: "Roboto", sans-serif;
 $weight-title: 500;
 $weight-subtitle: 700;
 $weight-content: 300;
-// $weight-middle: 400;
 
 //font-size
-$size-title: 1.6rem;
-$size-subtitle: 1.2rem;
-$size-content: 1rem;
-$size-small: 0.7rem;
-$size-info: 0.9rem;
-
-//gutter
-$gutter: 1rem;
+$size-title: $gutter * 1.6;
+$size-subtitle: $gutter * 1.2;
+$size-content: $gutter;
+$size-small: $gutter * 0.7;
+$size-info: $gutter * 0.9;
 
 //animation
+//TODO tenter une fonction pour avoir une liste "card-opacity-delay qui en découle
+$delay: 250ms;
+
 $card-opacity-delai: 0ms 250ms 500ms 750ms 1000ms 1250ms 1500ms 1750ms 2000ms
   2250ms;
 
