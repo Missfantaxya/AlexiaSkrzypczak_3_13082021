@@ -25,12 +25,11 @@ $size-info: 0.9rem;
 
 //gutter
 $gutter: 1rem;
-// TODO voir pour faire une variable avec plusieurs valeurs (list) pour le padding
 
 //animation
 $card-opacity-delai: 0ms 250ms 500ms 750ms 1000ms 1250ms 1500ms 1750ms 2000ms
   2250ms;
-// TODO voir pour faire un array
+
 $card-opacity-delai2: (
   1: 0ms,
   2: 250ms,
