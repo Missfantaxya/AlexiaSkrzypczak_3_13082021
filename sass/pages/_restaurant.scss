@@ -135,7 +135,6 @@
         }
       }
     }
-    // TODO ne fonctionne pas comme il faut---------------------------------------
     //transition au focus sur la carte en vue mobile et tablette
     &:hover {
       & .menu__dish {
@@ -179,7 +178,6 @@
         }
       }
     }
-    //TODO --------------------------------------------
     // animation d'apparition de la carte
     @keyframes card-animation {
       0% {

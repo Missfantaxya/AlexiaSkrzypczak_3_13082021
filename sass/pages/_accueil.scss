@@ -151,6 +151,7 @@
   }
   &__link {
     @include fullbox;
+    z-index: 5;
   }
   &__image {
     width: $propor * 100;
@@ -237,21 +238,17 @@
   }
   // favori
   &__icon {
-    //TODO voir pour faire un mixin avec une variable
     width: $part-w * 5;
     height: $part-w * 5;
     @include media-min(tablet) {
-      //TODO voir pour faire un mixin avec une variable
       width: $part-w * 4;
       height: $part-w * 4;
     }
     @include media-min(tabletxl) {
-      //TODO voir pour faire un mixin avec une variable
       width: $part-w * 3;
       height: $part-w * 3;
     }
     @include media-min(desktop) {
-      //TODO voir pour faire un mixin avec une variable
       width: $part-w * 1;
       height: $part-w * 1;
       margin-right: $gutter * 2;
