@@ -1,10 +1,10 @@
 .heart {
   &__icone {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: $gutter * 1.5;
+    height: $gutter * 1.5;
     position: relative;
   }
-  font-size: 1.5rem;
+  font-size: $size-title;
   color: darken($color-main, 50%);
   // configuration en tant qu'icône par fontawesome
   @include fa-icon;

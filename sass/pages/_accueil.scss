@@ -24,7 +24,7 @@
   margin: $gutter * 0 auto;
   &__input {
     width: $part-w * 40;
-    height: $part-w 8;
+    height: $part-w * 8;
     text-align: center;
     &:placeholder-shown {
       text-overflow: ellipsis;
