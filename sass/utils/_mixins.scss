@@ -76,16 +76,16 @@
 
 @mixin width0-100 {
   min-width: 0;
-  width: 100%;
+  width: $propor * 100;
 }
 
 //mixins de couleurs
 @mixin shadow {
-  box-shadow: 0 3px 4px 2px darken($color-main, 7%);
+  box-shadow: 0 $px * 3 $px * 4 $px * 2 darken($color-main, 7%);
 }
 
 @mixin shadowdark {
-  box-shadow: 0 3px 4px 2px darken($color-main, 15%);
+  box-shadow: 0 $px * 3 $px * 4 $px * 2 darken($color-main, 15%);
 }
 
 //mixin d'animation

@@ -14,7 +14,7 @@
       darken($color-main, 5%)
     );
     padding: $gutter * 0.8 $gutter * 0;
-    box-shadow: inset 0 1px 1px 1px darken($color-main, 10%);
+    box-shadow: inset 0 $px $px $px darken($color-main, 10%);
   }
 }
 
@@ -151,7 +151,6 @@
   }
   &__link {
     @include fullbox;
-    z-index: 5;
   }
   &__image {
     width: $propor * 100;
