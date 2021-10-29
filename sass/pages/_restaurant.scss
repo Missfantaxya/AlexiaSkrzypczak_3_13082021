@@ -141,6 +141,7 @@
       & .menu__dish {
         @include media-max(desktop) {
           transition: width 800ms ease-in-out 50ms;
+          // -moz-transition: width 800ms ease-in-out 50ms;
           width: $propor * 80;
         }
         @include media-max(mobilexs) {
@@ -150,6 +151,7 @@
       & .menu__detail {
         @include media-max(desktop) {
           transition: width 1000ms ease-in-out 50ms;
+          // -moz-transition: width 1000ms ease-in-out 50ms;
           width: $propor * 70;
         }
         @include media-max(mobilexs) {
@@ -159,7 +161,9 @@
       & .menu__price {
         @include media-max(desktop) {
           transform: translatex(-220%);
+          // -moz-transform: translatex(-220%);
           transition: transform 800ms ease-in-out;
+          // -moz-transition: transform 800ms ease-in-out;
         }
       }
       & .menu__choice {
