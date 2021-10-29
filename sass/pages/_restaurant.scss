@@ -135,9 +135,9 @@
         }
       }
     }
-    // TODO ne fonctionne pas ---------------------------------------
+    // TODO ne fonctionne pas comme il faut---------------------------------------
     //transition au focus sur la carte en vue mobile et tablette
-    &:focus {
+    &:hover {
       & .menu__dish {
         @include media-max(desktop) {
           transition: width 800ms ease-in-out 50ms;
@@ -175,6 +175,7 @@
         }
       }
     }
+    //TODO --------------------------------------------
     // animation d'apparition de la carte
     @keyframes card-animation {
       0% {

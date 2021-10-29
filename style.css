@@ -6389,7 +6389,7 @@ body {
   }
 }
 @media screen and (max-width: 1280px) {
-  .heart__regular:focus + .heart__solid {
+  .heart__regular:hover + .heart__solid {
     transform: scale(1);
   }
 }
@@ -6993,41 +6993,41 @@ body {
   }
 }
 @media screen and (max-width: 1280px) {
-  .menu__card:focus .menu__dish {
+  .menu__card:hover .menu__dish {
     transition: width 800ms ease-in-out 50ms;
     width: 80%;
   }
 }
 @media screen and (max-width: 374px) {
-  .menu__card:focus .menu__dish {
+  .menu__card:hover .menu__dish {
     width: 75%;
   }
 }
 @media screen and (max-width: 1280px) {
-  .menu__card:focus .menu__detail {
+  .menu__card:hover .menu__detail {
     transition: width 1000ms ease-in-out 50ms;
     width: 70%;
   }
 }
 @media screen and (max-width: 374px) {
-  .menu__card:focus .menu__detail {
+  .menu__card:hover .menu__detail {
     width: 50%;
   }
 }
 @media screen and (max-width: 1280px) {
-  .menu__card:focus .menu__price {
+  .menu__card:hover .menu__price {
     transform: translatex(-220%);
     transition: transform 800ms ease-in-out;
   }
 }
 @media screen and (max-width: 1280px) {
-  .menu__card:focus .menu__choice {
+  .menu__card:hover .menu__choice {
     transition: transform 800ms ease-in-out 50ms;
     transform: translatex(-100%);
   }
 }
 @media screen and (max-width: 1280px) {
-  .menu__card:focus .menu__v {
+  .menu__card:hover .menu__v {
     transition: transform 850ms ease-out;
     transform: rotate(360deg);
   }
